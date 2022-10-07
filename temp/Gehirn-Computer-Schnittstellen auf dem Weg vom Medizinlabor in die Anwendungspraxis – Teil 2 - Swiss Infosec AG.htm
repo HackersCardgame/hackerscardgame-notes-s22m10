@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="de-DE"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="stylesheet" type="text/css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/si-include-chat.min.css"><script type="text/javascript" src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/siwidget.1.3.js"></script><script async="" src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/google-analytics_analytics.js"></script><script type="text/javascript">var baseUrl = 'https://www.infosec.ch/wp-content/themes/infosec';</script>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PCVPZX2');</script>
+    <!-- End Google Tag Manager -->
+
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="alternate" hreflang="de" href="https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/">
+<link rel="alternate" hreflang="x-default" href="https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/">
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Gehirn-Computer-Schnittstellen auf dem Weg vom Medizinlabor in die Anwendungspraxis – Teil 2 - Swiss Infosec AG</title>
+	<meta name="description" content="Angriffsszenarien auf Vertraulichkeit, Verfüg-/Belastbarkeit und Integrität von Gehirn-Computer-Schnittstellen; Rechtsrahmen für diese Schnittstellen.">
+	<link rel="canonical" href="https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/">
+	<meta property="og:locale" content="de_DE">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Gehirn-Computer-Schnittstellen auf dem Weg vom Medizinlabor in die Anwendungspraxis – Teil 2 - Swiss Infosec AG">
+	<meta property="og:description" content="Angriffsszenarien auf Vertraulichkeit, Verfüg-/Belastbarkeit und Integrität von Gehirn-Computer-Schnittstellen; Rechtsrahmen für diese Schnittstellen.">
+	<meta property="og:url" content="https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/">
+	<meta property="og:site_name" content="Infosec AG">
+	<meta property="article:published_time" content="2022-06-28T09:16:36+00:00">
+	<meta property="article:modified_time" content="2022-09-02T09:41:36+00:00">
+	<meta property="og:image" content="https://www.infosec.ch/wp-content/uploads/2022/08/blogbeitraege.jpg">
+	<meta property="og:image:width" content="660">
+	<meta property="og:image:height" content="440">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="author" content="Swiss Infosec AG">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Verfasst von">
+	<meta name="twitter:data1" content="Swiss Infosec AG">
+	<meta name="twitter:label2" content="Geschätzte Lesezeit">
+	<meta name="twitter:data2" content="32 Minuten">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/#article","isPartOf":{"@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/"},"author":{"name":"Swiss Infosec AG","@id":"https://www.infosec.ch/#/schema/person/834662369c97223bcbf75e8840e6d2e7"},"headline":"Gehirn-Computer-Schnittstellen auf dem Weg vom Medizinlabor in die Anwendungspraxis – Teil 2","datePublished":"2022-06-28T09:16:36+00:00","dateModified":"2022-09-02T09:41:36+00:00","mainEntityOfPage":{"@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/"},"wordCount":6410,"publisher":{"@id":"https://www.infosec.ch/#organization"},"image":{"@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/#primaryimage"},"thumbnailUrl":"https://www.infosec.ch/wp-content/uploads/2022/08/blogbeitraege.jpg","keywords":["Cybersecurity","DSGVO","Med-Tech"],"articleSection":["Cybersecurity","Datenschutz"],"inLanguage":"de-DE"},{"@type":"WebPage","@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/","url":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/","name":"Gehirn-Computer-Schnittstellen auf dem Weg vom Medizinlabor in die Anwendungspraxis – Teil 2 - Swiss Infosec AG","isPartOf":{"@id":"https://www.infosec.ch/#website"},"primaryImageOfPage":{"@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/#primaryimage"},"image":{"@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/#primaryimage"},"thumbnailUrl":"https://www.infosec.ch/wp-content/uploads/2022/08/blogbeitraege.jpg","datePublished":"2022-06-28T09:16:36+00:00","dateModified":"2022-09-02T09:41:36+00:00","description":"Angriffsszenarien auf Vertraulichkeit, Verfüg-/Belastbarkeit und Integrität von Gehirn-Computer-Schnittstellen; Rechtsrahmen für diese Schnittstellen.","breadcrumb":{"@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/#breadcrumb"},"inLanguage":"de-DE","potentialAction":[{"@type":"ReadAction","target":["https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/"]}]},{"@type":"ImageObject","inLanguage":"de-DE","@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/#primaryimage","url":"https://www.infosec.ch/wp-content/uploads/2022/08/blogbeitraege.jpg","contentUrl":"https://www.infosec.ch/wp-content/uploads/2022/08/blogbeitraege.jpg","width":660,"height":440},{"@type":"BreadcrumbList","@id":"https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://www.infosec.ch/"},{"@type":"ListItem","position":2,"name":"Gehirn-Computer-Schnittstellen auf dem Weg vom Medizinlabor in die Anwendungspraxis – Teil 2"}]},{"@type":"WebSite","@id":"https://www.infosec.ch/#website","url":"https://www.infosec.ch/","name":"Infosec AG","description":"Swiss Infosec AG - security@its best","publisher":{"@id":"https://www.infosec.ch/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.infosec.ch/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"de-DE"},{"@type":"Organization","@id":"https://www.infosec.ch/#organization","name":"Infosec AG","url":"https://www.infosec.ch/","sameAs":[],"logo":{"@type":"ImageObject","inLanguage":"de-DE","@id":"https://www.infosec.ch/#/schema/logo/image/","url":"https://www.infosec.ch/wp-content/uploads/2022/09/Logo-SwissInfosec.svg","contentUrl":"https://www.infosec.ch/wp-content/uploads/2022/09/Logo-SwissInfosec.svg","width":194,"height":56,"caption":"Infosec AG"},"image":{"@id":"https://www.infosec.ch/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.infosec.ch/#/schema/person/834662369c97223bcbf75e8840e6d2e7","name":"Swiss Infosec AG","url":"https://www.infosec.ch/blog/author/swiss-infosec-ag/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Infosec AG » Feed" href="https://www.infosec.ch/feed/">
+<link rel="alternate" type="application/rss+xml" title="Infosec AG » Kommentar-Feed" href="https://www.infosec.ch/comments/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.infosec.ch\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/wp-emoji-release.min.js" type="text/javascript" defer="defer"></script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/style.min.css" media="all">
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--lightgray: #F0F0F0;--wp--preset--color--beige: #e0dfce;--wp--preset--color--green: #91bf07;--wp--preset--color--darkgreen: #1a4c1b;--wp--preset--color--infosecred: #CC0033;--wp--preset--color--infosecblack: #404040;--wp--preset--color--infosecredgradient: #CC2035;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="wpml-menu-item-0-css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/style.min_004.css" media="all">
+<link rel="stylesheet" id="bootstrap-css-css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/bootstrap.min.css" media="all">
+<link rel="stylesheet" id="fontawesome-css-css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/all.min.css" media="all">
+<link rel="stylesheet" id="ais-it-navigation-css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/style.min_003.css" media="all">
+<link rel="stylesheet" id="gutenberg-editor-css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/blocks.min.css" media="all">
+<link rel="stylesheet" id="ais-it-navigation-mobile-css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/mobile.min.css" media="all">
+<link rel="stylesheet" id="slickslider-css-css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/slick.css" media="all">
+<script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/jquery.min.js" id="jquery-core-js"></script>
+<script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script id="wpml-cookie-js-extra">
+var wpml_cookies = {"wp-wpml_current_language":{"value":"de","expires":1,"path":"\/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"de","expires":1,"path":"\/"}};
+</script>
+<script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/language-cookie.js" id="wpml-cookie-js"></script>
+<script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/bootstrap.bundle.min.js" id="bootstrap-bundle-js-js"></script>
+<link rel="https://api.w.org/" href="https://www.infosec.ch/wp-json/"><link rel="alternate" type="application/json" href="https://www.infosec.ch/wp-json/wp/v2/posts/3221"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.infosec.ch/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.infosec.ch/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.2">
+<link rel="shortlink" href="https://www.infosec.ch/?p=3221">
+<link rel="alternate" type="application/json+oembed" href="https://www.infosec.ch/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.infosec.ch%2Fblog%2Fgehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.infosec.ch/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.infosec.ch%2Fblog%2Fgehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2%2F&amp;format=xml">
+<meta name="generator" content="WPML ver:4.5.11 stt:1,3;">
+<link rel="icon" href="https://www.infosec.ch/wp-content/uploads/2022/07/cropped-cropped-Asset-1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.infosec.ch/wp-content/uploads/2022/07/cropped-cropped-Asset-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.infosec.ch/wp-content/uploads/2022/07/cropped-cropped-Asset-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.infosec.ch/wp-content/uploads/2022/07/cropped-cropped-Asset-1-270x270.png">
+</head>
+
+<body class="post-template-default single single-post postid-3221 single-format-standard wp-custom-logo no-sidebar">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCVPZX2"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#primary">Zum Inhalt springen</a>
+
+	<header id="masthead" class="site-header ais-ff-StoneSansStd-semibold">
+		<div class="site-branding d-flex justify-content-center align-items-center">
+            <a href="https://www.infosec.ch/" class="custom-logo-link" rel="home"><img src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/Logo-SwissInfosec.svg" class="custom-logo" alt="Infosec AG" width="194" height="56"></a>		</div><!-- .site-branding -->
+        <div class="ais-header-top d-flex justify-content-end align-items-center">
+            <nav id="site-navigation-top" class="main-navigation-top">
+                                <div class="menu-top-menu-container"><ul id="top-menu" class="menu"><li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="tel:+41419841212">+41 41 984 12 12</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="mailto:infosec@infosec.ch">infosec@infosec.ch</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="https://www.infosec.ch/blog/">Blog</a></li>
+<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="https://www.infosec.ch/kontakt/">Kontakt</a></li>
+<li id="menu-item-wpml-ls-12-de" class="menu-item wpml-ls-slot-12 wpml-ls-item wpml-ls-item-de wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-12-de"><a title="DE" href="https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/"><span class="wpml-ls-display">DE</span></a></li>
+</ul></div>            </nav><!-- #site-navigation -->
+            <form class="ais-search" id="searchform" method="get" action="https://www.infosec.ch/">
+    <input type="text" class="search-field" name="s" placeholder="Suche...">
+
+</form>        </div>
+        <div class="ais-header-main ais-bg-red d-flex justify-content-between justify-content-lg-end align-items-center">
+            <div class="mobile-holder d-flex d-lg-none justify-content-between align-items-center flex-fill">
+                <div><a href="https://www.infosec.ch/"><img src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/logo_w.svg" alt="logo"></a></div>
+                <div class="mobile-language-switcher">
+<div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal">
+	<ul><li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-de wpml-ls-current-language wpml-ls-first-item wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
+				<a href="https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/" class="wpml-ls-link">
+                    <span class="wpml-ls-native">DE</span></a>
+			</li></ul>
+</div>
+</div>
+            </div>
+            <nav id="site-navigation" class="main-navigation">
+                                <button class="navbar-toggler second-button menu-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon2 header-mobile-icon"><span></span><span></span><span></span><span></span></div>
+                </button>
+
+                <div class="primary-menu-holder">
+                    <ul id="primary-menu" class="menu nav-menu"><li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-32"><a href="https://www.infosec.ch/beratung/">Beratung</a>
+<ul class="sub-menu">
+	<li id="menu-item-7469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7469"><a href="https://www.infosec.ch/beratung/"><div class="menu-special-link"> 	<span class="txt-color-red txt-font-w-bold">Übersicht:</span> <span class="txt-font-w-bold">Beratung</span> </div></a></li>
+	<li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="https://www.infosec.ch/beratung/informationssicherheit/">Informationssicherheit</a></li>
+	<li id="menu-item-82" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-82"><a href="https://www.infosec.ch/beratung/datenschutz/">Datenschutz</a></li>
+	<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="https://www.infosec.ch/beratung/it-sicherheit/">IT-Sicherheit</a></li>
+	<li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="https://www.infosec.ch/beratung/integrale-sicherheit/">Integrale Sicherheit</a></li>
+	<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="https://www.infosec.ch/beratung/elektronische-archivierung/">Elektronische Archivierung</a></li>
+	<li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a href="https://www.infosec.ch/beratung/cybersecurity/">Cybersecurity</a></li>
+	<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="https://www.infosec.ch/beratung/audits/">Audits</a></li>
+	<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="https://www.infosec.ch/beratung/krisenmanagement/">Krisenmanagement</a></li>
+	<li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="https://www.infosec.ch/beratung/business-continuity-management/">Business Continuity Management</a></li>
+	<li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"><a href="https://www.infosec.ch/beratung/personen-und-infrastruktursicherheit/">Personen- und Infrastruktursicherheit</a></li>
+	<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://www.infosec.ch/beratung/awareness/">Awareness</a></li>
+</ul>
+</li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-33"><a href="https://www.infosec.ch/ausbildung/">Ausbildung</a>
+<ul class="sub-menu">
+	<li id="menu-item-7470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7470"><a href="https://www.infosec.ch/ausbildung/"><div class="menu-special-link"> 	<span class="txt-color-red txt-font-w-bold">Übersicht:</span> <span class="txt-font-w-bold">Ausbildung</span> </div></a></li>
+	<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="https://www.infosec.ch/ausbildung/kursuebersicht/">Kursübersicht</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.infosec.ch/ausbildung/agenda/">Agenda</a></li>
+	<li id="menu-item-4751" class="menu-item menu-item-type-post_type menu-item-object-courses menu-item-4751"><a href="https://www.infosec.ch/ausbildung/kurse/betrieblicher-datenschutzverantwortlicher/">Datenschutzverantwortlicher (BDSV)</a></li>
+	<li id="menu-item-7603" class="menu-item menu-item-type-post_type menu-item-object-courses menu-item-7603"><a href="https://www.infosec.ch/ausbildung/kurse/it-sicherheitsbeauftragter/">IT-Sicherheitsbeauftragter (IT-SIBE)</a></li>
+	<li id="menu-item-4754" class="menu-item menu-item-type-post_type menu-item-object-courses menu-item-4754"><a href="https://www.infosec.ch/ausbildung/kurse/cloud-und-it-security-manager/">Cloud- und IT Security-Manager</a></li>
+	<li id="menu-item-4753" class="menu-item menu-item-type-post_type menu-item-object-courses menu-item-4753"><a href="https://www.infosec.ch/ausbildung/kurse/business-continuity-manager/">Business Continuity Manager</a></li>
+	<li id="menu-item-6962" class="menu-item menu-item-type-post_type menu-item-object-courses menu-item-6962"><a href="https://www.infosec.ch/ausbildung/kurse/iso-27001-27002-lead-auditor/">ISO 27001/27002 Lead Auditor</a></li>
+	<li id="menu-item-4755" class="menu-item menu-item-type-post_type menu-item-object-courses menu-item-4755"><a href="https://www.infosec.ch/ausbildung/kurse/digital-risk-officer/">Digital Risk Officer</a></li>
+	<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="https://www.infosec.ch/ausbildung/lehrgaenge/">Lehrgänge</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.infosec.ch/ausbildung/themenkurse/">Themenkurse</a></li>
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.infosec.ch/ausbildung/firmenschulungen/">Firmenschulungen</a></li>
+	<li id="menu-item-4750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4750"><a href="https://www.infosec.ch/ausbildung/workshops/">Workshops</a></li>
+	<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="https://www.infosec.ch/ausbildung/elearning-kurse/">eLearning</a></li>
+	<li id="menu-item-962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-962"><a href="https://www.infosec.ch/ausbildung/events/">Events</a></li>
+</ul>
+</li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-34"><a href="https://www.infosec.ch/services/">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-7475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7475"><a href="https://www.infosec.ch/services/"><div class="menu-special-link"> 	<span class="txt-color-red txt-font-w-bold">Übersicht:</span> <span class="txt-font-w-bold">Services</span> </div></a></li>
+	<li id="menu-item-1712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1712"><a href="https://www.infosec.ch/services/externer-datenschutzbeauftragter/">Externer Datenschutzbeauftragter</a></li>
+	<li id="menu-item-1769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1769"><a href="https://www.infosec.ch/services/externer-chief-information-security-officer-ciso/">Chief Information Security Officer</a></li>
+	<li id="menu-item-1773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1773"><a href="https://www.infosec.ch/services/cyber-security-officer-cso-it-security-officer-iso/">Cyber Security Officer (CSO) / IT Security Officer (ISO)</a></li>
+	<li id="menu-item-1768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1768"><a href="https://www.infosec.ch/services/projektsupport-informationssicherheit/">Projektsupport Informationssicherheit</a></li>
+	<li id="menu-item-1767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1767"><a href="https://www.infosec.ch/services/personalverleih-business-continuity-manager/">Business Continuity Manager</a></li>
+	<li id="menu-item-1766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1766"><a href="https://www.infosec.ch/services/eu-vertreter-nach-dsgvo/">EU-Vertreter nach DSGVO</a></li>
+</ul>
+</li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-35"><a href="https://www.infosec.ch/ueber-uns/">Über uns</a>
+<ul class="sub-menu">
+	<li id="menu-item-7472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7472"><a href="https://www.infosec.ch/ueber-uns/"><div class="menu-special-link"> 	<span class="txt-color-red txt-font-w-bold">Übersicht:</span> <span class="txt-font-w-bold">Über uns</span> </div></a></li>
+	<li id="menu-item-2165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2165"><a href="https://www.infosec.ch/ueber-uns/success-stories/">Success Stories</a></li>
+	<li id="menu-item-958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-958"><a href="https://www.infosec.ch/ueber-uns/referenzen/">Referenzen</a></li>
+	<li id="menu-item-959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-959"><a href="https://www.infosec.ch/ueber-uns/team/">Team</a></li>
+	<li id="menu-item-2164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2164"><a href="https://www.infosec.ch/ueber-uns/karriere/">Karriere</a></li>
+	<li id="menu-item-960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-960"><a href="https://www.infosec.ch/ueber-uns/job/">Jobs</a></li>
+	<li id="menu-item-1084" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1084"><a href="https://www.infosec.ch/ueber-uns/leitbild/">Leitbild</a></li>
+	<li id="menu-item-1101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1101"><a href="https://www.infosec.ch/ueber-uns/partnerschaften/">Partnerschaften</a></li>
+	<li id="menu-item-1122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="https://www.infosec.ch/ueber-uns/mitgliedschaften/">Mitgliedschaften</a></li>
+	<li id="menu-item-1121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="https://www.infosec.ch/ueber-uns/mediamatiker-mediamatikerin-lehrbetrieb/">Lehrbetrieb</a></li>
+	<li id="menu-item-1120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1120"><a href="https://www.infosec.ch/ueber-uns/rent-a-speaker/">Rent a speaker</a></li>
+	<li id="menu-item-963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-963"><a href="https://www.infosec.ch/ueber-uns/medienspiegel/">Medienspiegel</a></li>
+	<li id="menu-item-2163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2163"><a href="https://www.infosec.ch/ueber-uns/downloads/">Downloads</a></li>
+	<li id="menu-item-1119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1119"><a href="https://www.infosec.ch/ueber-uns/standardwerk/">Standardwerk</a></li>
+	<li id="menu-item-1118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1118"><a href="https://www.infosec.ch/ueber-uns/gruppenunternehmen/">Gruppenunternehmen</a></li>
+</ul>
+</li>
+</ul>                    <div class="mobile-sidebar-menu d-flex d-lg-none d-flex justify-content-between">
+                        <div class="d-flex flex-column justify-content-center">
+                                                        <a href="https://www.infosec.ch/?s=&amp;search_form=show" class=""><img src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/search_r.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="mobile-footer-menu d-flex d-lg-none d-flex justify-content-between">
+                        <div class="social-media d-flex align-items-end">
+                            <a target="_blank" href="https://www.linkedin.com/company/swissinfosec/"><i class="fab fa-linkedin-in"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCd8L151fCo_5JkQq_33Ixhw"><i class="fab fa-youtube"></i></a>
+                            <a target="_blank" href="https://twitter.com/swissinfosec"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a href="https://www.infosec.ch/kontakt/" class="ais-button text-uppercase">Anfrage</a>
+                            <a href="https://www.infosec.ch/newsletter/" class="ais-button text-uppercase">News</a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav><!-- #site-navigation -->
+        </div>
+
+
+
+    </header><!-- #masthead -->
+
+    
+            <div class="ais-popup" style="display: block;">
+            <div class="d-flex justify-content-end"><span class="ais-close d-block"><a href="#"><img src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/close.svg" alt=""></a></span></div>
+            <h3 class="ais-fs-32"><span class="ais-color-red">Newsletter</span> Anmeldung</h3>
+            <div><section id="block-11" class="widget widget_block widget_text"><p class="is-style-ais-ff-StoneSansStd-medium">Bleiben Sie mit dem Newsletter immer up to date. </p>
+</section><section id="block-12" class="widget widget_block"><div class="wp-container-1 wp-block-buttons">
+<div class="wp-block-button is-style-infosec-button-redline"><a class="wp-block-button__link" href="https://www.infosec.ch/newsletter/">Zur Anmeldung</a></div>
+</div>
+</section></div>
+        </div>
+    
+
+    <div class="ais-sidebar-sticky">
+        <a href="https://www.infosec.ch/kontakt/" class="ais-request d-flex justify-content-center align-items-center"><div class=""><span class="d-flex justify-content-center align-items-center">Anfrage</span></div><img src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/Group.svg" alt=""></a>
+            </div>
+    <div class="ais-scrolltop d-flex justify-content-center align-items-center d-none">
+        <img src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/arrow.svg" alt="arrow-to-top">
+    </div>
+
+	<main id="primary" class="site-main">
+
+		<div class="ais-breadcrumbs">
+</div>
+
+
+
+
+<div class="container">
+    <div class="row p-3">
+        <div class="col-md-12">
+            <article id="post-3221" class="post-3221 post type-post status-publish format-standard has-post-thumbnail hentry category-cybersecurity category-datenschutz tag-cybersecurity tag-dsgvo tag-med-tech">
+
+                
+
+                                    <header class="entry-header">
+                        <h1 class="entry-title ais-fs-56">Gehirn-Computer-Schnittstellen auf dem Weg vom Medizinlabor in die Anwendungspraxis – Teil 2</h1>                    </header><!-- .entry-header -->
+                
+                                <div class="row">
+                    <div class="col-md-8">
+                        <div class="entry-content">
+                            
+                            
+<h2><strong>Angriffsszenarien</strong></h2>
+
+
+
+<p>Wege, um Angriffe auf die Vertraulichkeit, Verfügbarkeit, 
+Belastbarkeit und Integrität&nbsp;von Gehirn-Computer-Schnittstellen zu 
+verüben, gibt es genügend. So ist es denkbar, dass der Angreifer bereits
+ den Stimulus beeinflusst, der beim Opfer bestimmte&nbsp;<em>neuronale Signalmuster</em>&nbsp;hervorruft. Während der&nbsp;<em>Aufnahme</em>&nbsp;kann
+ er neuronale Signale stören&nbsp;oder die aufgenommenen Daten 
+verfälschen.&nbsp;Ein Eindringling kann ebenfalls die&nbsp;<em>Verarbeitung</em>&nbsp;der Rohdaten beim Messen der Gehirnaktivitäten oder ihre&nbsp;<em>Klassifizierung</em>&nbsp;manipulieren.&nbsp;Kontrolliert
+ ein Angreifer etwa den Output der Klassifizierung, übernimmt er das mit
+ der Gehirn-Computer-Schnittstelle gesteuerte Gerät: Ein Patient könnte 
+z. B. die Gewalt über die Bewegungsrichtung und Geschwindigkeit seines 
+Rollstuhls verlieren, den er via Gehirn-Computer-Schnittstelle 
+bedient.&nbsp;Auch mithilfe einer Schadsoftware lassen sich Geräte, die 
+ein Patient mit einer aktiven Gehirn-Computer-Schnittstellen steuert, 
+übernehmen.</p>
+
+
+
+<h3><strong><em>a)&nbsp;Angriffsziele und -folgen</em></strong></h3>
+
+
+
+<p>Die konkreten Spielarten hypothetischer Angriffs- und 
+Schadensszenarien hängen entscheidend vom technischen Design der 
+jeweiligen Gehirn-Computer-Schnittstelle ab&nbsp;– z. B. davon, ob sie 
+„nur“ Gehirnaktivitäten messen und aufnehmen, auch stimulieren, oder ob 
+sie ein Gerät, z. B. eine Prothese, bedienen kann.</p>
+
+
+
+<p>Aktive Gehirn-Computer-Schnittstellen und die mit ihnen vernetzten 
+Prothesen erweisen sich als besonders vulnerables 
+Angriffsziel.&nbsp;Übernimmt ein Angreifer z. B. die Kontrolle über eine
+ Armprothese, kann er dem Opfer sowie Dritten erhebliche Schäden 
+zufügen. Im Falle einer stimulierenden Gehirn-Computer-Schnittstelle 
+kann ein Angreifer sogar lebensbedrohliche Folgen auslösen,&nbsp;wenn 
+Neurostimulatoren dem Nutzer elektrische Impulse versetzen.</p>
+
+
+
+<p>Generell gilt: Je mehr Funktionen eine Gehirn-Computer-Schnittstelle 
+in sich vereint, desto reichhaltiger ist das Portfolio der denkbaren 
+Angriffsszenarien. Während unbefugte Dritte bei<em>&nbsp;aktiven Angriffen</em>&nbsp;in die Funktion der Gehirn-Computer-Schnittstelle eingreifen, tasten&nbsp;<em>passive Angriffe</em>&nbsp;die&nbsp;<em>Vertraulichkeit</em>&nbsp;an,
+ um private Informationen der Nutzer zu erspähen. Dabei können Angreifer
+ zielgerichtet bestimmte Personen anvisieren oder eine bekannte 
+Sicherheitslücke ausnutzen, um betroffene Gehirn-Computer-Schnittstellen
+ „blind“ zu attackieren (sog. <em>targeted </em>und <em>blind </em>bzw. <em>mass </em>oder <em>opportunistic attacks</em>).</p>
+
+
+
+<p>Sollten Schnittstellen es dem Nutzer in Zukunft etwa ermöglichen, 
+nicht nur einen externen Computer zu bedienen, sondern darüber hinaus 
+gleichsam telepathisch mit anderen Personen zu kommunizieren&nbsp;oder 
+kognitive Fähigkeiten, wie das Erinnerungsvermögen, zu verbessern, 
+eröffnen sich zahlreiche weitere Ansatzpunkte für Beeinträchtigungen.</p>
+
+
+
+<p><strong>aa)&nbsp;Angriffe auf die Vertraulichkeit</strong></p>
+
+
+
+<p>Ein zentraler Angriffspunkt einer Gehirn-Computer-Schnittstelle ist 
+der Neurochip, der die Messdaten verarbeitet sowie mit anderen Computern
+ interagiert und kommuniziert.&nbsp;Er bündelt in der Regel sensible 
+Daten, die Informationen über den Gesundheitszustand des Patienten an 
+das Tageslicht spülen oder Rückschlüsse auf die Identität des Nutzers 
+zulassen.</p>
+
+
+
+<p>Der Angreifer kann den Nutzer einer aktiven Schnittstelle auch 
+Stimuli aussetzen, um aus den resultierenden Gehirnaktivitäten Schlüsse 
+auf private Informationen zu ziehen.&nbsp;So haben Forscher in einem 
+Experiment mithilfe frei verkäuflicher EEG-Headsets vierstellige 
+Geheimzahlen (PINs) in Erfahrung gebracht.&nbsp;Künftig können Angreifer
+ auf diese Weise womöglich Informationen über die politische oder 
+religiöse Ausrichtung, Erinnerungen oder emotionale Reaktionen 
+extrahieren sowie Lügen detektieren –&nbsp;es entstünde eine „<em>Brain Spyware</em>“.
+ Das macht Daten, die Gehirn-Computer-Schnittstellen zutage fördern, für
+ viele Anwendungen attraktiv&nbsp;– bis hin zu Maßnahmen der 
+Terrorismusbekämpfung oder Strafermittlung.</p>
+
+
+
+<p>Die Informationen, die ein Angreifer erlangt, lassen sich auf 
+vielfältige Weise missbrauchen, insbesondere monetarisieren. 
+Gesundheitsbezogene Informationen kann der Angreifer bspw. verwenden, um
+ den Nutzer bzw. Patienten zu erpressen oder um sie im Darknet 
+feilzubieten.&nbsp;Je nach Art der Informationen können sie für einen 
+Identitätsdiebstahl oder Krankenversicherungsbetrug bzw. -missbrauch zum
+ Einsatz kommen.&nbsp;Zudem lassen sich z. B.&nbsp;umfangreiche 
+Aktivitätenprofile der betroffenen Person erstellen.</p>
+
+
+
+<p>Nicht zuletzt könnte der Angreifer in „Lauschangriffen“ die 
+Kommunikation zwischen verschiedenen Komponenten der 
+Gehirn-Computer-Schnittstelle „abhören“ und aufzeichnen. Denkbar ist es 
+bspw., Menschen unbefugt zu scannen, um festzustellen, ob sie Implantate
+ in sich tragen und welches Modell sie nutzen.&nbsp;Dadurch lassen sich 
+Rückschlüsse auf den Gesundheitszustand einer Person ziehen oder 
+passgenaue Angriffsszenarien entwickeln. Hat ein Angreifer etwa die 
+Modell- oder Seriennummer des Geräts erspäht und bereits bekannte 
+Sicherheitslücken ausfindig gemacht, kann er weitere (auch aktive) 
+Angriffe auf die Gehirn-Computer-Schnittstelle leichter durchführen.</p>
+
+
+
+<p><strong>bb)&nbsp;Angriffe auf die Verfügbarkeit und Belastbarkeit</strong></p>
+
+
+
+<p>Angriffe auf die&nbsp;<em>Verfügbarkeit</em>&nbsp;eines Systems 
+beeinträchtigen die Funktionsfähigkeit einer 
+Gehirn-Computer-Schnittstelle.&nbsp;Die Neuroprothese eines 
+beinamputierten Menschen funktioniert dann beim Gehen nicht mehr, der 
+Nutzer stürzt und verletzt sich; eine stimulierende Schnittstelle kann 
+einen Epilepsieanfall nicht mehr verhindern oder abmildern. Ein 
+Angreifer kann bspw. die Gehirn-Computer-Schnittstelle mit massenhaften 
+Anfragen überlasten (sog.&nbsp;<em>Denial-of-Service</em>[DoS]-Angriffe),
+ um sie gezielt unter der Last der Anfragen kollabieren zu 
+lassen.&nbsp;Dann kann sie legitime Anfragen und Prozesse nicht mehr 
+durchführen. DoS-Angriffe können ebenfalls die&nbsp;<em>Belastbarkeit</em>&nbsp;einer
+ Gehirn-Computer-Schnittstelle strapazieren: Das Gerät ist dann nicht 
+hinreichend robust, um Gefahrenlagen zu bewältigen; insbesondere kann es
+ die notwendige Leistungsfähigkeit nicht länger aufrechterhalten oder 
+zügig wiederherstellen.</p>
+
+
+
+<p><strong>cc)&nbsp;Angriffe auf die Integrität</strong></p>
+
+
+
+<p>Die wohl schwerwiegendsten Attacken auf 
+Gehirn-Computer-Schnittstellen sind solche, die auf ihre Integrität 
+zielen: Ein Angreifer manipuliert in diesem Fall die Informationen bzw. 
+die Kommunikation mit anderen Geräten oder beeinträchtigt die 
+Funktionsfähigkeit des Systems insgesamt.&nbsp;So lassen sich 
+Geräteeinstellungen, Befehle oder Daten verändern&nbsp;sowie von 
+Angreifern manipulierte Updates injizieren, um die Steuerung einer 
+Prothese zu übernehmen (<em>Hijacking</em> bzw.&nbsp;<em>Brainjacking</em>)
+ oder ein fehlerhaftes Feedback an die Schnittstelle zu übermitteln. 
+Besonders brenzlig wird es, wenn Angreifer in neurologische Abläufe 
+eingreifen und dadurch Schmerzen, Emotionen oder einen Verlust der 
+Impulskontrolle herbeiführen, die empfindliche Schäden nach sich 
+ziehen.&nbsp;In ferner Zukunft könnte es gar möglich sein, dass ein 
+Angreifer die Gedanken eines anderen Menschen beeinflusst und ihn so zu 
+bestimmten Handlungen verleitet.</p>
+
+
+
+<h3><strong><em>b)&nbsp;Angriffsvektoren und häufige Schwachstellen</em></strong></h3>
+
+
+
+<p>Besonders groß sind Angriffsflächen für Cyberattacken,&nbsp;wenn 
+Geräte drahtlos&nbsp;vernetzt sind. Viele medizinische Implantate sind 
+zwingend auf eine drahtlose Verbindung angewiesen, weil sie im Körper 
+eingepflanzt und nicht effektiv auf anderen Wegen ansteuerbar sind.</p>
+
+
+
+<p>Um die Informationen, die ein Implantat erhebt, speichern und 
+analysieren zu können (z. B. um das Implantat auf seine 
+Funktionsfähigkeit hin zu überprüfen oder den Therapieerfolg zu 
+überwachen), interagiert die Schnittstelle mit einem PC oder Smartphone.
+ Veraltete Software, insbesondere nicht mehr aktuelle 
+Betriebssysteme,&nbsp;können dann als Einfallstor dienen, um Geräte zu 
+attackieren. Zahlreiche Medizinprodukte senden Daten an einen 
+Home-Monitor, der diese sammelt und drahtlos in ein Repositorium 
+hochlädt, sodass der behandelnde Arzt diese auf einer Webseite einsehen 
+kann.&nbsp;Bei&nbsp;<em>Deep Brain Stimulation</em>&nbsp;kommt das 
+Gerät, das die Abgabe des elektrischen Pulses zur Stimulierung regelt, 
+im Brustbereich zum Einsatz und kommuniziert mit den Mikroelektroden im 
+Gehirn, die neuronale Aktivitäten messen. Übertragen Medizinprodukte 
+Daten unverschlüsselt, wie etwa einige implantierte 
+Kardioverter-Defibrillatoren, können Unbefugte sie mit einer 
+Funkausrüstung mitlesen.</p>
+
+
+
+<p>Wenn Gehirn-Computer-Schnittstellen perspektivisch Daten drahtlos mit
+ einem Smartphone über eine App austauschen, potenziert sich das 
+Risiko.&nbsp;Denn nicht nur von der Schnittstelle selbst gehen dann 
+Gefahren aus, sondern auch von dem mit ihr <em>verbundenen Gerät</em>, z. B. einem Smartphone.</p>
+
+
+
+<h2><strong>Rechtsrahmen für Gehirn-Computer-Schnittstellen</strong></h2>
+
+
+
+<p>Die berechtigte Sorge vor Cyberangriffen auf 
+Medizinprodukte&nbsp;ruft allerorten Regierungen und Behörden auf den 
+Plan, effektive und handhabbare Regelungen und Anforderungen für die 
+Cybersicherheit von Medizinprodukten zu entwickeln.</p>
+
+
+
+<p>Auf den ersten Blick drängt sich das Strafrecht als 
+Abschreckungswaffe par excellence auf, um Cyberangriffen 
+entgegenzuwirken.&nbsp;In praxi entpuppt es sich jedoch als 
+vergleichsweise stumpfes Schwert. Da Angriffe für die Cybersicherheit 
+örtlich entkoppelt erfolgen können, entziehen sich (international 
+operierende oder sich gekonnt verschleiernde) Akteure bislang 
+typischerweise erfolgreich dem Zugriff der 
+Strafverfolgungsbehörden:&nbsp;Sie agieren meist von Orten aus, in denen
+ sie keine Strafverfolgung fürchten müssen, oder unter der Obhut eines 
+Staates.&nbsp;Bei Gefahren für hochrangige Rechtsgüter wie Leben, 
+Körper, Gesundheit und mentale Integrität, genügt die repressive 
+Konzeption des Strafrechts ohnedies nicht als Schutzinstrument. Es sind 
+zwingend auch präventive Ansätze und Strategien geboten: Wirksame 
+Schutzmaßnahmen müssen Angreifern den Zugriff von vornherein unmöglich 
+machen oder zumindest wesentlich erschweren.</p>
+
+
+
+<h2><strong>Verfassungsrechtliche Schutzgüter</strong></h2>
+
+
+
+<p>Ein Regelungskonzept gegen Cyberangriffe muss sich bruchfrei in den 
+verfassungsrechtlichen Rahmen einbetten, den das Grundgesetz zieht. 
+Dieses schützt den Einzelnen gegen den Zugriff Dritter auf seine 
+Gehirn-Computer-Schnittstellen in unterschiedlichen grundrechtlichen 
+Tatbeständen.</p>
+
+
+
+<h2><strong>Betroffene Grundrechte</strong></h2>
+
+
+
+<h3><strong><em>a)&nbsp;Schutz der Privatsphäre: personenbezogene Daten 
+und IT-Systeme (Art.&nbsp;7 und Art.&nbsp;8 GRCh, Art.&nbsp;2 
+Abs.&nbsp;1 i.</em></strong><strong> </strong><strong><em>V.</em></strong><strong> </strong><strong><em>m. Art.&nbsp;1 Abs.&nbsp;1 GG); Telekommunikationsgeheimnis (Art.&nbsp;10 Abs.&nbsp;1 GG)</em></strong></h3>
+
+
+
+<p>Erbeuten Cyberangriffe Informationen zum (neurologischen oder 
+psychischen) Gesundheitszustand oder zu emotionalen Reaktionen, legt das
+ intimste Bereiche der Privatheit des Nutzers offen&nbsp;und tangiert 
+dadurch die&nbsp;<em>informationelle Selbstbestimmung</em>. Diese 
+verbürgt jedem Grundrechtsträger das Recht, grundsätzlich selbst zu 
+bestimmen, ob und innerhalb welcher Grenzen er persönliche 
+Lebenssachverhalte offenbart (Art.&nbsp;2 Abs.&nbsp;1 GG i. V. m. 
+Art.&nbsp;1 Abs.&nbsp;1 GG bzw. Art.&nbsp;7 und&nbsp;8 GRCh und 
+Art.&nbsp;8 EMRK).&nbsp;Die grundrechtliche Wertung wirkt auch in 
+privatrechtliche Beziehungen hinein. Ihr Schutzgehalt versagt es 
+Dritten, die Persönlichkeit der betroffenen Person zu registrieren, zu 
+katalogisieren und ein umfassendes Persönlichkeitsprofil zu erstellen.</p>
+
+
+
+<p>Das&nbsp;<em>Grundrecht auf Gewährleistung der Vertraulichkeit und Integrität informationstechnischer Systeme</em>&nbsp;(sog.
+ IT-Grundrecht) gewährt einer anderen Komponente des 
+Persönlichkeitsrechts besonderen grundrechtlichen Schutz: Es richtet 
+seinen Schutzradius nicht nur auf einzelne Daten aus, sondern bewahrt 
+das gesamte System davor, dass Unbefugte eindringen und es modifizieren;
+ es schützt sowohl die Unversehrtheit der Daten als auch die 
+Funktionsweise des Systems.&nbsp;Soweit ein IT-System 
+Kommunikationsinhalte an&nbsp;<em>Dritte</em>&nbsp;überträgt, tritt ergänzend das&nbsp;<em>Telekommunikationsgeheimnis</em>&nbsp;als
+ Schutzrecht hinzu: Es verbürgt die Vertraulichkeit der Inhalte und 
+Umstände individueller Kommunikationsvorgänge,&nbsp;solange sie aufgrund
+ des Übertragungsvorgangs erhöhten Zugriffsgefahren ausgesetzt sind.</p>
+
+
+
+<h3><strong><em>b)&nbsp;Angriffe auf die körperliche und „mentale“ Integrität</em></strong></h3>
+
+
+
+<p>Fügt ein Cyberangriff den Nutzern einer Schnittstelle Schmerzen zu 
+oder verursacht er Schäden im Gehirn, greift dies in die körperliche 
+Integrität und ggf. das Recht auf Leben (Art.&nbsp;2 Abs.&nbsp;2 
+S.&nbsp;1 GG) ein&nbsp;– ebenso, wenn ein Angreifer auf ein 
+Neuroimplantat einwirkt, auf das ein Patient angewiesen ist.</p>
+
+
+
+<p>Manipulationen, welche die&nbsp;<em>„mentale Integrität“</em>&nbsp;betreffen,
+ lassen sich schwerer in das grundrechtliche Raster einordnen. Sie 
+beeinflussen Gehirnaktivitäten und rufen emotionale Zustände oder 
+sonstige Reaktionen hervor. Auch das Verhalten, die Persönlichkeit oder 
+Identität können sie verändern. Betrachtet man solche Steuerungen der 
+Gehirnaktivitäten rein neurowissenschaftlich, handelt es sich um einen 
+Eingriff in körperliche Vorgänge (Art.&nbsp;2 Abs.&nbsp;2 S.&nbsp;1 
+GG).&nbsp;Berührt eine Gehirnmanipulation die Grundlage menschlicher 
+Selbstwahrnehmung sowie die Konstituierung des Ichs, erschöpft sie sich 
+nicht in einem körperlichen Eingriff.&nbsp;Sie kann einerseits die 
+Menschenwürde&nbsp;und andererseits das allgemeine Persönlichkeitsrecht 
+(Art.&nbsp;2 Abs.&nbsp;1 GG i. V. m. Art.&nbsp;1 Abs.&nbsp;1 GG) 
+berühren.</p>
+
+
+
+<h3><strong><em>c)&nbsp;Autonomie und Handlungsfreiheit</em></strong></h3>
+
+
+
+<p>Wer die Kontrolle über seine Gehirn-Computer-Schnittstelle und ggf. 
+über eine hierdurch gesteuerte Prothese verliert, büßt mehr ein als nur 
+seine Daten und körperliche Integrität. Im Extremfall geht er seiner 
+Fähigkeit verlustig, Entscheidungen im Einklang mit seinen Wünschen und 
+Absichten zu treffen und diese selbstbestimmt in die Tat umzusetzen.</p>
+
+
+
+<p>Die Kategorie „Autonomie“&nbsp;ist der deutschen Grundrechtsdogmatik 
+zwar nicht als solche vertraut. Die allgemeine Handlungsfreiheit 
+(Art.&nbsp;2 Abs.&nbsp;1 GG) und das allgemeine Persönlichkeitsrecht 
+(Art.&nbsp;2 Abs.&nbsp;1 GG i. V. m. Art.&nbsp;1 Abs.&nbsp;1 GG), das 
+den Geltungsanspruch des Individuums in der sozialen Welt 
+schützt,&nbsp;decken allerdings zentrale Aspekte der menschlichen 
+Autonomie ab. Dies gilt insbesondere für solche Konstellationen, in 
+denen die Gehirn-Computer-Schnittstelle medizinisch notwendig bzw. 
+rehabilitativ ist, der Patient also nur mit ihrer Hilfe überhaupt in der
+ Lage ist, sein Leben selbstbestimmt zu führen.&nbsp;Bei Schnittstellen,
+ die motorische Fähigkeiten wiederherstellen, läuft der Patient bspw. 
+Gefahr, seine Bewegungsfreiheit einzubüßen.</p>
+
+
+
+<h3><strong><em>d)&nbsp;Eigentum</em></strong></h3>
+
+
+
+<p>Schaltet ein Angreifer eine Gehirn-Computer-Schnittstelle aus oder 
+zerstört ihre Funktionsfähigkeit,&nbsp;beeinträchtigt das ihren Nutzer 
+in seinem Eigentumsrecht (Art.&nbsp;14 Abs.&nbsp;1 GG).&nbsp;Das Gleiche
+ gilt, wenn Cyberangriffe die Gehirn-Computer-Schnittstelle mit Anfragen
+ überlasten, bis sie ihre Funktionen nicht mehr erfüllen kann.&nbsp;Auch
+ in diesen Fällen entzieht der Angreifer dem Eigentümer die 
+Nutzungsmöglichkeit.</p>
+
+
+
+<h2><strong>Reichweite der Schutzpflicht</strong></h2>
+
+
+
+<p>Das vielschichtige Gewährleistungspotpourri der Grundrechte vermittelt dem Einzelnen nicht nur ein&nbsp;<em>Abwehrrecht</em>&nbsp;gegen staatliche Zugriffe, sondern konstituiert auch eine staatliche<em>&nbsp;Schutzpflicht</em>&nbsp;gegen
+ das Wirken Privater: Kraft der objektivrechtlichen Dimension der 
+Grundrechte ist der Staat verpflichtet, sich „schützend und fördernd“ 
+vor sie zu stellen.&nbsp;Das gilt für die Integrität und Vertraulichkeit
+ von IT-Systemen in besonderer Weise: Der Staat kann diese nur dann 
+angemessen gewährleisten, wenn er dem Schutzgehalt auch gegenüber 
+Privaten zur Wirksamkeit verhilft.</p>
+
+
+
+<p>Seinem Ausgestaltungsauftrag ist der Gesetzgeber im Ansatz bspw. 
+durch die Strafvorschriften für unbefugtes Ausspähen (§&nbsp;202a StGB) 
+und Abfangen von Daten (§&nbsp;202b StGB)&nbsp;sowie durch die 
+Tatbestände der Datenveränderung (§&nbsp;303a StGB) und Computersabotage
+ (§&nbsp;303b StGB)&nbsp;nachgekommen.&nbsp;Mit Blick auf die 
+elementaren Risiken, die von Angriffen auf 
+Gehirn-Computer-Schnittstellen ausgehen, ist die Rechtsordnung jedoch 
+auch aufgerufen, hohe Anforderungen an die Cybersicherheit&nbsp;zu 
+stellen, um dystopische „Brainhacks“ möglichst zu verhindern, oder 
+wenigstens zu erschweren bzw. schnellstmöglich zu unterbinden. Das 
+Datenschutz- und IT-Sicherheitsrecht bis hin zu den Vorgaben im 
+Medizinprodukterecht sind Ausdruck dieses Schutzauftrags.</p>
+
+
+
+<p>Die staatliche Schutzpflicht ist aber nicht grenzenlos. Sie stößt an 
+ihre Schranken, wenn sich Nutzer einer Gehirn-Computer-Schnittstelle 
+eigenverantwortlich selbst gefährden, um die eigene Leistungsfähigkeit 
+zu optimieren (sog.&nbsp;<em>Neuroenhancement</em>). Die Freiheitsrechte
+ (und damit die Schutzpflicht des Staates) sind nicht als ein 
+aufgedrängtes Schutzgut konzipiert, das den Einzelnen vor sich selbst 
+schützt:&nbsp;Der Staat darf sie dem Einzelnen nicht ohne Weiteres 
+aufnötigen, soweit die Selbstgefährdung nicht zugleich die Allgemeinheit
+ intensiv beeinträchtigt, z. B. weil sie dem Gemeinwesen hohe 
+Gesundheitskosten aufbürdet.&nbsp;Dem Einzelnen bleibt es deshalb im 
+Grundsatz unbenommen, sich selbst durch Neuroenhancement zu gefährden 
+oder zu schädigen sowie in Einwirkungen einzuwilligen.&nbsp;Das Recht, 
+Neuroenhancement zu betreiben, ist Teil des Schutzgehalts der 
+allgemeinen Handlungsfreiheit.</p>
+
+
+
+<p>Umgekehrt darf das Gemeinwesen seine Hilfe dem Einzelnen nicht ohne 
+Weiteres deshalb vorenthalten, weil er sich zum Zwecke der 
+Selbstoptimierung selbst gefährdet hat. Wer sich selbst in Gefahr 
+gebracht hat, den darf der Staat nicht gleichsam fallen lassen und ihn 
+seinem Schicksal überlassen. So greift die staatliche Schutzpflicht auch
+ für denjenigen, der Drogen konsumiert&nbsp;oder sich einer nicht 
+medizinisch indizierten Schönheitsoperation unterzogen hat.&nbsp;Die 
+Schutzpflicht endet erst, wenn der sich selbst Gefährdende wider 
+besseres Wissen handelt und auf die Hilfe anderer spekuliert.</p>
+
+
+
+<p>Als Ausdruck seiner Schutzpflicht ist der Staat im Ergebnis gehalten,
+ bei nichtmedizinischen Neurotechnologieprodukten,&nbsp;welche die 
+Gesundheit beeinträchtigen können, durch Regulierung für ein 
+hinreichendes Maß an IT-Sicherheit zu sorgen. Wenn der Einzelne die 
+Risiken seiner Selbstgefährdung durch sog. „Do-it-yourself“-Produkte, 
+die Privatpersonen zusammenbasteln und anwenden,&nbsp;zu spät erkennt 
+und sich von den Folgen befreien möchte, hat der Staat ihm ein 
+Hilfsangebot zu machen.</p>
+
+
+
+<h2><strong>Einfachrechtliche Anforderungen</strong></h2>
+
+
+
+<p>Ein spezifisches einfachgesetzliches Rechtsregime für 
+Gehirn-Computer-Schnittstellen hat der Gesetzgeber bislang nicht 
+entfaltet. Das Datenschutzrecht&nbsp;(1.), das 
+Medizinprodukterecht&nbsp;(2.) als auch allgemeine Vorschriften des 
+IT-Sicherheitsrechts&nbsp;(3.) stecken jedoch einen groben normativen 
+Rahmen ab.</p>
+
+
+
+<h2><strong>Das Datenschutzrecht als allgemeiner IT-sicherheitsrechtlicher Überbau</strong></h2>
+
+
+
+<h3><strong><em>a)&nbsp;Verarbeitung personenbezogener Daten</em></strong></h3>
+
+
+
+<p>Gehirnsignale, die Gehirn-Computer-Schnittstellen aufnehmen, machen 
+eine Person identifizierbar. Als personenbezogene Daten (Art.&nbsp;4 
+Nr.&nbsp;1 DSGVO) unterliegen sie dem Regelungsanspruch der DSGVO. Sie 
+gehören zudem einer besonderen Sensibilitätskategorie des 
+Datenschutzrechts an. Denn sie geben typischerweise Auskunft über die 
+körperliche und geistige Gesundheit einer natürlichen Person und sind 
+damit Gesundheitsdaten (Art.&nbsp;4 Nr.&nbsp;15 DSGVO), die den 
+besonders hohen Rechtfertigungshürden des Art.&nbsp;9 Abs.&nbsp;1 DSGVO 
+unterliegen.&nbsp;So werten manche Apps oder Spiele, die mit 
+Gehirn-Computer-Schnittstellen interagieren, bspw. Informationen zum 
+Stresspegel aus&nbsp;und schließen hieraus auf die (psychische) 
+Gesundheit des Nutzers. Selbst bei Geräten, die nicht im medizinischen 
+Bereich zum Einsatz kommen, können neurologische Daten ggf. 
+Informationen über den gegenwärtigen oder künftigen körperlichen oder 
+psychischen Gesundheitszustand des Nutzers preisgeben.&nbsp;Darüber 
+hinaus lassen sich Gehirnaktivitätsmuster als physiologische Merkmale 
+einsetzen, um Personen automatisiert zu identifizieren und zu 
+authentifizieren.&nbsp;Auch die Verarbeitung solcher biometrischer Daten
+ (Art.&nbsp;4 Nr.&nbsp;14 DSGVO) muss sich an Art.&nbsp;9 Abs.&nbsp;1 
+DSGVO messen lassen.</p>
+
+
+
+<h3><strong><em>b)&nbsp;Datensicherheit</em></strong></h3>
+
+
+
+<p>Der Regelungsanspruch der DSGVO erschöpft sich keineswegs in&nbsp;<em>datenschutz</em>rechtlichen Geboten. Sie formuliert vielmehr auch Anforderungen an die&nbsp;<em>Datensicherheit</em>:
+ Der Verantwortliche muss (ebenso wie der etwaige Auftragsverarbeiter) 
+geeignete technische und organisatorische Maßnahmen treffen, um ein dem 
+Risiko angemessenes Sicherheitsschutzniveau zu gewährleisten 
+(Art.&nbsp;32 Abs.&nbsp;1 DSGVO).&nbsp;Er hat insbesondere die 
+Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit der 
+datenverarbeitenden Systeme sicherzustellen (Art.&nbsp;32 Abs.&nbsp;1 
+Hs.&nbsp;2 lit.&nbsp;b). Nach einem Zwischenfall muss der 
+Verantwortliche ferner in der Lage sein, die Verfügbarkeit der Daten 
+rasch wiederherzustellen (lit.&nbsp;c). Er muss (ähnlich der 
+Datenschutzfolgenabschätzung nach Art.&nbsp;35 DSGVO) ein Konzept zum 
+Datensicherheitsmanagement erarbeiten.&nbsp;Dieses Schutzkonzept hat er 
+im Anschluss regelmäßig zu überprüfen (lit.&nbsp;d). Das einzuhaltende 
+Schutzniveau muss sich an dem Risiko ausrichten, das sich mit der 
+Verarbeitung verbindet.</p>
+
+
+
+<p>Da Gehirn-Computer-Schnittstellen in der Regel hochsensible 
+biometrische und Gesundheitsdaten verarbeiten, geht von ihnen selbst 
+dann ein hohes Risiko aus, wenn die Wahrscheinlichkeit eines Angriffs 
+gering ist.&nbsp;Sie müssen daher höchsten Ansprüchen genügen, um 
+Zugriffe möglichst zu vermeiden. Die zu ergreifenden Maßnahmen müssen 
+dem Stand der Technik entsprechen, d. h. auf gesicherten Erkenntnissen 
+der Wissenschaft und Technik beruhen, die sich in der Praxis bewährt 
+haben. Seine Anforderungen entwickeln sich im Gleichschritt mit 
+technologischen Innovationen dynamisch fort. Einen ersten 
+Konkretisierungsversuch wagen etwa die 
+ISO&nbsp;27000-Normenreihe&nbsp;sowie das 
+IT-Grundschutz-Kompendium&nbsp;des BSI.</p>
+
+
+
+<p><strong>aa)&nbsp;Verschlüsselung</strong></p>
+
+
+
+<p>Eine Basismaßnahme, um sicherzustellen, dass eine 
+Gehirn-Computer-Schnittstelle mit anderen Geräten vertraulich 
+kommuniziert, ist deren Verschlüsselung: Daten sind während der 
+Übertragung („in&nbsp;motion“) und im ruhenden Zustand („at&nbsp;rest“) 
+mit einer geeigneten Verschlüsselungsmethode zu schützen (Art.&nbsp;32 
+Abs.&nbsp;1 lit.&nbsp;a DSGVO).</p>
+
+
+
+<p><strong>bb)&nbsp;Authentifikationserfordernis und Zugriffsverwaltung</strong></p>
+
+
+
+<p>Um einen unbefugten Fremdzugriff zu verhindern, sollte das System den
+ Zugriff auf eine Gehirn-Computer-Schnittstelle nur nach vorheriger 
+Authentifikation ermöglichen.&nbsp;Eine Benutzerzugriffsverwaltung 
+sollte den Berechtigten (restriktiv) Privilegien und Befugnisse 
+einräumen.</p>
+
+
+
+<p>Während bei EEG-Headsets häufig eine individuelle 
+Nutzername-Passwort-Kombination ausreicht, ist bei Neuroimplantaten und 
+Neurostimulatoren eine Zwei-Faktor-Authentifizierung&nbsp;geboten. Wer 
+seinen Rollstuhl per Gehirn-Computer-Schnittstelle lenkt, sollte sich 
+nicht einfach via Bluetooth „koppeln“ können, sondern diesen z. B. durch
+ seine Gehirnwellen in Verbindung mit einer Smartphone-App ansteuern 
+können.</p>
+
+
+
+<p><strong>cc)&nbsp;Angriffserkennung</strong></p>
+
+
+
+<p>Um die Gefahren zu minimieren, die von dem Gerät ausgehen, das mit 
+der Schnittstelle verbunden ist, sollten Anbieter die 
+Gehirn-Computer-Schnittstelle mit einer Detektions-Software 
+ausstatten.&nbsp;Auf diese Weise lassen sich untypische Aktivitäten oder
+ Schadsoftware erkennen.&nbsp;Hilfreich ist es zudem, alle Aktivitäten 
+und Zugriffe auf die Gehirn-Computer-Schnittstelle in einer Logdatei 
+festzuhalten und diese regelmäßig auf Unregelmäßigkeiten zu überprüfen. 
+Insbesondere sicherheitsrelevante Ereignisse sind zu 
+protokollieren.&nbsp;DoS-Angriffe kann die Gehirn-Computer-Schnittstelle
+ bspw. bewältigen, indem sie als Gegenmaßnahme Anfragen 
+filtert&nbsp;bzw. zurückstellt und ihre Kernfunktionen (das Aufnehmen 
+und Auswerten von Gehirnsignalen) priorisiert.</p>
+
+
+
+<p><strong>dd)&nbsp;Security by Design</strong></p>
+
+
+
+<p>Die Gehirn-Computer-Schnittstelle sollte sich bei ihren 
+Datenzugriffen entsprechend dem Gebot der Datenminimierung (Art.&nbsp;5 
+Abs.&nbsp;1 lit.&nbsp;c DSGVO) auf die notwendigen Informationen und 
+Verarbeitungsschritte beschränken. Das verkleinert die Angriffsfläche. 
+Bspw. kann die Gehirn-Computer-Schnittstelle neuronale Signale, die für 
+die spezifische Aufgabe erforderlich sind, selbst vorverarbeiten, bevor 
+sie bspw. auf IT-Systeme Dritter übertragen werden (sog.&nbsp;<em>Edge Computing</em>).
+ Rohdaten oder Daten, die nicht explizit für die jeweilige Aufgabe 
+erforderlich sind, muss sie dann nicht übermitteln oder speichern (und 
+sie dadurch Sicherheitsrisiken exponieren).&nbsp;Kraft ihres technischen
+ Zuschnitts („by&nbsp;Design“) sollte die Gehirn-Computer-Schnittstelle 
+so weit wie möglich vermeiden, personenbezogene Daten zu übermitteln: 
+IP-Adressen oder die Modell- bzw. Device-ID sollte das Gerät 
+standardmäßig entfernen, bevor es Daten an eine Plattform übermittelt.</p>
+
+
+
+<p><strong>ee)&nbsp;Defense in Depth und Vorfallsmanagement</strong></p>
+
+
+
+<p>IT-Sicherheit ist kein Produkt, sondern ein Prozess: Softwaresysteme 
+sind dynamisch und verändern sich stetig. Hacker&nbsp;finden zudem immer
+ neue Schlupfwege in vermeintlich sichere Systeme. Durch technischen 
+Datenschutz allein wird es daher nicht gelingen, Angriffe auf vernetzte 
+Geräte zuverlässig abzuwehren.&nbsp;Kein IT-System genießt überdies 
+absoluten Schutz. Eine gute Sicherheitsarchitektur besteht daher aus 
+vielen, stetig weiterzuentwickelnden Komponenten und Schichten, die 
+einen hinreichenden Schutz sicherstellen (<em>Defense in Depth</em>).</p>
+
+
+
+<p>Einem Angreifer genügt bereits&nbsp;<em>eine</em>&nbsp;Schwachstelle.
+ Eine effektive Verteidigungsstrategie muss daher rundum schützen. Die 
+Schutzmaßnahmen sollten auch aus diesem Grund nicht nur unmittelbar an 
+der Schnittstelle selbst, sondern ggf. auch an den mit ihr verbundenen 
+Geräten ansetzen.</p>
+
+
+
+<p>Eine entscheidende Rolle bei dem Schutzmaßnahmenpaket kommt dem 
+Vorfallsmanagement zu. Insbesondere Sicherheitsupdates&nbsp;tragen dazu 
+bei, Sicherheitslücken so schnell wie möglich zu erkennen und zu 
+beheben. Ein besonderes Augenmerk sollte dem verwendeten 
+Open-Source-Code und Programmbibliotheken gelten, die Schwachstellen 
+enthalten könnten bzw. unter Umständen einer Aktualisierung bedürfen. 
+Regelmäßige Penetrationstests&nbsp;und Red-Team-Einsätze&nbsp;helfen, 
+die Sicherheitsmaßnahmen zu überprüfen und zu bewerten (vgl. 
+Art.&nbsp;32 Abs.&nbsp;1 Hs.&nbsp;2 lit.&nbsp;d DSGVO).</p>
+
+
+
+<p>Ist das Kind der IT-Sicherheit erst einmal gleichsam in den Brunnen 
+gefallen, ist es also zu einem Sicherheitsvorfall gekommen, der 
+Unbefugten Zugriff auf die personenbezogenen Daten eröffnet hat, muss 
+der Verantwortliche dies der Aufsichtsbehörde (Art.&nbsp;33 Abs.&nbsp;1 
+DSGVO, §&nbsp;65 BDSG) sowie der betroffenen Person&nbsp;(Art.&nbsp;34 
+Abs.&nbsp;1 DSGVO, §&nbsp;66 BDSG) melden. Er sollte zudem ein Vorfalls-
+ und Notfall-Management einrichten, das darauf gerichtet ist, die 
+Schwachstelle zu untersuchen und zu beheben, um im Ernstfall rasch auf 
+Vorkommnisse reagieren zu können (Art.&nbsp;32 Abs.&nbsp;1 Hs.&nbsp;2 
+lit.&nbsp;c DSGVO).</p>
+
+
+
+<h3><strong><em>c)&nbsp;Adressat der Pflichten</em></strong></h3>
+
+
+
+<p>Am zuverlässigsten kann der&nbsp;<em>Hersteller</em>&nbsp;des 
+Produkts ein hohes Sicherheitsniveau der Gehirn-Computer-Schnittstelle 
+verbürgen. Die sicherheitsrechtlichen Pflichten der 
+Art.&nbsp;32 ff.&nbsp;DSGVO treffen allerdings nicht den Hersteller 
+eines Produkts, sondern alleine den datenschutzrechtlich&nbsp;<em>Verantwortlichen</em>,
+ also denjenigen, der tatsächlich oder rechtlich über die Zwecke und 
+Mittel der Datenverarbeitung entscheidet (Art.&nbsp;4 Nr.&nbsp;7 DSGVO).</p>
+
+
+
+<p>Verantwortlicher im datenschutzrechtlichen Sinn ist der Hersteller 
+nur dann, wenn er für die Schnittstelle eine App oder eine Cloud 
+vorhält, die Daten auf die Server des Anbieters hochlädt und dort z. B. 
+analysiert, sodass er die relevanten personenbezogenen Daten 
+verarbeitet. Seine Pflichten aus Art.&nbsp;32 ff.&nbsp;DSGVO erstrecken 
+sich in diesem Fall aber nur auf den&nbsp;<em>Verarbeitungsvorgang</em>&nbsp;selbst, nicht auf die&nbsp;<em>Herstellungseigenschaften</em>&nbsp;des
+ Produkts, insbesondere die technischen Eigenschaften der 
+Schnittstelle.&nbsp;Diese sind nicht Gegenstand des 
+datenschutzrechtlichen Pflichtenradars. Das Regulierungsportfolio der 
+DSGVO hat an dieser wichtigen Stelle eine Lücke: Denjenigen, der die 
+Weichenstellungen für die Gehirn-Computer-Schnittstelle trifft, 
+adressiert sie grundsätzlich nicht. Effektiv anonymisieren, 
+pseudonymisieren sowie verschlüsseln kann aber nur derjenige, dem dafür 
+überhaupt die technischen Möglichkeiten zur Verfügung stehen. Ein 
+App-Anbieter muss seine Software als Verantwortlicher mithin so 
+gestalten, dass sie Datensicherheit gewährleistet, selbst wenn er keinen
+ unmittelbaren Einfluss auf die eingesetzte Hardware hat. Im Bereich der
+ „Do-it-yourself“<em>–</em>Produkte und Analysetools entscheidet dagegen
+ der Nutzer als Verantwortlicher typischerweise selbst, welche Daten 
+seine Gehirn-Computer-Schnittstelle erhebt und verarbeitet.</p>
+
+
+
+<h2><strong>Medizinprodukterecht</strong></h2>
+
+
+
+<p>Kommen Gehirn-Computer-Schnittstellen im Gesundheitswesen zum 
+Einsatz, zieht die Medizinprodukte-Verordnung (MPVO) ergänzende 
+normative Leitplanken ein, die Sicherheitsanforderungen 
+etablieren.&nbsp;Seit dem 26.&nbsp;Mai 2021 ist sie in der gesamten EU 
+unmittelbar anwendbar.</p>
+
+
+
+<h3><strong><em>a)&nbsp;Gehirn-Computer-Schnittstellen als Medizinprodukte</em></strong></h3>
+
+
+
+<p>Die MPVO erstreckt sich grundsätzlich auf Produkte, die für Menschen 
+bestimmt sind und einen spezifischen medizinischen Zweck erfüllen: Sie 
+sollen Krankheiten oder Behinderungen diagnostizieren, überwachen, 
+behandeln oder lindern (Art.&nbsp;2 Nr.&nbsp;1 MPVO).</p>
+
+
+
+<p>Sofern eine Gehirn-Computer-Schnittstelle eine medizinische 
+Zweckbestimmung aufweist, fällt sie daher typischerweise in den 
+Anwendungsbereich der Verordnung. Diese Voraussetzungen erfüllen etwa 
+dauerhaft implantierte <em>Deep-Brain-</em>Stimulatoren oder andere 
+Neuroimplantate, die Parkinson-Tremores oder Epilepsie behandeln 
+sollen.&nbsp;Auch EEG-Headsets mit medizinischer Zweckbestimmung sind 
+Medizinprodukte.&nbsp;Die dazugehörige Software ist Teil des Produkts, 
+da sie dieses steuert und dessen Anwendungen beeinflusst.&nbsp;Ein&nbsp;<em>eigenständiges</em>&nbsp;Medizinprodukt
+ ist Software demgegenüber nur dann, wenn sie Informationen zu 
+Entscheidungen für diagnostische oder therapeutische Zwecke liefert oder
+ physiologische Prozesse kontrolliert.&nbsp;Dies gilt bspw. für Apps, 
+welche die Funktionen und Anwendungsmöglichkeiten der 
+Gehirn-Computer-Schnittstelle erweitern. Apps oder Anwendungen, die 
+Daten lediglich speichern, archivieren, kommunizieren oder anzeigen, 
+erfasst die MPVO hingegen nicht.</p>
+
+
+
+<p><strong>aa)&nbsp;Medizinische Zweckbestimmung</strong></p>
+
+
+
+<p>Ob ein Produkt eine medizinische Zweckbestimmung aufweist, bestimmt 
+sich (anders als man auf den ersten Blick vermuten könnte) nicht danach,
+ welchen Zweck die&nbsp;<em>Verbraucher</em>&nbsp;einer 
+Gehirn-Computer-Schnittstelle im Rahmen ihres Konsumverhaltens 
+unterlegen. Entscheidend ist allein die Zweckbestimmung des&nbsp;<em>Herstellers</em>&nbsp;(„dem Hersteller zufolge“).</p>
+
+
+
+<p>Es verwundert deshalb nicht, dass viele Hersteller ihre EEG-Headsets 
+unter ausdrücklichem Ausschluss einer medizinischen Zweckbestimmung 
+verkaufen.&nbsp;Solche Freizeit- bzw. Verbraucherprodukte, die u. a. 
+dazu dienen, Konzentration oder Stress zu überwachen, sind keine 
+Medizinprodukte i.&nbsp;S. der MPVO.&nbsp;Diese „Wellness“-Sparte von 
+EEG-Headsets, mit denen Nutzer ihre Gehirnaktivitäten (i.&nbsp;S. des 
+„Quantified Self“) ohne medizinische Indikation selbst überwachen, dient
+ der allgemeinen Gesundheitsförderung, die sich auf 
+Lifestyle-Optimierung und kleinere Befindlichkeitsstörungen bezieht.</p>
+
+
+
+<p><strong>bb)&nbsp;Produkte ohne medizinische Zweckbestimmung</strong></p>
+
+
+
+<p>Auf Gehirn-Computer-Schnittstellen ohne medizinische Zweckbestimmung 
+erstreckt sich die MPVO ausnahmsweise&nbsp;dann, wenn diese das Gehirn 
+(nichtinvasiv) transkraniell (also durch die Schädeldecke hindurch) 
+stimulieren (Art.&nbsp;1 Abs.&nbsp;2 MPVO i. V. m. Anhang&nbsp;XVI 
+Nr.&nbsp;6 MPVO). Damit will der Unionsgesetzgeber den Risiken begegnen,
+ die von einer solchen besonderen Art der Stimulation ausgehen, und 
+Produkte, die manchmal zu medizinischen Zwecken und manchmal für&nbsp;<em>Enhancement</em>&nbsp;zur
+ Anwendung kommen, im Ergebnis den gleichen Anforderungen 
+unterwerfen.&nbsp;Bei ihnen legt es die MPVO also bewusst nicht in die 
+Hand der Hersteller, durch eigene Zweckbestimmung darüber zu befinden, 
+ob die strengen Vorschriften des Rechts der Medizinprodukte zur 
+Anwendung kommen.</p>
+
+
+
+<p>Mit Blick auf Produkte, die sich derzeit noch im Forschungsstadium 
+befinden, zeigen sich indes die ersten normativen Lücken der MPVO. So 
+möchte&nbsp;<em>Neuralink</em>&nbsp;ein multifunktionales Neuroimplantat
+ anbieten, das nicht nur neuronale Aktivitäten aufnehmen, sondern auch 
+Neuronen-Cluster stimulieren kann. Solche (futuristischen) 
+Neuroimplantate kämen weder zwingend zu medizinischen Zwecken zum 
+Einsatz noch nähmen sie eine transkranielle (sondern eine&nbsp;<em>intra</em>kranielle,
+ innerhalb des Gehirns erfolgende) Stimulierung des Gehirns 
+vor.&nbsp;Der Normgeber hatte scheinbar nur die (nichtmedizinischen) 
+Stimulierungen&nbsp;<em>durch</em>&nbsp;die Schädeldecke im Blick, nicht aber die invasivere Stimulierung&nbsp;<em>innerhalb</em>&nbsp;des
+ Schädels. Da die Liste in Anhang&nbsp;XVI Ausnahmecharakter hat, lässt 
+sie sich auch nicht durch teleologische Extension um die risikoreichere 
+intrakranielle Stimulierung erweitern.</p>
+
+
+
+<p>Anhang&nbsp;XVI Nr.&nbsp;2 MPVO erstreckt das Regelungsregime der 
+MPVO zwar auch auf solche Produkte, „die dazu bestimmt sind, durch 
+chirurgisch-invasive Verfahren zum Zwecke der Modifizierung der 
+Anatomie&nbsp;[…] in den menschlichen Körper eingeführt zu 
+werden“.&nbsp;Implantierte Mikroelektroden, wie sie z. B.&nbsp;<em>Neuralink</em>&nbsp;anvisiert,
+ verändern die Gehirnanatomie oder -struktur jedoch nicht&nbsp;– 
+abgesehen von neuroplastischen Veränderungen bei der Implantation und 
+„Bedienung“ der Schnittstelle, die es erfordert, dass der Nutzer 
+wiederholt bestimmte neuronale Signalmuster erzeugt.&nbsp;Sie sollen 
+Gehirnfunktionen oder -aktivitäten vielmehr messen, um z. B. Computer 
+oder Smartphones „mit Gedanken“ zu steuern.</p>
+
+
+
+<p>Spätestens wenn der Markt nichtmedizinischer Neuroimplantate in den 
+nächsten Jahrzehnten breite Teile der Bevölkerung erreicht,&nbsp;sind 
+der nationale und der europäische Normgeber dringend dazu aufgerufen, 
+die regulatorische Lücke zu schließen und die normative Architektur auf 
+kommende technologische Innovationen auszurichten.</p>
+
+
+
+<h3><strong><em>b)&nbsp;Allgemeine Anforderungen der MPVO an die IT-Sicherheit von Medizinprodukten und unverbindliche Leitlinien</em></strong></h3>
+
+
+
+<p>Anders als etwa Arzneimittel unterliegen Medizinprodukte keiner 
+allgemeinen Zulassungspflicht als Sicherheitsmaßnahme.&nbsp;Die 
+Hersteller sind vielmehr in eigener Verantwortung gehalten, die 
+einschlägigen Sicherheits- und Leistungsanforderungen zu erfüllen. Dazu 
+gehören auch Anforderungen an die IT-Sicherheit der Systeme (Art.&nbsp;5
+ Abs.&nbsp;1, Abs.&nbsp;2 i. V. m. Anhang&nbsp;I Nr.&nbsp;1 und 
+Nr.&nbsp;17 MPVO). Die Verordnung trägt ihnen aber auf, ein 
+Konformitätsverfahren (Art.&nbsp;52 MPVO) durchzuführen, um 
+sicherzustellen, dass die Medizinprodukte den Sicherheits-, Leistungs- 
+und sonstigen rechtlichen Anforderungen entsprechen. In dessen Rahmen 
+hat ggf. auch eine klinische Bewertung (Art.&nbsp;61 MPVO) zu 
+erfolgen.&nbsp;Bei dem Konformitätsverfahren wirken sog.&nbsp;<em>Benannte Stellen</em>&nbsp;mit,
+ die von staatlichen Stellen akkreditiert und vom Hersteller beauftragt 
+sein müssen.&nbsp;Sie führen Audits durch und bewerten das 
+implementierte Qualitätsmanagementsystem, insbesondere dessen Umsetzung 
+und die technische Dokumentation.&nbsp;Bei Implantaten ist zudem die 
+Koordinierungsgruppe Medizinprodukte zu beteiligen („<em>Scrutiny Verfahren</em>“, Art.&nbsp;54 MPVO).</p>
+
+
+
+<p>Für die Besonderheiten vernetzter Geräte ist das Medizinprodukterecht
+ indes noch nicht vollständig gewappnet: Die Sicherheits- und 
+Leistungsanforderungen für Medizinprodukte beziehen sich vor allem auf 
+die&nbsp;<em>Produktsicherheit</em>&nbsp;(<em>Safety</em>)&nbsp;– nicht (unmittelbar) auf die Sicherheit des Geräts als&nbsp;<em>IT-System</em>&nbsp;(<em>Security</em>).&nbsp;Dieser
+ Missstand ist ein Relikt aus jener Zeit, als Medizinprodukte über kaum 
+bis keine Softwarekomponenten verfügten und nicht vernetzt waren.</p>
+
+
+
+<p>Anforderungen an die Cybersicherheit für Medizinprodukte mit 
+digitaler Komponente gibt die MPVO lediglich durch allgemeine 
+Bestimmungen vor: Neben der Wiederholbarkeit, Zuverlässigkeit und 
+Leistung (Anhang&nbsp;I Nr.&nbsp;17.1. MPVO) nach Maßgabe der 
+bestimmungsgemäßen Verwendung des Produkts muss der Produzent es 
+„entsprechend dem Stand der Technik entwickelt und hergestellt“ haben. 
+Dabei sind „die Grundsätze des Software-Lebenszyklus, des 
+Risikomanagements einschließlich der Informationssicherheit, der 
+Verifizierung und der Validierung zu berücksichtigen“ (Anhang&nbsp;I 
+Nr.&nbsp;17.2. MPVO).&nbsp;Der Stand der Technik schließt hinreichend 
+sichere Schutzmaßnahmen gegen Sicherheitsangriffe auf sensible Bausteine
+ ein.</p>
+
+
+
+<p>Konkretere Leitlinien zu der Frage, wie ein Hersteller die 
+Anforderungen des Anhangs&nbsp;I der MPVO an Cybersicherheit erfüllen 
+kann, gibt die&nbsp;<em>Guidance on Cybersecurity for Medical Devices</em>&nbsp;der
+ Koordinierungsgruppe Medizinprodukte vor.&nbsp;Sie empfiehlt u. a. 
+Mindestanforderungen zur Gewährleistung der IT-Sicherheit&nbsp;– mit 
+einem klaren Augenmerk auf Cybersicherheitsrisiken, die sich auf die 
+Patientensicherheit auswirken können.&nbsp;Rechtsverbindlich sind diese 
+Leitlinien indes nicht.&nbsp;Sie fungieren vielmehr als Auslegungshilfe 
+für die allgemein gehaltenen Sicherheitsanforderungen der MPVO.</p>
+
+
+
+<p>Die Leitlinie gibt den Herstellern von Medizinprodukten insbesondere vor, eine&nbsp;<em>Defense-in-Depth</em>-Strategie
+ zu entwerfen, die den gesamten Produktlebenszyklus abdeckt: Sie soll 
+u. a. Maßnahmen zum sicheren Design und Einsatz, zur Überprüfung und 
+Validierung,&nbsp;zum Sicherheitsmanagement sowie Spezifikationen der 
+Sicherheitsanforderungen enthalten.</p>
+
+
+
+<p>Der Anhang der&nbsp;<em>Guidance</em>&nbsp;hält eine Liste mit 
+Maßnahmen und Sicherheitsfunktionen vor, die IT-Sicherheit gewährleisten
+ sollen, z. B. Verschlüsselung, persönliche Authentifizierung, 
+automatisches Abmelden, Hardening („Härten“, also Eliminieren nicht 
+benötigter Funktionen, um die Angriffsfläche zu verkleinern) und 
+Programme, die vor Schadsoftware schützen oder diese erkennen.</p>
+
+
+
+<p>Darüber hinaus weist die&nbsp;<em>Guidance</em>&nbsp;aus gutem Grund 
+an, Zugriffsrechte restriktiv zu vergeben und sichere 
+Authentifizierungsmöglichkeiten vorzuhalten. So offensichtlich dies 
+klingt, ist es in der bisherigen Praxis doch keine 
+Selbstverständlichkeit. Manche auf dem Markt vertriebenen 
+Medizinprodukte verfügen über keine oder eine unsichere Methode der 
+Authentifizierung,&nbsp;z. B. Standardpasswörter&nbsp;oder im Klartext 
+auf dem Gerät gespeicherte Passwörter. Es kann außerdem sinnvoll sein, 
+den Zugriff auf ein vernetztes Medizinprodukt auf eine spezifische 
+Raumdistanz zu beschränken, um Fernzugriffe auszuschließen. Alternativ 
+zu einer Internetverbindung ist es etwa möglich, die 
+Gehirn-Computer-Schnittstelle z. B. via Bluetooth mit einem anderen 
+System zu koppeln, um die Sicherheit zu erhöhen.</p>
+
+
+
+<p>Zudem gibt die&nbsp;<em>Guidance</em>&nbsp;den Herstellern auf, im 
+Rahmen eines Verfahrens zum Sicherheitsrisikomanagement das Risiko 
+(insbesondere vorhersehbare&nbsp;Schwachstellen) zu evaluieren und 
+mögliche Maßnahmen zu dessen Kontrolle und ggf. verbleibenden 
+Restrisiken in Betracht zu ziehen. Denn dann fällt es den Herstellern im
+ „Ernstfall“ leichter, einem geregelten Verfahren zu folgen, bei dem 
+Zuständigkeiten und Abläufe vorab geklärt sind. Um langfristige 
+Sicherheit zu gewährleisten, haben Hersteller ihre Medizinprodukte zudem
+ fortlaufend zu testen.</p>
+
+
+
+<h3><strong><em>c)&nbsp;Pflichten nach Inverkehrbringen</em></strong></h3>
+
+
+
+<p>Viele Sicherheitslücken gängiger IT-Systeme treten erst nach einiger 
+Zeit in Erscheinung; fortwährend entstehen bzw. zeigen sich neue 
+Angriffsvektoren. Der Hersteller muss daher den gesamten Lebenszyklus 
+des Medizinprodukts, insbesondere der Softwarekomponenten, auch im Blick
+ behalten, nachdem er es in den Verkehr gebracht hat, um das Restrisiko 
+zu begrenzen. Für stark softwaregesteuerte und ggf. lernfähige Systeme, 
+wie Gehirn-Computer-Schnittstellen, ist dies mit Blick auf die vielen 
+Angriffsvektoren und -szenarien unentbehrlich.&nbsp;Die Hersteller 
+müssen ihre Medizinprodukte überwachen,&nbsp;im Ernstfall die 
+zuständigen Behörden informieren und Präventiv- oder Korrekturmaßnahmen 
+ergreifen (Art.&nbsp;10 Abs.&nbsp;12 UAbs.&nbsp;1, Art.&nbsp;83 
+Abs.&nbsp;4 MPVO). Im Einzelfall können sie auch dazu angehalten sein, 
+ein fehlerhaftes Produkt vom Markt zu nehmen oder zurückzurufen 
+(Art.&nbsp;95 Abs.&nbsp;1 MPVO).</p>
+
+
+
+<p><strong>aa)&nbsp;Schwerwiegendes Vorkommnis</strong></p>
+
+
+
+<p>Im Falle sog. schwerwiegender Vorkommnisse muss der Hersteller 
+Sicherheitskorrekturmaßnahmen im Feld vornehmen, um Schäden abzuwenden 
+und Risiken für Patienten zu verringern (Art.&nbsp;2 Nr.&nbsp;68, 
+Art.&nbsp;83 Abs.&nbsp;4 MPVO).&nbsp;Dafür kann er bspw. 
+Sicherheitsupdates aufspielen bzw. zur Verfügung stellen.&nbsp;Bei 
+schwerwiegenden Vorkommnissen, die auf Sicherheitslücken der 
+IT-Sicherheit beruhen, ist das BSI zu beteiligen (§&nbsp;85 Abs.&nbsp;5 
+Nr.&nbsp;1 Medizinprodukte-Durchführungsgesetz). Darüber hinaus treffen 
+den Hersteller –&nbsp;ähnlich wie den datenschutzrechtlich 
+Verantwortlichen (Art.&nbsp;33 und&nbsp;34 DSGVO)&nbsp;– Meldepflichten 
+gegenüber den zuständigen Behörden (sog.&nbsp;<em>Vigilanz</em>, Art.&nbsp;87 MPVO).</p>
+
+
+
+<p>Ein „schwerwiegendes Vorkommnis“ ist eingetreten, wenn eine 
+Fehlfunktion oder Verschlechterung des Medizinprodukts zur Folge haben 
+kann, dass eine Person stirbt, sich ihr Gesundheitszustand vorübergehend
+ oder dauerhaft schwerwiegend verschlechtert oder dass eine 
+schwerwiegende Gefahr für die öffentliche Gesundheit eintritt 
+(Art.&nbsp;2 Nr.&nbsp;65 MPVO).&nbsp;<em>Nicht schwerwiegend</em>&nbsp;sind
+ demgegenüber Sicherheitslücken, die es ermöglichen, die Kommunikation 
+eines Medizinprodukts mit einem anderen Gerät&nbsp;abzuhören oder auf 
+dem Medizinprodukt gespeicherte Daten&nbsp;auszuspähen oder zu 
+exportieren. Dies gilt gleichfalls für Konstellationen, in denen die 
+Gesundheit des Patienten nur geringfügig, z. B. durch eine verspätete 
+Behandlung oder langsamere Ausführung, beeinträchtigt ist.</p>
+
+
+
+<p>Für Gehirn-Computer-Schnittstellen sind schwerwiegende Vorkommnisse 
+deshalb a&nbsp;priori nur bei Varianten denkbar, die das Gehirn exzessiv
+ stimulieren und schwer schädigen können. Sind dagegen nur leichtere 
+Manipulationen ohne tödliche oder schwerwiegende gesundheitliche Folgen 
+zu gewärtigen, entsteht selbst dann keine Vigilanz-Pflicht, wenn der 
+Patient selbst im Einzelfall die Konsequenzen –&nbsp;vom 
+Vertrauensverlust und Ängsten bis zu leichten Schäden und 
+Schmerzen&nbsp;– als gravierend empfindet.</p>
+
+
+
+<p><strong>bb)&nbsp;Einfaches Vorkommnis</strong></p>
+
+
+
+<p>Auch bei „einfachen“ Vorkommnissen, die unter der Schwelle des 
+Art.&nbsp;2 Nr.&nbsp;65 MPVO bleiben, ist der Hersteller nicht von 
+seiner Verantwortung entbunden, für ein Mindestmaß an Sicherheit zu 
+sorgen. Er bleibt verpflichtet, die Konformität des Produkts im 
+Störungsfall (wieder)herzustellen und Korrekturmaßnahmen vorzunehmen 
+(Art.&nbsp;10 Abs.&nbsp;12; Art&nbsp;83 Abs.&nbsp;4 MPVO). Er muss die 
+Ursache eines potenziellen oder vorhandenen Konformitätsmangels (oder 
+einer sonstigen unerwünschten Situation, vgl. Art.&nbsp;2 Nr.&nbsp;67 
+MPVO) beseitigen.</p>
+
+
+
+<p>Aufsichtsrechtliche Maßnahmen ergreifen die zuständigen Behörden in 
+solchen Fällen nur, wenn Medizinprodukte mutmaßlich ein unvertretbares 
+Risiko auslösen oder aus anderen Gründen nicht rechtskonform sind 
+(Art.&nbsp;94 MPVO). Dann bewerten sie das Produkt in Hinblick auf die 
+Anforderungen der MPVO und fordern den Hersteller z. B. zu 
+Korrekturmaßnahmen auf.&nbsp;Allerdings muss hierfür ein unvertretbares 
+Gesundheits- und Sicherheitsrisiko für Patienten, Anwender oder andere 
+Personen eintreten (vgl. Art.&nbsp;95 Abs.&nbsp;1 MPVO). Insbesondere 
+Schwachstellen, die die Vertraulichkeit von Daten betreffen, erreichen 
+diese kritische Schwelle regelmäßig nicht.</p>
+
+
+
+<h3><strong><em>d)&nbsp;Sicherheit durch Datenbanken und Register?</em></strong></h3>
+
+
+
+<p>Zu dem Pflichtenheft der Überwachung und Vigilanz gesellt sich im 
+unionsrechtlichen Regulierungsregime eine europäische Datenbank für 
+Medizinprodukte (<em>Eudamed</em>, Art.&nbsp;33 MPVO;&nbsp;aa) und ein Implantateregister hinzu (§&nbsp;1 Abs.&nbsp;2 Nr.&nbsp;4 IRegG;&nbsp;bb).</p>
+
+
+
+<p><strong>aa)&nbsp;Eudamed</strong></p>
+
+
+
+<p><em>Eudamed</em>&nbsp;hält Informationen über alle Medizinprodukte 
+vor. Die Datenbank ist u. a. mit dem elektronischen System für Vigilanz 
+und für die Überwachung nach dem Inverkehrbringen verknüpft 
+(Art.&nbsp;33 Abs.&nbsp;2 lit.&nbsp;f i. V. m. Art.&nbsp;92 
+MPVO).&nbsp;Sie speichert u. a. Vigilanz- und klinische Prüfungsdaten 
+sowie wie Informationen über die Hersteller.&nbsp;Ihre Daten sind aber 
+nicht öffentlich zugänglich: Nur die EU-Kommission und die 
+Mitgliedstaaten&nbsp;dürfen auf sie zugreifen (Art.&nbsp;33 Abs.&nbsp;5 
+MMPVO), um auf Sicherheitsrisiken rasch reagieren zu können.</p>
+
+
+
+<p><strong>bb)&nbsp;Implantateregister</strong></p>
+
+
+
+<p>Anders als Eudamed erfasst das Implantateregister auch Informationen 
+über Patienten mit spezifischen Implantattypen, u. a. 
+Cochleaimplantate&nbsp;und Neurostimulatoren (§&nbsp;2 Nr.&nbsp;1 
+i. V. m. Anlage IRegG).&nbsp;Der Unionsgesetzgeber will dadurch 
+Implantatrisiken abwehren sowie die Gesundheit und Sicherheit der 
+Patienten schützen (§&nbsp;1 Abs.&nbsp;2 Nr.&nbsp;1 IRegG). Deshalb muss
+ die Gesundheitseinrichtung, die für die implantatbezogene Maßnahme 
+verantwortlich zeichnet, in Zukunft u. a. technisch-organisatorische 
+Daten zum Versorgungsprozess, implantatrelevante Befunde sowie 
+individuelle Parameter zum Implantat melden (§&nbsp;16 Abs.&nbsp;1 
+IRegG). Darunter fallen etwa sicherheitsbezogene Änderungen eines 
+Implantats oder Sicherheitsupdates (§&nbsp;2 Nr.&nbsp;4 IRegG). Mithilfe
+ des Registers können verantwortliche Gesundheitseinrichtungen und 
+Hersteller Patienten ausfindig machen, die unsichere Geräte 
+nutzen,&nbsp;und sicherstellen, dass sie verfügbare Updates aufspielen 
+(§&nbsp;4 Abs.&nbsp;4, §&nbsp;29 Abs.&nbsp;1 Nr.&nbsp;1, Nr.&nbsp;3 
+lit.&nbsp;c IRegG).</p>
+
+
+
+<p>Ob sich das neue Implantateregister als geeignetes Instrument 
+entpuppt, um Reaktionen auf schwerwiegende Sicherheitslücken in 
+Implantaten zu koordinieren und die Gefahren für Patienten abzuwehren, 
+steht derzeit aber noch in den Sternen. Als Crux könnten sich zwei 
+Aspekte erweisen: Bislang ist es Patienten zum einen verwehrt, selbst 
+Probleme mit ihren Implantaten zu melden; weder sie noch ihre Ärzte 
+haben Zugang zu den Daten des Registers.&nbsp;Zum anderen beschränkt 
+sich der Schutz –&nbsp;ähnlich wie die Überwachung nach Inverkehrbringen
+ und die Vigilanz&nbsp;– auf die Gesundheit und (körperliche) Sicherheit
+ der Patienten. Wenn Sicherheitslücken „nur“ eine Einsicht in Daten, die
+ das Implantat erhebt oder verarbeitet, ermöglichen, knüpft sich daran 
+keine Meldepflicht des Herstellers. Dies ist allenfalls dann der Fall, 
+wenn der Hersteller oder die verantwortliche Gesundheitseinrichtung 
+zugleich datenschutzrechtliche Verantwortliche sind 
+(Art.&nbsp;33,&nbsp;34 DSGVO).</p>
+
+
+
+<p>Mario Martini, Carolin Kemper: Cybersicherheit von Gehirn-Computer-Schnittstellen; International Cybersecurity Law Review; 2022</p>
+
+
+
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
+https://doi.org/10.1365/s43439-022-00046-x
+</div></figure>
+
+
+
+<p><a href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" rel="noreferrer noopener">http://creativecommons.org/licenses/by/4.0/deed.de</a></p>
+
+
+
+<p>Zur einfacheren Lesbarkeit wurden die Quellenverweise und Fussnoten entfernt</p>
+                        </div><!-- .entry-content -->
+                    </div>
+                </div>
+                
+                <hr class="ais-hr mt-5 mb-5">
+
+                
+                    <div class="ais-content-footer">
+                        <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+                            <div class="cat_term_holder">
+                                <div><span class="ais-color-red ais-ff-StoneSansStd-semibold">Kategorie: </span>Cybersecurity | Datenschutz</div>
+                                <div><span class="ais-color-red ais-ff-StoneSansStd-semibold">Tags: </span>Cybersecurity | DSGVO | Med-Tech</div>
+                            </div>
+
+                            
+
+                            <div class="social_sharing_holder text-md-end">
+                                <span class="ais-ff-StoneSansStd-semibold">Beitrag teilen:</span>
+                                
+                                <div class="ais-blog-sharing d-flex flex-row">
+                                                                        <span><a class="ais-color-black d-flex justify-content-center align-items-center me-2" target="_blank" href="https://twitter.com/intent/tweet?url=https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/&amp;text="><i class="fab fa-twitter-square"></i></a></span>
+                                    <span><a class="ais-color-black d-flex justify-content-center align-items-center me-2" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/&amp;title="><i class="fab fa-linkedin"></i></a></span>
+                                                                        <span><a class="ais-color-black d-flex justify-content-center align-items-center me-2" target="_blank" href="mailto:info@example.com?subject=Gehirn-Computer-Schnittstellen auf dem Weg vom Medizinlabor in die Anwendungspraxis %E2%80%93 Teil 2&amp;body=https://www.infosec.ch/blog/gehirn-computer-schnittstellen-auf-dem-weg-vom-medizinlabor-in-die-anwendungspraxis-teil-2/%2F%0A"><i class="far fa-envelope"></i></a></span>
+                                    <span><a class="ais-color-black ais-print d-flex justify-content-center align-items-center" target="_blank" href="#" onclick="window.print()"><img src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/print.svg" alt=""></a></span>
+                                </div>
+                            </div>
+                        </div>
+                                            </div>
+                
+
+            </article><!-- #post-3221 -->
+        </div>
+    </div>
+</div>
+
+	</main><!-- #main -->
+
+
+</div><!-- #content -->
+
+<footer id="colophon" class="site-footer ais-bg-blue" role="contentinfo">
+    <div class="container">
+        <div class=" d-flex justify-content-between  flex-wrap flex-lg-nowrap">
+            <div class="widget-area text-sm-start">
+                <img src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/logo_w.svg" alt="Logo">
+            </div>
+            <div class="widget-area text-sm-start order-3 order-lg-0">
+                <section id="block-7" class="widget widget_block"><h2>Standorte</h2>
+</section><section id="block-15" class="widget widget_block widget_text"><p>Swiss Infosec AG<br>Centralstrasse 8A<br>6210 Sursee, Schweiz<br><a href="mailto:infosec@infosec.ch">infosec@infosec.ch</a><br><a href="tel:+41419841212">+41 41 984 12 12</a><br><a href="https://www.infosec.ch/kontakt/">Zürich, Bern, Berlin</a></p>
+</section>            </div>
+            <div class="widget-area text-sm-start order-0 order-lg-1">
+                <section id="nav_menu-2" class="widget widget_nav_menu"><h2 class="widget-title">Unser Angebot</h2><div class="menu-footer-our-offer-en-container"><ul id="menu-footer-our-offer-en" class="menu"><li id="menu-item-7199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7199"><a href="https://www.infosec.ch/beratung/">Beratung</a></li>
+<li id="menu-item-7200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7200"><a href="https://www.infosec.ch/services/">Services</a></li>
+<li id="menu-item-7201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7201"><a href="https://www.infosec.ch/beratung/audits/">Audits</a></li>
+</ul></div></section>            </div>
+
+            <div class="widget-area text-sm-start order-2 order-lg-2">
+                <section id="nav_menu-3" class="widget widget_nav_menu"><h2 class="widget-title">Über uns</h2><div class="menu-footer-ueber-uns-container"><ul id="menu-footer-ueber-uns" class="menu"><li id="menu-item-103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"><a href="https://www.infosec.ch/ueber-uns/job/">Jobs</a></li>
+<li id="menu-item-104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"><a href="https://www.infosec.ch/ueber-uns/team/">Team</a></li>
+<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="https://www.infosec.ch/ueber-uns/referenzen/">Referenzen</a></li>
+<li id="menu-item-6233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6233"><a href="https://www.infosec.ch/ueber-uns/gruppenunternehmen/">Gruppe</a></li>
+</ul></div></section>            </div>
+
+            <div class="widget-area text-sm-start order-1 order-lg-3">
+                <section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">News</h2><div class="menu-footer-news-container"><ul id="menu-footer-news" class="menu"><li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="https://www.infosec.ch/blog/">Blogbeiträge</a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="https://www.infosec.ch/newsletter/">Newsletter</a></li>
+</ul></div></section>                <div class="footer-social-media d-flex justify-content-between">
+                    <section id="nav_menu-6" class="widget widget_nav_menu ais-social-media"><div class="menu-footer-social-media-container"><ul id="menu-footer-social-media" class="menu"><li id="menu-item-161" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-161"><a target="_blank" rel="noopener" href="https://www.linkedin.com/company/swissinfosec/"><i class="fab fa-linkedin-in"></i></a></li>
+<li id="menu-item-162" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-162"><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCd8L151fCo_5JkQq_33Ixhw"><i class="fab fa-youtube"></i></a></li>
+<li id="menu-item-6968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6968"><a target="_blank" rel="noopener" href="https://twitter.com/swissinfosec"><i class="fa fa-twitter"></i></a></li>
+</ul></div></section>                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</footer>
+<div class="site-info left col-1-1ais-bg-black text-white d-flex justify-content-between align-items-center">
+    <div><a href="https://www.infosec.ch/" rel="designer"> © Swiss Infosec AG 2022</a></div>
+    <div><section id="nav_menu-5" class="widget widget_nav_menu"><div class="menu-footer-foot-container"><ul id="menu-footer-foot" class="menu"><li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"><a href="https://www.infosec.ch/impressum/">Impressum</a></li>
+<li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"><a href="https://www.infosec.ch/allgemeine-geschaeftsbedingungen-agb/">AGB</a></li>
+<li id="menu-item-4357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-4357"><a href="https://www.infosec.ch/datenschutzerklaerung/">Datenschutz</a></li>
+</ul></div></section></div>
+
+</div>
+
+
+<style>.wp-container-1 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-1 > * { margin: 0; }</style>
+<link rel="stylesheet" id="wpml-legacy-horizontal-list-0-css" href="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/style.min_002.css" media="all">
+<script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/navigation.js" id="ais-it-navigation-js"></script>
+<script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/isotop-3.0.6.min.js" id="isotop-js"></script>
+<script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/functions.min.js" id="ais-it-functions-js"></script>
+<script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/slick.min.js" id="slickslider-js-js"></script>
+<script src="Gehirn-Computer-Schnittstellen%20auf%20dem%20Weg%20vom%20Medizinlabor%20in%20die%20Anwendungspraxis%20%E2%80%93%20Teil%202%20-%20Swiss%20Infosec%20AG-Dateien/socialintents.1.3.js" async="async"></script>
+
+
+<div id="social-intents-tab-chat" class="social-intents-tab" style="visibility: visible;"><style id="si-styles" type="text/css">.siClosed {transform-origin: right 95% 0; transform: translate(0px, 0px) scale(0.1); opacity: 0; display: none;}.siScale {z-index:999999999!important;display:visible;transform: scale(1);transform-origin: right 95% 0;transition: transform 0.25s ease-in-out 0s, opacity 0.13s linear 0.15s, -webkit-transform 0.30s ease-in-out 0s;opacity:1;}.siNoScroll {position:fixed !important ;overflow: hidden !important;width: 100% !important;height: 100% !important;}.siNotify {font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;display:none;background: #ff1a00;background: -moz-linear-gradient(top,#ff1a00 0,#ff1a00 100%);background: -webkit-linear-gradient(top,#ff1a00 0,#ff1a00 100%);background: linear-gradient(to bottom,#ff1a00 0,#ff1a00 100%);border: 2px solid #fff;border-radius: 50%;box-shadow: 0 1px 1px 0 rgba(0,0,0,.5);color: #fff;filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff1a00', endColorstr='#ff1a00', GradientType=0);font-size: 11px;font-weight: 700;height: 18px;padding-top:0px;position: absolute;right: -2px;text-align: center;top: 0px;width: 18px;}#siWidget-chat {position: fixed; right: 25px; height: calc(100% - 150px);bottom: 90px;width: 360px;min-height: 260px;max-height: 590px;-webkit-box-shadow: 0 5px 30px rgba(0,0,0,.15)!important;box-shadow: 0 5px 30px rgba(0,0,0,.15)!important;border-radius: 6px;overflow: hidden!important;overflow: hidden; display: none; z-index: 9999999; background: none 0% 0% repeat scroll transparent; border: 0px none;}.siInvite {height:190px !important;min-height:190px !important}#si-wrapper .silc-btn {border:none;background-color:transparent;bottom:25px;height:55px;width:55px;position:fixed;right: 25px;z-index:99999000;}#si-wrapper.si-livechat .silc-btn-button {display:inherit;background-image:url('data:image/png;base64,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')}.silc-btn-button-close {background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAAggJCxMWMTIzNExscIWGiLDV19na3un9hTvT5wAAAKpJREFUKM990kkOg0AMRNGimSGBJNAJ//4XzaIRYrCp7ZMsT1IZZCerMunJ0pmaT3wy/QDL8whUemB6HoEpk14A7UlDBGKQTN/p6s1eZ2DeJjr5SU9+UWkEqD3duambO7p676k0kDI5NxpuVcUC0Dsa5lS89nXxPMzAVAy2Jw1rf42lad7x6oddXTzEw67G43/k0bpv6+nqnac7P3zd1d+mJl+CvrYmL3WfP5rdGLokt1OvAAAAAElFTkSuQmCC') !important;background-size:20px !important;}.silc-btn, .silc-btn:active, .silc-btn:focus {top:unset !important;}button.silc-btn:focus {outline: 0;}#si-wrapper .silc-btn-button.silc-btn-button-color {background-color: #00aeef;}#si-wrapper .silc-btn-button, #si-wrapper  {box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);}#si-wrapper .silc-btn-button {background-position: 50% center;bottom: 0;right: 0;cursor: pointer;background-repeat: no-repeat;background-size: 27px;border-radius: 50%;height: 55px;width: 55px;position: absolute;}</style><div id="si-wrapper" class="si-wrapper si-livechat"><button style="display: block;" aria-label="Live Chat" class="silc-btn silc-btn-enabled" id="silc-btn"><div tabindex="0" class="silc-btn-button silc-btn-button-color" style="background-color: rgb(204, 0, 51); border: medium none rgb(204, 0, 51);"></div><div class="siNotify"></div></button></div></div><div id="socialintents-chat"></div><a id="sibutton" class="sibutton" href="#" data-target="#siWidget-chat" aria-label="Live Chat"> </a><div class="siClosed" id="siWidget-chat"><iframe id="si_frame" scrolling="no" allowtransparency="true" width="100%" height="100%" frameborder="0"></iframe></div></body></html>
