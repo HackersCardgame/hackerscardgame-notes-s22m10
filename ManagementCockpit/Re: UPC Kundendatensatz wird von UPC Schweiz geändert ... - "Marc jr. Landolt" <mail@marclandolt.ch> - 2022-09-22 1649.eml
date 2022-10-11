@@ -1,0 +1,160 @@
+Message-ID: <01a6a58a-9cd6-6e7c-27c3-76de7f8a9861@marclandolt.ch>
+Date: Thu, 22 Sep 2022 16:49:58 +0200
+MIME-Version: 1.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101
+ Thunderbird/91.13.1
+Subject: =?UTF-8?Q?Re=3a_UPC_Kundendatensatz_wird_von_UPC_Schweiz_ge=c3=a4nd?=
+ =?UTF-8?B?ZXJ0IC4uLg==?=
+To: Markus Amsler <markus.amsler@gmail.com>
+References: <c2dc3188-c6b9-e808-a7ab-d771276cad29@marclandolt.ch>
+ <e10f5db8-fb19-3b2a-9ef4-1024e3eb3771@marclandolt.ch>
+ <89d0e137-f59e-78cc-d39f-14e22a6f1cfa@marclandolt.ch>
+ <5189940b-6080-33ec-cb12-b3509f98c5be@marclandolt.ch>
+ <830dcd46-15eb-ab37-261a-0b38233339b0@marclandolt.ch>
+ <a7685cd8-1dbc-0f0e-02a9-02d126f2e8f1@marclandolt.ch>
+ <01a9cec7-e170-246e-c0fe-75981e9b67ce@marclandolt.ch>
+ <ade74624-b1cf-4841-8b28-a8d88e8afb42@marclandolt.ch>
+ <c9c6de7e-a477-d15c-2298-cc6a31dea3af@marclandolt.ch>
+ <c4a79509-9701-9c68-8dbd-fbaca7374814@marclandolt.ch>
+ <fc7b67f3-5bd8-8aa5-75db-4670bae100e9@marclandolt.ch>
+ <9bee9a60-48fe-dd79-64bb-708725f5cabe@marclandolt.ch>
+ <21f3cbf8-2de6-d8f7-973a-4778c3bfb28c@marclandolt.ch>
+ <73011488-400f-f225-58ab-942faba4685c@marclandolt.ch>
+ <87205e85-1497-0af9-737e-a482a1801892@marclandolt.ch>
+ <67b1f8c2-3b81-eb66-769d-dd5b91237384@gmail.com>
+ <de2bd39b-6652-4c75-5a33-e3c4da8050b0@marclandolt.ch>
+ <441471d9-8a5d-f261-5d99-66b9c1dfb185@gmail.com>
+From: "Marc jr. Landolt" <mail@marclandolt.ch>
+Disposition-Notification-To: "Marc jr. Landolt" <mail@marclandolt.ch>
+In-Reply-To: <441471d9-8a5d-f261-5d99-66b9c1dfb185@gmail.com>
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Bei UPC
+
+So Applikationen für ISP's haben immer Journal pro kunden wo teilweise 
+Änderungen welche die Mitarbeiter beim ISP machen automatisch 
+eingetragen wird. Also z.B. wenn jemand das Modem wechselt sieht man da 
+welcher Mitarbeiter die Mac Ad(d)resse geändert hat.
+
+Da schreiben dann manche auch Dinge rein wie "der Kunde ist bescheuert" 
+oder solche Dinge.
+
+Mit genug Rechten auf dem UPC system kann man diese logischerweise 
+löschen oder ändern, oder wenn man direkt auf die Datenbank der APP 
+Zugriff hat.
+
+Der Support der UPC ist neuerdings im Kosovo seit ca. 1 Jahr. Dann sagt 
+der Mitarbeiter im Kosovo "ich hätte am Freitag nicht angerufen", aber 
+ich hab am Freitag dort mind. 3x angerufen. Also werde ich aus meiner 
+Perspektive belogen, und der Kosovo-UPC-Mitarbetier denkt ich wolle ihn 
+verarschen => konflitk vorprogrammiert. ABER wenn sonst jemand da 
+Datensätze ändert dann würden wir wirst case einen Konflikt haben ohne 
+grund zwischen uns.
+
+Da musst Du Dich nicht als uninformiert fühlen, Du hast ja einfach nie 
+an so einem Ort gearbeitet.
+
+Ist alles auf den Aufzeichnungen drauf auf, die nehmen ja die 
+Kundentelefonate auf, also läuft bei mir auch eine Aufnahme mit.
+
+https://github.com/HackersCardgame/hackerscardgame-notes-s22m09/tree/main/upc
+
+Und YAY, morgen kommt der Techniker mit dem Messgerät was scheinbar 
+zugriff auf das System hat und den Pegel erhöhen kann. Der war vor 3 
+Jahren bei 63 DBµV und jetzt vermutlich schlechter. Der Planungspegel 
+sollte bei 67-69DBµV sein, und wie man das Plant hab ich mal ein paar 
+Jahre unterrichtet: https://marclandolt.ch/doc/KoaxialeAnlagen0.5.7.pdf
+
+Da rechtnet man mit DB weil jede Dose nimmt sich einen Faktor an Signal, 
+so dass man das Addieren kann und nicht multiplizieren muss weil sonst 
+wäre der ausführende Elektriker überfordert.
+
+
+Viel mehr Ärger wird mir aber dies hier einbringen:
+
+https://github.com/HackersCardgame/hackerscardgame-notes-s22m09/tree/main/TwinTowers
+
+(das odt open document)
+
+
+
+Am 22.09.2022 um 15:50 schrieb Markus Amsler:
+> Sali Marc
+> 
+> Welchen Kundendatensatz?
+> 
+> Besten Dank und schöne Grüsse
+> 
+> Markus
+> 
+> On 20.09.22 18:46, Marc jr. Landolt wrote:
+>> ok, nehm ich raus, irgendwer ändert aber wirklich meinen 
+>> Kundendatensatz :D
+>>
+>>
+>> Am 20.09.2022 um 17:51 schrieb Markus Amsler:
+>>> Sali Marc
+>>>
+>>> Kannst du mich aus dem Verteiler rausnehmen? Ich fühle mich nicht 
+>>> angesprochen, beantworte gerne persönliche E-Mails.
+>>>
+>>> Gruss Markus
+>>>
+>>> On 20.09.22 17:43, Marc jr. Landolt wrote:
+>>>> ... dann stehe ich und/oder der Kosovare als Lügner da, und man 
+>>>> verscht mich auf Ausländer aggressiv zu machen mit parallel 
+>>>> induzierter Temporal-Lappen-Epilepsie.
+>>>>
+>>>> Also die SVP will gerne das dass ich auch Ausländer hasser werde.
+>>>>
+>>>> Nachvollziehbar auf den Aufnahmen, somit ist das Ziel wirklich 
+>>>> Menschen zu Amokläufer oder Soldaten (was das selbe ist wie ein 
+>>>> Amokläufer) abzurichten.
+>>>>
+>>>>
+>>>> WICHTIG:
+>>>> =======================================================================
+>>>> Die Zürich Verscherung hat somit auf das Neuralink von Kosovo 
+>>>> Mitarbeitern Zugriff, was dann im Slavischen Raum und somit auch 
+>>>> Putins Neuralink heissen würde dass die Schweiz da Zugriff drauf hat
+>>>> -----------------------------------------------------------------------
+>>>> das mit Putin ist logischerweise Spekulation, der konkrete Fall wäre 
+>>>> aber nachvollziehbar
+>>>> =======================================================================
+>>>>
+>>>>
+>>>> Das ist ein grösseres Blackhat-Täternetzwerk von der UPC, Zürich 
+>>>> Versichreung, Schweizer Armee und der SVP
+>>>>
+>>>> Also das Ritual "Obligatorische zu schiessen" wäre es den jungen 
+>>>> Bürger dazu zu treiben einen Menschen bzw. einen Ausländer, bzw. 
+>>>> einen Zeugen, bzw. einen Autisten zu ermorden oder so etwas in diese 
+>>>> Richtung. Also das "Huhn" was wenn man die Offiziersschule gemacht 
+>>>> hätte da jeweils geschlachtet wird.
+>>>>
+>>>> Also die SVP hat Zugriff auf das Management Cockpit der Zürich 
+>>>> Versicherung, und wir wissten jetzt ungefähr wie oder mit welchen 
+>>>> Schachzügen der Urs Blum seinen Sohn Philipp Blum zum Nazi 
+>>>> abgerichtet hat.
+>>>>
+>>>> https://github.com/HackersCardgame/hackerscardgame-notes-s22m09/tree/main/upc 
+>>>> (14 + 15. Anruf, Psychologisch: Einwirkungsdauer)
+>>>>
+>>>> Also tehcnisch, die schalten einfach das Modem solange nicht ein bis 
+>>>> ich Amok oder Suizid gelaufen bin. Dann spielt jetzt jemand das 
+>>>> Sprachsample von Urs Blum ab: "hahaha, was wott er"
+>>>>
+>>>
+>>
+> 
+
+-- 
+Mit freundlichen Grüssen
+
+Marc jr. Landolt
+eidg. dipl. Informatiker HF
+Neuenburgerstrasse 6
+5004 Aarau
+062 822 61 31
+078 674 15 32
