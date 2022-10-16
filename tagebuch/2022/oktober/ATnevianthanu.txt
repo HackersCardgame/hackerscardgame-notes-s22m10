@@ -41,7 +41,15 @@ das video ist auch nicht gerade nett zu mir
 
 wenn man das anklickt 
 
-* schaltet  induzierte Epilepsie ein
+* schaltet induzierte Epilepsie ein
+* schaltet raumüberwachung und körpertelemetrie auf unter 1cm genauigkeit ein
+* quellen sichten zu dem was behauptet wird allenfalls als Fingerprint um menschen zu idenitifizieren die den Scharlatan durchschauen und diese anzugreifen
+* ping über isp wird immer wenn ich nicht pinge auf >300ms gewechselt, indiz für das qFire System des NSA
+* endpoint malware wird aktiviert
+* grösseres team von blackhats wird gegen mich aktiviert
+* das blackhat team wird von menschen die vermutlich auf kokain sind und sich mit psychologischer Kriegsführung wage auskennen geschützt
+
+
 
 
 
