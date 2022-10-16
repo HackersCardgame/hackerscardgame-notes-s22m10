@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{798:function(a,s,o){"use strict";o.r(s);o(1);var t=o(240),e="_3XNtZY8a _1Bo9lalQ",l="skmGC7K6",n="_2E6wRUWp",c=o(0);s.default=()=>Object(c.jsx)(t.a,{position:"bottom-center",autoClose:!1,draggable:!1,className:e,toastClassName:l,bodyClassName:n,closeButton:!1})}}]);
+//# sourceMappingURL=toasts.480d19f6.chunk.js.map
