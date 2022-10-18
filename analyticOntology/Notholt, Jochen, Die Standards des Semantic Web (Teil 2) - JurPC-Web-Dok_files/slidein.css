@@ -1,0 +1,39 @@
+/* 
+    Document   : slidein.css
+    Created on : 08.08.2013, 14:46:05
+    Author     : jibach
+*/
+
+div#jurpc-slidein {
+    position: fixed;
+    display: block;
+    float: right;
+    bottom: 0;
+    right: -540px;  
+    z-index:10;
+    -webkit-box-shadow: -4px -3px 10px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow:    -4px -3px 10px rgba(0, 0, 0, 0.48);
+    box-shadow:         -4px -3px 10px rgba(0, 0, 0, 0.48);
+}
+
+div#jurpc-slidein-toggle {
+    float: left;
+    width: 40px;
+    border-right: 1px solid #cccccc;
+    height: 120px;
+    cursor: pointer;
+}
+
+div#jurpc-slidein-content {
+    float: right;
+    width: 480px;
+    height: 120px;
+}
+
+div#slidein-close {
+    cursor: pointer;
+    z-index: 20;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}

@@ -1,0 +1,273 @@
+/*
+Theme Name: JurPC
+Theme URI: 
+Description: CMS-Template für JurPC
+Author: IM
+Author URI: 
+*/
+
+body {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #445157;
+	padding: 0;
+	margin: 0;
+	background-color: #dee2e5;
+}
+
+IMG {
+	border: none 0;
+}
+
+#head {
+	background-color: #dee2e5;
+	height: 30px;;
+}
+
+#container {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	min-height: 700px;
+	background-color: #ffffff;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+#main {
+    padding:20px;
+}
+
+#static-content-bar {
+    float: left;
+    margin-left: 20px;
+    padding-top: 3px;
+}
+.menu-mainmenu-container {
+    float:right;
+}
+  
+a {
+    color: #000000;
+    text-decoration: none;
+    
+}  
+a:hover, a:focus {
+	color: #0066B3; /* #48951A; */
+	text-decoration: underline;
+}
+
+a.dateiLink {
+	text-decoration: underline;
+}
+
+#topnav {
+	background-color: #ffffff;
+	height: 20px;  
+    margin-top:20px;
+}
+
+#topnav .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+#topnav ul {
+    margin: 0;
+    padding: 0;
+}
+#topnav li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 auto;
+    padding: 0 15px 0 0;
+}
+
+#logo-bar {
+	height: 30px;
+}
+
+.logolink {
+	float:left;
+}
+
+.content-bar {
+	height: 20px;
+	font-size: 12px;
+	line-height: 12px;
+	background-color: #007fff; /*0066B3*/
+}
+
+.content-bar ul {
+	list-style: none outside none;
+	padding: 0;
+	/* 	padding-left: 245px; */
+	padding-left: 25px;
+	margin: 0;
+}
+
+.content-bar li {
+	display: inline;
+	float: left;
+	list-style: none outside none;
+	padding-right: 5px;
+	padding-top: 3px;
+}
+
+.content-bar a {
+	color: white;
+	font-weight: bold;
+}
+
+.content-bar a:hover {
+	color: #dee2e5;
+}
+
+.right {
+	float: right;
+}
+
+
+.banner {
+	background-color: menu;
+	text-align: center;
+}
+
+.banneranzeige {
+	color: gray;
+}
+
+#header {
+	margin-bottom: 20px;
+}
+
+#header .variante_big {
+	padding-left: 25px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	height: 115px;
+	text-align: left;
+}
+
+#header .variante_small {
+	height: 115px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-top: 20px;
+}
+
+#header #superbanner {
+	margin-bottom:15px;
+}
+
+#header #superbanner img {
+	border-radius: 10px 10px 10px 10px;
+}
+
+#main div.page {
+	margin-left:30px;
+	margin-right:30px;
+}
+
+#main div.page h4 {
+	margin-top:30px;
+}
+
+.center {
+	text-align:center;
+}
+
+.pricetable { 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    min-width: 350px; 
+    width: 800px; 
+    margin: auto; 
+    background-color: #f9f9f9; 
+    color: #555; 
+} 
+
+.pricetable tr th, 
+.pricetable tr td { 
+    border-right: 1px solid #bbb; 
+    border-bottom: 1px solid #bbb; 
+    padding: 5px; 
+    height: 50px; 
+    line-height: 25px; 
+    padding-left: 25px; 
+    vertical-align: middle;
+} 
+
+.pricetable tr th:first-child, 
+.pricetable tr td:first-child { 
+    border-left: 1px solid #bbb; 
+}
+
+.pricetable thead tr th{
+    border-top: 1px solid #bbb;
+}
+
+.pricetable tr td:first-child{ 
+    text-align: right; 
+    padding-right: 20px; 
+    width: 160px; 
+} 
+
+.pricetable tr th { 
+    background-color: #f2f2f2; 
+    border-top: 1px solid #bbb; 
+    text-align: left; 
+} 
+
+.pricetable tr:first-child th:first-child { 
+    border-top-left-radius: 4px; 
+    -moz-border-top-left-radius: 4px; 
+    -webkit-border-top-left-radius: 4px; 
+} 
+
+.pricetable tr:first-child th:last-child { 
+    border-top-right-radius: 4px; 
+    -moz-border-top-right-radius: 4px; 
+    -webkit-border-top-right-radius: 4px; 
+} 
+
+.pricetable tr:last-child td:first-child { 
+    border-bottom-left-radius: 4px; 
+    -moz-border-bottom-left-radius: 4px; 
+    -webkit-border-bottom-left-radius: 4px; 
+} 
+
+.pricetable tr:last-child td:last-child { 
+    border-bottom-right-radius: 4px; 
+    -moz-border-bottom-right-radius: 4px; 
+    -webkit-border-bottom-right-radius: 4px; 
+}
+
+.cform{
+    padding: 10px;
+}
+   
+.hide {
+	display: none;
+}
+
+#main div.page blockquote {
+	margin-left:0px;
+}
+
+#banner {
+	/* margin:auto; */
+ 	width:580px;
+ 	position:relative;	
+}
+
+#banner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

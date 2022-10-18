@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="Description" content="Die Standards des Semantic Web (Teil 2)">
+		<meta name="citation_title" content="Die Standards des Semantic Web (Teil 2)">
+		<meta name="citation_author" content="Notholt, Jochen">
+		<meta name="citation_publication_date" content="">
+		<meta name="citation_journal_title" content="JurPC">
+		<meta name="citation_volume" content="2005">
+		<meta name="citation_issue" content="0065">
+		<meta name="citation_firstpage" content="">
+		<meta name="citation_lastpage" content="">
+		
+		
+		 
+		<link type="text/css" href="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/style.css" rel="stylesheet">
+			<link type="text/css" href="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/webapp-style.css" rel="stylesheet">
+		<link rel="stylesheet" href="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/print.css" type="text/css" media="print">	
+		<link type="text/css" href="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/tab.css" rel="stylesheet">
+		
+		<link rel="alternate" type="application/rss+xml" title="Newsfeed" href="https://www.jurpc.de/jurpc.rss">
+		<link rel="shortcut icon" href="https://www.jurpc.de/jurpc/images/favicon.ico">
+		<link rel="icon" href="https://www.jurpc.de/jurpc/images/favicon.ico">	
+		<link rel="apple-touch-icon" href="https://www.jurpc.de/jurpc/images/apple-touch-icon.png">
+		<link rel="author" href="https://plus.google.com/100011054568832070882/posts/"> 		
+
+		<title>
+			Notholt, Jochen, Die Standards des Semantic Web (Teil 2) - JurPC-Web-Dok. 0065/2005</title>
+
+		<script type="text/javascript" defer="defer" async="" src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/piwik.js"></script><script type="text/javascript" src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/jquery.min.js"></script>
+		<script type="text/javascript" src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/jquery.pdf.repository.js"></script>
+		<link rel="stylesheet" type="text/css" href="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/pdf-repository.css">
+  
+		<script type="text/javascript">
+		       $(document).ready(function() {
+					var contextPath = '/jurpc';
+					if (contextPath.indexOf("jurpc") == -1) {
+						contextPath = '/jurpc-staging';
+					}
+					$("A[href^='http://www.jurpc.de/jurpcpdf'], a[href^='../jurpcpdf/']")
+						.each(function()
+						{ 
+							  this.href = "https://www.jurpc.de" + contextPath + "/getpdf.jsp?pdfname=" + this.href.substr(this.href.lastIndexOf("/") + 1) + "&rectype=pdf";
+						});
+	       			$('A[href*="/jurpcpdf"]').not('A[href*="Mediadaten-JurPC"]').pdfRepository({repository: 'https://www.jurpc.de/pdf-repository', repoParam: 'jurpc'});
+	       			$('a[href*="/jurpcpdf"]').not('a[href*="Mediadaten-JurPC"]').pdfRepository({repository: 'https://www.jurpc.de/pdf-repository', repoParam: 'jurpc'});
+	       			$('a[href*="/jurpcimages"][href*=".pdf"]').pdfRepository({repository: 'https://www.jurpc.de/pdf-repository', repoParam: 'jurpc'});
+
+	       			//$('A[href*="/jurpcpdf"]').not('A[href*="Mediadaten-JurPC"]').pdfRepository({repository: 'http://pdf.makrolog.de/pdf-repository', repoParam: 'jurpc'});
+	       			//$('a[href*="/jurpcpdf"]').not('a[href*="Mediadaten-JurPC"]').pdfRepository({repository: 'http://pdf.makrolog.de/pdf-repository', repoParam: 'jurpc'});
+	       			//$('a[href*="/jurpcimages"][href*=".pdf"]').pdfRepository({repository: 'http://pdf.makrolog.de/pdf-repository', repoParam: 'jurpc'});
+
+	       			//$('a[href*=".pdf"]').pdfRepository({repository: 'http://pdf.makrolog.de/pdf-repository', repoParam: 'jurpc'});
+	       			//$('a[href^="http://www.jurpc.de/jurpcpdf"]').pdfRepository({repository: 'http://pdf.makrolog.de/pdf-repository', repoParam: 'jurpc'});	       		
+		       });
+		</script>
+
+		<script type="text/javascript" src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/tab.js"></script>
+
+		<script type="text/javascript">
+		
+			function seite_aufschlagen(element, id) {
+				var index = element.selectedIndex;
+				var page = element.options[index].id;
+				self.location.href="show?id="+id+"&page="+page;
+			}
+
+			$(document).ready(function() {
+				moveSkyscraper();
+			});
+
+			$(window).resize(function() {
+				moveSkyscraper();
+			});
+			
+			$(window).scroll(function() {
+			    var containerOffset = $("#container").offset();
+			    var containerTop = containerOffset.top;
+			    var containerLeft = containerOffset.left;
+			    var containerWidth = $("#container").width();
+			    var skyscraperWidth = containerLeft + containerWidth + 15;
+			    
+			    var windowTop = $(window).scrollTop();
+			    
+			    var diff = containerTop - windowTop;
+			    
+			    if (diff < 0) {
+			        $("#skyscraper").addClass("fixedPosition");
+			        $('#skyscraper').css({left: skyscraperWidth});
+			        $("#container").addClass("paddingTop");
+			    } else {
+			        //$("#skyscraper").removeClass("fixedPosition");
+			        $('#skyscraper').css({left: skyscraperWidth});
+			        $("#container").removeClass("paddingTop");
+			    }
+			});	
+			
+			function moveSkyscraper() {
+			    var containerOffset = $("#container").offset();
+			    var containerTop = containerOffset.top;
+			    var containerLeft = containerOffset.left;
+			    var containerWidth = $("#container").width();
+			    var skyscraperWidth = containerLeft + containerWidth + 15;
+			    
+		        $("#skyscraper").addClass("fixedPosition");
+		        $('#skyscraper').css({left: skyscraperWidth});
+			} 
+	
+		</script>
+
+        <link rel="stylesheet" href="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/slidein.css" type="text/css">
+        <script type="text/javascript" src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/jurpc-slidein.js"></script>
+	
+	</head>
+	<body>
+        <div id="jurpc-slidein">
+            <div id="jurpc-slidein-toggle">
+                <img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/slidein-arrow-right.png">
+            </div>
+            <div id="jurpc-slidein-content">
+            	<div id="slidein-close"><img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/close_symbol.png"></div>
+            	<a href="https://www.jurpc.de/newsletter"><img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/Banner_JurPC_NL.png"></a>
+				</div>
+        </div>
+        <div style="width:1200px; margin-left: auto; margin-right: auto;">
+			<div id="container" class="paddingTop"> <div id="header">
+    <div class="variante_small">
+	<div id="superbanner" class="test">
+	</div>
+
+    	<a href="https://www.jurpc.de/jurpc/start?css=full">
+    		<img class="headerbild" style="border: 0;" src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/logo_jurpc_neu_small.png" alt="JurPC Logo">
+        </a>
+    		
+    	<div style="float: right; padding-right: 25px; text-align: right; padding-right: 25px;"><div>
+<script type="text/javascript">
+<!--
+  var _paq = _paq || [];
+	_paq.push(['setCustomVariable', 2, 'Banneraufruf', '47A09C06D2A85BC9C1257AF600342AD1', 'visit']);
+//-->
+</script>
+	<a href="https://www.jurpc.de/makrolog/bannerverwaltung.nsf/bannerlinkaufruf?openagent&amp;banner=47A09C06D2A85BC9C1257AF600342AD1" target="_blank" title="Werben auf JurPC" onclick="javascript:_paq.push(['setCustomVariable', 3, 'Bannerklick', '47A09C06D2A85BC9C1257AF600342AD1', 'page']);">
+		
+	</a>
+</div>
+
+        </div>
+    </div>
+    
+    <div class="content-bar">
+    <div id="static-content-bar">
+        <a href="https://www.jurpc.de/jurpc/start?css=full">Übersicht</a>
+		    <span style="color: #fff; font-weight: bold;">(</span> 
+        <a href="https://www.jurpc.de/jurpc/start?css=compact">Kurz</a> 
+        <span style="color: #fff; font-weight: bold;">|</span> 
+        <a href="https://www.jurpc.de/jurpc/start?category=Aufsatz">Aufsätze</a> 
+        <span style="color: #fff; font-weight: bold;"> | </span> 
+        <a href="https://www.jurpc.de/jurpc/start?category=Urteil">Urteile</a> 
+        <span style="color: #fff; font-weight: bold;">)</span>
+    </div>
+    <div class="menu-mainmenu-container"><ul id="menu-mainmenu" class="menu"><li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="https://www.jurpc.de/wp/impressum/">Impressum</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="https://www.jurpc.de/jurpc/search?q=*:*&amp;view=archiv">Archiv</a></li>
+<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="http://www.jurpc.de/newsletter">Newsletter</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="http://www.jurpc.de/jurpc.rss">RSS-Feed</a></li>
+<li id="menu-item-211" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-211"><a href="https://www.jurpc.de/jurpcpdf/Mediadaten-JurPC-25.02.2014.pdf">Media</a></li>
+</ul></div></div></div>
+<div id="doc">				
+					<div class="leftCol">
+								<div class="doc_options">
+														
+									<!-- div class="pager">
+									   	<select onchange="seite_aufschlagen(this, '20050065');" name="seite">
+										   	</select>									
+									</div-->
+									
+									<div class="biblio">
+										<span class="resultinfo left">
+										<b>JurPC Web-Dok. 65/2005 - DOI 10.7328/jurpcb/200520561</b>
+										</span>
+									</div>
+								</div>
+								<table width="100%" cellspacing="10" border="0">
+<tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0">
+<tbody><tr>
+<td width="10%"></td>
+<td width="70%">
+<h2>Jochen Notholt <a href="#fn0" name="rfn0">*</a></h2>
+<h2>Die Standards des Semantic Web (Teil 2)</h2>
+<h3>JurPC Web-Dok. 65/2005, Abs. 1 - 72</h3>
+<hr width="100%"></td>
+<td width="20%"></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0">
+<tbody><tr><td></td></tr>
+</tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Tim Berners-Lee definiert das Semantic Web als eine Erweiterung des 
+bestehenden World Wide Web (WWW), in dem Daten eine wohldefinierte 
+Bedeutung gegeben wird, um Maschinen und Menschen eine bessere 
+Zusammenarbeit zu ermöglichen.<a class="sdfootnoteanc" name="sdfootnote1anc" href="#sdfootnote1sym">(1)</a>
+ Nachdem im vorigen Teil der Bearbeitung die Vorzüge und Nachteile von 
+XML als grundlegender Online-Dokumentstandard vorgestellt wurden, muss 
+in diesem Teil zunächst geklärt werden, wie Berners-Lee zu seiner Idee 
+gekommen ist und welche Probleme des bestehenden Web er mit ihr lösen 
+will. Die Entwicklung des Semantic Web basiert auf einem abstrakten 
+Modell, Daten zu strukturieren und zu modellieren (Datenmodell). Das 
+abstrakte Modell ist mittlerweile in Form verschiedener Sprachstandards 
+konkret umgesetzt und bereits einigermaßen etabliert. Diese Standards 
+gilt es - jeweils aus der Perspektive des juristischen Einsatzes - in 
+den Grundlagen zu erläutern.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1">JurPC Web-Dok.<br>65/2005, <a name="0001">Abs. 1</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="15" border="0">
+<tbody><tr><td></td></tr>
+</tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+<table>
+<caption>
+I n h a l t s ü b e r s i c h t &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  Zum&nbsp;&nbsp;<a href="https://www.jurpc.de/jurpc/20050057.htm">TEIL&nbsp;1</a>
+</caption>
+<tbody><tr align="right"><td><a href="#I">I.</a></td><td></td><td align="left">  Die Idee des Semantic Web</td></tr>
+<tr align="right"><td><a href="#II">II.</a></td><td></td><td align="left"> Umsetzung und Datenmodell</td></tr>
+<tr align="right"><td><a href="#III">III.</a></td><td></td><td align="left"> Resource Description Framework (RDF)</td></tr>
+<tr align="right"><td></td><td width="10%" align="center"><a href="#III1">1.</a></td><td align="left"> &nbsp; &nbsp; RDF als Datenmodell</td></tr>
+<tr align="right"><td></td><td align="center"><a href="#III2">2.</a></td><td align="left"> &nbsp; &nbsp; RDF-Notationen: RDF/XML und N3</td></tr>
+<tr align="right"><td></td><td align="center"><a href="#III3">3.</a></td><td align="left"> &nbsp; &nbsp; Einige spezielle RDF-Techniken</td></tr>
+<tr align="right"><td><a href="#IV">IV.</a></td><td></td><td align="left"> RDF Schema</td></tr>
+<tr align="right"><td><a href="#V">V.</a></td><td></td><td align="left"> OWL als Ontologiesprache</td></tr>
+<tr align="right"><td></td><td align="center"><a href="#V1">1.</a></td><td align="left"> &nbsp; &nbsp; Ontologien und Taxonomien</td></tr>
+<tr align="right"><td></td><td align="center"><a href="#V2">2.</a></td><td align="left"> &nbsp; &nbsp; Über DAML+OIL zu OWL</td></tr>
+<tr align="right"><td></td><td align="center"><a href="#V3">3.</a></td><td align="left"> &nbsp; &nbsp; Einzelne OWL-Beispiele</td></tr>
+<tr align="right"><td><a href="#VI">VI.</a></td><td></td><td align="left"> Zusammenfassung</td></tr>
+</tbody></table>
+</td><td width="20%" valign="TOP" align="RIGHT"></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="I"></a>
+I.  Die Idee des Semantic Web
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Nach Berners-Lees ursprünglicher Idee vom Semantic Web sollen, wie schon
+ im ersten Teil erläutert, Computerprogramme (die sog. Maschinen) eine 
+wichtigere Rolle im bestehenden Web übernehmen als bisher. Sie sollen 
+nicht mehr nur eine passive Infrastruktur für die Dokumentenverarbeitung
+ des Menschen bieten, wie derzeit im WWW, sondern stärker ins Geschehen 
+einbezogen, ihre analytischen Fähigkeiten besser genutzt werden, um in 
+der alltäglichen Informationsverarbeitung möglichst viele Aufgaben aktiv
+ übernehmen zu können.<a class="sdfootnoteanc" name="sdfootnote2anc" href="#sdfootnote2sym">(2)</a>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0002">Abs. 2</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Da das Semantic Web auf dem WWW aufsetzt, sollen die dort bereits 
+veröffentlichten Informationen die Grundlage dieser 
+Informationsverarbeitung sein. Bereits im vorigen Teil des Aufsatzes 
+wurde beschrieben, wo die wesentlichen Unterschiede zwischen 
+menschlicher und maschineller Informationsverarbeitung liegen: Während 
+Menschen Informationen (z.B. einem Textdokument) ihren Bedeutungsgehalt 
+(die Semantik) selbstständig entnehmen können, können Maschinen das 
+nicht, jedenfalls nicht "von sich aus". Um ihnen diese Fähigkeit zu 
+geben, gibt es prinzipiell zwei Ansätze: Entweder man stattet die 
+Maschinen mit Fähigkeiten der künstlichen Intelligenz aus, die sie in 
+die Lage versetzen, den Bedeutungsgehalt von Informationen zu erkennen.<a class="sdfootnoteanc" name="sdfootnote3anc" href="#sdfootnote3sym">(3)</a>
+ Oder man beschreibt die Informationen mit Hilfe sog. Metainformationen 
+(im maschinellen Kontext als Metadaten bezeichnet) so, dass sie den 
+Maschinen diese Interpretation erleichtern bzw. abnehmen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0003">Abs. 3</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Das Ziel des Semantic Web soll vor allem auf dem letzteren, dem 
+"Metadaten-Weg" erreicht werden: Die im Web vorhandenen Informationen 
+werden möglichst umfassend durch Metadaten beschrieben. Diese Metadaten 
+sind so definiert, formuliert und strukturiert, dass sie von Maschinen 
+nicht nur korrekt interpretiert, sondern auch tatsächlich "verstanden" 
+werden können. "Verständnis" heißt hier, dass Maschinen nicht nur in die
+ Lage versetzt werden, die Bedeutung von (Meta-)Daten zu erfassen, 
+sondern auch, aus vorhandenen Daten Schlüsse zu ziehen und auf diese 
+Weise neue Informationen zu erzeugen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0004">Abs. 4</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Dieser theoretische Hintergrund des Semantic Web, der sich im Detail 
+u.a. an Modellen aus der Semiotik, der Wissensrepräsentation, der 
+Graphentheorie der Informatik sowie der Logik orientiert,<a class="sdfootnoteanc" name="sdfootnote4anc" href="#sdfootnote4sym">(4)</a>
+ mag zunächst etwas schwer nachvollziehbar sein, er ist jedoch kein 
+Selbstzweck. Er dient dazu, ein solides theoretisches Fundament 
+bereitzustellen, auf dem das Semantic Web praktisch umgesetzt werden 
+kann.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0005">Abs. 5</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="II"></a>
+II. Umsetzung und Datenmodell
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Um seine Idee vom Semantic Web in die Tat umsetzen zu können, musste 
+sich Berners-Lee zunächst die Frage nach dem zu Grunde liegenden 
+Datenmodell stellen. Er musste also ein Prinzip entwickeln, nach dem die
+ zu beschreibenden (Online-)Informationen und ihre Beschreibungen 
+(Metadaten) zu formulieren und zu strukturieren sind. Man könnte nun - 
+gerade, nachdem man den ersten Teil dieser Arbeit gelesen hat - daran 
+denken, von vornherein das Strukturmodell von XML als Ausgangspunkt für 
+ein solches Datenmodell zu verwenden. Wegen seiner vorgegebenen strikten
+ Baumstrukturen eignet sich XML zwar sehr gut zur Repräsentation von 
+Dokumentinhalten, weniger jedoch zur Repräsentation allgemeinen Wissens 
+bzw. allgemeiner Daten. Deshalb entfernte sich Berners-Lee zunächst von 
+XML und ging statt dessen vom Grundsatz aus, dass ein möglichst 
+universell einsetzbares Datenmodell selbst so allgemein wie möglich 
+gehalten sein muss.<a class="sdfootnoteanc" name="sdfootnote5anc" href="#sdfootnote5sym">(5)</a> Als grundlegendes Datenmodell des Semantic Web entwarf er das <b>Resource Description Framework (RDF)</b>.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0006">Abs. 6</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Wie der Name schon sagt, kann man mit RDF nichts anderes tun, als 
+Gegenstände, sog. Ressourcen zu beschreiben. Dies geschieht, indem man 
+Aussagen über sie aufstellt. Diese Aussagen bestehen jeweils aus drei 
+Elementen (ein sog. <i>triple</i>), die man als Subjekt, Prädikat und Objekt bezeichnen kann. Das Subjekt ist jeweils die zu beschreibende Ressource (<i>resource</i>, oder auch: Gegenstand). Das Prädikat bezeichnet eine Eigenschaft dieser Ressource (<i>property</i>), und das Objekt den Wert dieser Eigenschaft (<i>property value</i>).
+ Da Objekte wiederum Ressourcen sein können, die einer näheren 
+Beschreibung bedürfen, und eine Ressourcen natürlich verschiedene 
+Eigenschaften (Prädikate) haben kann, lassen sich die Aussagen 
+miteinander verknüpfen und in einem Graphenmodell zusammenfassen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0007">Abs. 7</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Dass sich mit RDF Ressourcen, also Informationen beschreiben und 
+verknüpfen lassen, reicht für ein tatsächlich semantisches Web alleine 
+jedoch nicht aus. Einer Ressource kann alleine durch die Beschreibung 
+ihrer Eigenschaften nur ein relativ geringer Bedeutungsgehalt verliehen 
+werden; dies gelingt eher durch die Beschreibung ihres Verhältnis zu 
+anderen Ressourcen. Es muss also möglich sein, Ressourcen und ihre 
+Eigenschaften zu klassifizieren, sie also nicht nur mit anderen 
+Ressourcen zu verknüpfen, sondern diese sinngemäß zueinander in 
+Beziehung zu setzen und diese Beziehungen auch möglichst genau zu 
+beschreiben. Hierfür reicht RDF alleine nicht aus. In die Bresche 
+springt zunächst <b>RDF Schema (RDFS</b><b><a class="sdfootnoteanc" name="sdfootnote6anc" href="#sdfootnote6sym">(6)</a></b><b>)</b>,
+ ein Standard, durch den Ressourcenklassen und ihre typischen 
+Eigenschaften definiert und somit Ressourcen hierarchisch zu sog. 
+Taxonomien gegliedert werden können.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0008">Abs. 8</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Diese Taxonomien sind eine Art "kleiner Bruder" der Ontologien. 
+Ontologien ermöglichen noch genauere Beschreibungen der Beziehungen von 
+Ressourcen und ihren Eigenschaften zueinander. Im Semantic Web lassen 
+sie sich mit Hilfe der sog. Ontologiesprachen definieren, unter denen 
+sich zuletzt die vom W3C unterstützte <b>Web Ontology Language (OWL</b><b><a class="sdfootnoteanc" name="sdfootnote7anc" href="#sdfootnote7sym">(7)</a></b><b>)</b>
+ als Standard durchgesetzt hat. RDF, RDFS und OWL werden in den 
+folgenden Absätzen (in ihren Grundlagen) näher beschrieben, jeweils mit 
+Beispielen aus der Perspektive des juristischen Einsatzes.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0009">Abs. 9</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Diese Datenstandards versehen das Web mit Daten, die nach Berners-Lee eine wohldefinierte Bedeutung (<i>"well-defined meaning"</i>)
+ besitzen. Um mit Hilfe dieser Daten Maschinen in die Lage zu versetzen,
+ besser untereinander und mit Menschen im Web zu kooperieren, sind 
+zusätzliche Daten- und Programmmodelle erforderlich, die leider noch 
+nicht zur Gänze entwickelt, geschweige denn etabliert sind. Hierzu 
+gehört z.B. die Möglichkeit, aus bestehenden RDF-Daten bzw. -Aussagen 
+durch logische Regeln und Schlüsse neue Aussagen herzuleiten. Neben 
+Datenstandards zur Beschreibung dieser Regeln sind zusätzlich sog. 
+Folgerungs- oder Inferenzmaschinen (<i>inference engines</i>) notwendig, deren Aufgabe es ist, diese Schlüsse zu ziehen und daraus die "neuen" Daten zu ermitteln. Das Gegenstück zu dieser <b>Logikebene</b> (<i>logic layer</i>) des Semantic Web ist die <b>Beweisebene</b> (<i>proof layer</i>). Sie soll dazu dienen, nach den gleichen logischen Regeln die Wahrheit bestimmter RDF-Aussagen prüfen zu können. Auf der <b>Vertrauensebene</b> (<i>trust layer</i>)
+ soll schließlich sicher gestellt werden, dass bei der Bearbeitung nur 
+Aussagen aus vertrauenswürdigen Quellen berücksichtigt werden. Dies ist 
+nötig, da das RDF-Datenmodell von sich aus offen und dezentral ist, d.h.
+ jedermann kann grundsätzlich beliebige Aussagen über beliebige 
+Ressourcen treffen, unabhängig davon, ob sie wahr oder frei von 
+Widersprüchen zu anderen Aussagen sind. Die Logik-, Vertrauens- und 
+Beweisebene des Semantic Web werden im nächsten Teil des Aufsatzes 
+ausführlicher vorgestellt.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0010">Abs. 10</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Die einzelnen Ebenen des Semantic Web lassen sich übersichtlich in einem
+ graphischen Modell darstellen, das "Semantic Web Tower" oder auch 
+"Semantic Web Layer Cake" genannt wird:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0011">Abs. 11</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+<img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/20050065-1.png">
+<b>Abbildung 1:</b> Das Layer-Modell des Semantic Web<a class="sdfootnoteanc" name="sdfootnote8anc" href="#sdfootnote8sym">(8)</a>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0012">Abs. 12</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Diese Grafik wirft die Frage auf, weshalb gerade die Standards Unicode, 
+URI und XML das eigentliche Fundament des "layer cake" bilden.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0013">Abs. 13</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+<b>Unicode</b><b><a class="sdfootnoteanc" name="sdfootnote9anc" href="#sdfootnote9sym">(9)</a></b>
+ ist die Sprache, die im Semantic Web grundsätzlich "gesprochen" werden 
+soll. Es ist ein internationaler Zeichensatz für den Einsatz im WWW, der
+ andere Zeichensätze wie z.B. den lateinischen, arabischen, kyrillischen
+ oder japanischen, in sich vereint. Die Verwendung von Unicode 
+ermöglicht daher eine effektive internationale Online-Kommunikation als 
+Grundvoraussetzung eines funktionsfähigen Semantic Web.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0014">Abs. 14</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Schon an der Verwendung von Unicode zeigt sich, dass sich das Semantic 
+Web an den bereits geltenden Web-Standards orientiert, um das Web nicht 
+komplett neu erfinden zu müssen. <b>URI</b> (Uniform Ressource Identifier)<a class="sdfootnoteanc" name="sdfootnote10anc" href="#sdfootnote10sym">(10)</a>
+ ist bereits jetzt der geltende Standard, um Online-Ressourcen zu 
+adressieren. Es handelt sich um eine allgemeinere Form des URL (Uniform 
+Ressource Locator)<a class="sdfootnoteanc" name="sdfootnote11anc" href="#sdfootnote11sym">(11)</a>, des Standards für die Bezeichnung von Web-Adressen (z.B. <u><a href="http://www.jurpc.de/">http://www.jurpc.de</a></u>).
+ Ein maßgebliches Prinzip des Semantic Web ist, dass alles, was im Web 
+über eine URI adressierbar ist, sich auch im Semantic Web beschreiben 
+oder zur Beschreibung heranziehen lässt.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0015">Abs. 15</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Bereits im vorigen Teil dieser Arbeit wurde gezeigt, weshalb <b>XML</b> 
+derzeit der bevorzugte Standard zur maschinellen Verarbeitung und zur 
+Speicherung von Online-Dokumenten ist. Wenngleich das RDF-Datenmodell an
+ sich nichts mit XML zu tun hat, spielt XML eine entscheidende Rolle bei
+ der maschinellen Verarbeitung und Speicherung von RDF- und 
+Ontologiedaten.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0016">Abs. 16</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="III"></a>
+III. Resource Description Framework (RDF)
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="III1"></a>
+1. RDF als Datenmodell
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Im dargestellten Layer-Modell ist RDF nach Unicode, URI und XML, die 
+schon vorher eingesetzt wurden, der erste "neue" Standard und damit wohl
+ die eigentliche Grundlage des Semantic Web. Wie bereits angedeutet, ist
+ RDF ein sehr offenes Datenmodell, das zunächst nichts anderes erlaubt, 
+als so genannte Ressourcen zu beschreiben. Diese Beschreibung erfolgt in
+ Form von Aussagen, die als sog. <i>triples</i> formuliert sein und demnach aus drei Elementen bestehen müssen, nämlich aus 
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0017">Abs. 17</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+<ol> <li>
+einer <b>Ressource</b>, die zu beschreiben ist (<b>Subjekt</b> oder eben auch <i>resource</i>). </li><li>
+einer <b>Eigenschaft</b> der Ressource (<b>Prädikat</b> oder auch <i>property</i>). </li><li>
+dem <b>Wert</b> dieser Eigenschaft (<b>Objekt</b> oder auch <i>property value</i>). </li></ol>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0018">Abs. 18</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+RDF-Aussagen sind also eng an Aussagesätze des natürlichen 
+Sprachgebrauchs angelehnt. Mit dem Satz "Ich heiße Jochen Notholt." wird
+ die Ressource "Ich" beschrieben (das Subjekt). Diese Ressource hat 
+einen Namen ("heiße", das Prädikat), das ist also eine ihrer 
+Eigenschaften. Der Name lautet "Jochen Notholt", das ist also der Wert 
+des Namens als Eigenschaft, oder auch: das Objekt.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0019">Abs. 19</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+RDF-Aussagen lassen sich zunächst graphisch repräsentieren, indem man 
+Subjekt und Objekt als sog. Knoten durch das Prädikat als Pfeil (sog. 
+Kante) verbindet. Für die obige Aussage sieht das so aus:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0020">Abs. 20</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+<img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/20050065-2.png">
+<b>Abbildung 2:</b> Ein einfacher RDF-Graph.<a class="sdfootnoteanc" name="sdfootnote12anc" href="#sdfootnote12sym">(12)</a>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0021">Abs. 21</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Hieran fällt zunächst auf, dass das Subjekt und Prädikat der obigen 
+Aussage als URIs notiert sind. Grundsätzlich werden in RDF alle Elemente
+ von Aussagen durch URIs repräsentiert - nur Objekte können auch als 
+sog. Literale notiert sein (wie hier "Jochen Notholt" als Zeichenkette).
+ Die Notation als URI unterscheidet RDF-Aussagen von Aussagen unseres 
+Sprachgebrauchs. Für Maschinen, und für die ist das Semantic Web 
+schließlich konzipiert, sind URIs leichter zu verarbeiten als unsere 
+natürliche Sprache, da sich Gegenstände damit eindeutig identifizieren 
+lassen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0022">Abs. 22</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+So dient hier eine persönliche Homepage des Autors (<tt>http://jurawiki.de/JochenNotholt</tt>) dazu, diesen als URI zu repräsentieren. Sie können auch anders formuliert sein, z.B. als Adresse einer Mailbox (<tt>mailto:beispiel@mailbox.de</tt>).
+ Es muss sich auch nicht um den Inhalt einer Webseite handeln, es geht 
+nur um die Eindeutigkeit der Bezeichnung. So hat sich in 
+Semantic-Web-Kreisen mittlerweile herumgesprochen, dass das 
+FOAF-RDF-Vokabular ("Vokabular" ist hier eine Sammlung vor allem von 
+RDF-Prädikaten) gebräuchlich ist, um in RDF Personen zu beschreiben.<a class="sdfootnoteanc" name="sdfootnote13anc" href="#sdfootnote13sym">(13)</a>
+ Also wird auch hier der name-Bezeichner aus dem FOAF-Vokabular als 
+Prädikat benutzt, um zu beschreiben, in welcher Beziehung Subjekt und 
+Objekt zueinander stehen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0023">Abs. 23</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Wenn Objekte ebenfalls als URIs dargestellt werden können (und nur 
+dann), können Sie ihrerseits auch Subjekt sein. In diesem Fall lassen 
+sich identische Elemente (also solche mit gleicher URI) im Graphenmodell
+ miteinander verknüpfen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0024">Abs. 24</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Das Urteil des Bundesverfassungsgericht aus dem ersten Teil dieser 
+Arbeit ließe sich in RDF auf diese Weise zum Beispiel folgendermaßen 
+darstellen:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0025">Abs. 25</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+<img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/20050065-3.png">
+<b>Abbildung 3:</b> Der Beispiels-Graph in RDF<a class="sdfootnoteanc" name="sdfootnote14anc" href="#sdfootnote14sym">(14)</a>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0026">Abs. 26</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+An diesem Beispiel fällt zunächst auf, dass im Gegensatz zum obigen 
+Graphen die Prädikatsbezeichnungen durch die vorangestellten Zusätze <tt>ro:</tt> und <tt>foaf:</tt>
+ abgekürzt wurden. Diese Zusätze sind sog. Namespaces (Namensräume). 
+Namespaces werden vor allem in XML benutzt; im Prinzip handelt es sich 
+um Teile von URIs, mit deren Hilfe man gesamte URIs abgekürzt 
+wiedergeben kann. Wenn man z.B. den Namensraum <tt>ro:</tt> mit der URI <tt>http://www.rechtsontologie.de/elemente#</tt>
+ bezeichnet (warum hier von einer "Rechtsontologie" die Rede ist, wird 
+im Abschnitt zur sog. Ontologiesprache OWL deutlicher werden), kann 
+statt dieser Teil-URI die Abkürzung <tt>ro:</tt> vorangestellt werden.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0027">Abs. 27</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Im Zentrum des RDF-Modells steht das von RA Meier veröffentlichte 
+(XML-)Dokument, das den Text der vorher beschriebenen Entscheidung des 
+Bundesverfassungsgerichts zur Geldwäsche bei Strafverteidigern enthält. 
+Zum einen wird in RDF ausgedrückt, dass RA Meier das Dokument 
+veröffentlicht hat (<tt>ro:veroeffentlicht_von</tt>). Wie der Autor 
+dieses Beitrags nach Abbildung 2 hat auch RA Meier eine Seite im Web 
+veröffentlicht, die ein kurzes Portrait seiner Person enthält und die 
+ihm daher eindeutig zugeordnet ist. Diese Web-Adresse als URI ist daher 
+besser geeignet, ihn im Web eindeutig zu identifizieren als die bloße 
+Angabe seines Namens als Zeichenkette (Herr Meier dürfte in Deutschland 
+einige Namensvettern haben). Diesen kann man, wie im obigen Beispiel, 
+benutzen, um die durch die genannte URI repräsentierte Person näher zu 
+beschreiben. In RDF ist es also ein großer Unterschied, ob man nur den 
+Namen einer Person mit einer Zeichenkette belegt oder versucht, die 
+ganze Person (als Ressource) auf diese Weise zu beschreiben.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0028">Abs. 28</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Außerdem werden im Beispiels-Graph weitere Aussagen über die 
+veröffentlichte Gerichtsentscheidung getroffen. So wird das 
+Bundesverfassungsgericht als entscheidendes Gericht gekennzeichnet (<tt>ro:entschieden_von</tt>)
+ und durch Angabe der URI http://www.bundesverfassungsgericht.de 
+eindeutig identifiziert. Der Beschwerdegegenstand der 
+Verfassungsbeschwerde, nämlich die genannten drei 
+Gerichtsentscheidungen, werden in gleicher Art und Weise nicht bloß als 
+Dokument verlinkt, sondern sie werden durch Angabe des Prädikats <tt>ro:ist_Beschwerdegegenstand_von</tt> zur genannten Entscheidung in eine semantische Beziehung gesetzt.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0029">Abs. 29</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="III2"></a>
+2. RDF-Notationen: RDF/XML und N3
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+RDF wird vielfach als "auf XML aufbauendes" Datenmodell bezeichnet.<a class="sdfootnoteanc" name="sdfootnote15anc" href="#sdfootnote15sym">(15)</a> Darüber kann man zumindest diskutieren, denn das RDF-Datenmodell an sich, also die Art und Weise, Ressourcen anhand von <i>triples</i>
+ zu beschreiben und in einem Graph zu modellieren, hat mit XML nichts zu
+ tun. Erst, wenn es darum geht, RDF-Daten (z.B. auf einem Web-Server) zu
+ speichern und maschinell zu verarbeiten, kommt XML ins Spiel. Denn wenn
+ man mit der Metasprache XML beliebige Markup-Sprachen definieren kann, 
+dann eben auch eine zur Repräsentation des RDF-Datenmodells. So ist die 
+wohl am weitesten verbreitete Form, RDF schriftlich festzuhalten, die so
+ genannte <b>RDF/XML</b>-Syntax. Das obige Beispiel sieht in RDF/XML wie folgt aus:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0030">Abs. 30</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td style="background-color: dcdcdc; " width="70%">
+<pre>&lt;?xml version="1.0"?&gt;
+&lt;rdf:RDF
+    xmlns:ro="http://www.rechtsontologie.de/elemente#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;
+    &lt;rdf:Description rdf:about="http://www.ra-
+meier.de/person/meier.xml"&gt;
+    &lt;foaf:name&gt;Michael Meier&lt;/foaf:name&gt;
+    &lt;/rdf:Description&gt;
+    &lt;rdf:Description rdf:about="http://www.ra-
+meier.de/entscheidungen/bverfg_2004-03-30_2-B vR-1520-01.xml"&gt;
+    &lt;ro:hat_als_Beschwerdegegenstand 
+rdf:resource="http://www.lg-frankfurt-
+main.de/entscheidungen/2003_01_1 5_5-4_KLs_74-92.html"/&gt;
+    &lt;ro:hat_als_Beschwerdegegenstand
+rdf:resource="http://www.bgh.de/entscheidungen/2001_07_04_2_St
+R_513-00 .html"/&gt;
+    &lt;ro:hat_als_Beschwerdegegenstand 
+rdf:resource="http://www.lg-frankfurt-
+main.de/entscheidungen/2000_05_0 4_5-17_KLs_92.html"/&gt;
+    &lt;ro:veroeffentlicht_von rdf:resource="http://www.ra-
+meier.de/person/meier.xml"/&gt;&gt;
+    &lt;ro:entschieden_von 
+rdf:resource="http://www.bundesverfassungsgericht.de"/&gt;
+    &lt;/rdf:Description&gt;
+
+&lt;/rdf:RDF&gt;
+</pre>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0031">Abs. 31</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Im Gegensatz zur obigen graphischen Beschreibung des Beispiels wird hier
+ zunächst die Funktionsweise der (XML-)Namespaces besser deutlich. Sie 
+werden hier zu Beginn des Dokuments definiert (xmlns:...).<a class="sdfootnoteanc" name="sdfootnote16anc" href="#sdfootnote16sym">(16)</a>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0032">Abs. 32</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+In Form der RDF/XML-Notation lassen sich RDF-Daten neben der Speicherung
+ in gesonderten Dateien auch in HTML-Dateien einfügen und auf diese 
+Weise im Web verfügbar machen.<a class="sdfootnoteanc" name="sdfootnote17anc" href="#sdfootnote17sym">(17)</a>
+ Ein großer Vorteil der XML-basierten Syntax liegt natürlich in der im 
+vorigen Teil des Aufsatzes betonten Eignung zur maschinellen 
+Verarbeitung. Für den menschlichen Bearbeiter und Betrachter dagegen ist
+ die RDF/XML-Notation bisweilen schwer lesbar. Eine gerade für Menschen 
+besser lesbare Alternative der RDF-Notation ist <b>Notation 3 (N3)</b>. N3 verzichtet auf die XML-typischen Element- und Attributbezeichnungen und beschränkt sich auf die sukzessive Notation der <i>triple</i>-Elemente in Tag-Klammern. Das obige Kurzbeispiel wird in N3 wie folgt notiert<a class="sdfootnoteanc" name="sdfootnote18anc" href="#sdfootnote18sym">(18)</a>:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0033">Abs. 33</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td style="background-color: dcdcdc; " width="70%">
+<pre>@prefix foaf: <http: xmlns.com="" foaf="" 0.1="">.
+<http: jurawiki.de="" jochennotholt=""> <foaf:name> "Jochen Notholt".
+</foaf:name></http:></http:></pre>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0034">Abs. 34</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="III3"></a>
+3. Einige spezielle RDF-Techniken
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="u1"></a>
+a) Unbekannte Ressourcen (<i>blank nodes</i>) 
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Am Beispiel der von RA Meier veröffentlichten Gerichtsentscheidung 
+lassen sich noch einige kleinere Besonderheiten von RDF verdeutlichen. 
+Eine davon sind die so genannten unbenannten (oder auch einfach: leeren)
+ Ressourcen (<i>blank nodes</i>). In unserem Beispiel könnte man Herrn 
+Meier auch beschreiben, ohne seine private Homepage als Referenz-URI zu 
+nennen. Als Graph sähe das dann so aus:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0035">Abs. 35</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+<img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/20050065-4.png">
+<b>Abbildung 4:</b> Ein Ausschnitt des obigen Beispiels-Graphen mit 
+erweiterter Beschreibung des RA Meier als Ressource unter Verwendung 
+eines "blank node"
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0036">Abs. 36</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Wir können also in RDF Aussagen über Ressourcen treffen, die wir nicht 
+bzw. nur über weitere strukturierte Ressourcen benennen können oder 
+wollen. Das klingt seltsam, entspricht aber unserem natürlichen 
+Sprachgebrauch. Hier würden wir sagen: "Das hier beschriebene Urteil hat
+ jemand veröffentlicht, der Michael Meier heißt und Rechtsanwalt ist."<a class="sdfootnoteanc" name="sdfootnote19anc" href="#sdfootnote19sym">(19)</a>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0037">Abs. 37</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="u1"></a>
+b) Zitierung von Aussagen (<i>reification</i>)
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Als Tim Berners-Lee das Grundmodell des Semantic Web beschrieb, nannte 
+er neben der Möglichkeit, Aussagen zu treffen, als weiteres 
+grundlegendes Prinzip die Möglichkeit, diese Aussagen auch zu zitieren. 
+Zitieren heißt hier, Aussagen über andere Aussagen zu treffen.<a class="sdfootnoteanc" name="sdfootnote20anc" href="#sdfootnote20sym">(20)</a> Das geht auch in RDF und wird <i>reification</i>
+ (deutsch: Vergegenständlichung) genannt. Das Prinzip müsste sich für 
+Juristen besonders gut verdeutlichen lassen, schließlich spielen 
+Zitierungen in der juristischen Wissenschaft und Praxis eine besonders 
+große Rolle.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0038">Abs. 38</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Nehmen wir also an, RA Meier hat das genannte Urteil des 
+Bundesverfassungsgerichts nicht nur veröffentlicht, sondern - in einem 
+gesonderten Dokument - auch zu dieser Entscheidung Stellung genommen. In
+ diesem Dokument äußert er seine Zustimmung zur Entscheidung des 
+Gerichts. In RDF könnte man diese Zustimmung als Aussage beschreiben: RA
+ Meier (Subjekt) äußert sich zustimmend (Prädikat) zur Entscheidung des 
+BVerfG (Objekt). Diese Aussage von RA Meier kann nun seinerseits 
+Gegenstand einer juristischen Diskussion sein, z.B. dann, wenn RA Müller
+ nicht nur der Entscheidung des BVerfG zustimmt, sondern auch 
+seinerseits der Anmerkung von RA Meier. Möchte man in RDF ausdrücken, 
+dass RA Müller der Aussage von RA Meier über die Entscheidung des BVerfG
+ zustimmt, könnte man dies in Form der <i>reification</i> formulieren. Als Graph könnte das so aussehen:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0039">Abs. 39</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+<img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/20050065-5.png">
+<b>Abbildung 5:</b> Der farbig unterlegte Teil des Graphen enthält die Elemente derjenigen Aussage, auf die im Wege der <i>reification</i> Bezug genommen wird.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0040">Abs. 40</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Dieser Graph ist auf Anhieb nicht ganz einfach zu verstehen, weil er 
+zwei Besonderheiten enthält. Die erste ist, dass der Graph einen <i>blank node</i>
+ (s.o.) enthält. Dieser repräsentiert die gesamte Aussage des RA Meier. 
+Er könnte auch über eine (eigens zu vergebene) URI repräsentiert werden,
+ darauf wurde hier aber der Einfachheit halber verzichtet. Die weitere 
+Besonderheit liegt in den Objekten des <i>blank node</i>: Er enthält zunächst einen Hinweis darauf, dass er keine gewöhnliche Ressource ist, sondern der Klasse (<tt>rdf:type</tt>) <tt>rdf:Statement</tt> angehört, also seinerseits eine RDF-Aussage "bündelt". Elemente dieses "Bündels" sind dementsprechend das Subjekt (<tt>rdf:subject</tt>), das Prädikat (<tt>rdf:predicate</tt>) und das Objekt (<tt>rdf:object</tt>) der Aussage.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0041">Abs. 41</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Durch seine Offenheit und Abstraktheit ist das RDF-Datenmodell zwar auf 
+Anhieb vielleicht nicht ganz leicht verständlich. Dafür bietet es eine 
+extreme Flexibilität im Datenentwurf, die man mit eigenen 
+XML-Dokumententwürfen so kaum erreichen kann. Über die reine 
+Dokumentbeschreibung hinaus lassen sich Gegenstände und ganze 
+Sachverhalte in ähnlicher Art und Weise formulieren, wie wir dies auch 
+im zwischenmenschlichen Umgang täten. So ist RDF ein wegweisender 
+Schritt, Metadaten die Bedeutung zu verleihen, die sie im "Web der 
+Zukunft" verdienen. Dass RDF selbst in der N3-Notation für Menschen 
+nicht leicht zu lesen ist, ist im Ergebnis verzeihlich, da, anders als 
+in XML, nicht primär wir Menschen sie verstehen müssen, sondern vor 
+allem die sie verarbeitenden Maschinen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0042">Abs. 42</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="IV"></a>
+IV. RDF Schema
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Neben der beschriebenen Offenheit des RDF-Datenmodells soll eine weitere
+ Stärke des Semantic Web darin liegen, dass zu den beschreibbaren (und 
+damit auch maschinell auswertbaren) Eigenschaften von Ressourcen auch 
+die Beziehungen zu anderen Ressourcen gehören sollen. Um diese 
+Beziehungen im Semantic Web auszudrücken, könnte man daran denken, jeder
+ einzelnen Ressource für sich ihre Beziehungen zu anderen Ressourcen als
+ RDF-Triple zuzuweisen. Das ist jedoch gerade dann gleichermaßen unnötig
+ wie ineffizient, wenn wir es mit vielen gleichartigen Ressourcen zu tun
+ haben. In diesem Fall pflegen wir den Umgang mit Gegenständen zu 
+erleichtern, indem wir sie "in Schubladen stecken" und nur diese 
+Schubladen miteinander vergleichen. Was man braucht, sind also diese 
+"Schubladen" (bzw. der Schrank, in dem sie stecken), also eine 
+Klassifizierung gleichartiger Ressourcen. Auf diesem Prinzip beruht als 
+Erweiterung von RDF der Standard RDF Schema (RDFS).
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0043">Abs. 43</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Der Ansatz von RDFS besteht darin, einzelne RDF-Ressourcen zu Klassen 
+zusammenzufassen, diese mit anderen Klassen in Beziehung zu setzen und 
+schließlich einzelne Ressourcen als Erscheinungsformen (sog. Instanzen) 
+ihrer Ausgangsklassen zu beschreiben. Dies erinnert im Ansatz an das 
+Prinzip der XML-Schematisierung. Auch hier werden Strukturen 
+("Schubladen") definiert, um Einzeldokumente gleicher Art zu 
+vereinheitlichen. Der grundlegende Unterschied liegt jedoch darin, dass 
+DTDs und XML-Schemata bloß die Einhaltung eines Nachrichten- bzw. 
+Dateiformats auf der syntaktischen Zeichenebene bewirken soll, während 
+RDFS das Ziel hat, Web-Ressourcen tatsächlich inhaltlich zueinander in 
+Beziehung zu setzen und damit auf semantischer Ebene einzuordnen. Die 
+Schematisierung geht hier also erheblich weiter als in 
+"nicht-semantischen" XML-Sprachen.<a class="sdfootnoteanc" name="sdfootnote21anc" href="#sdfootnote21sym">(21)</a>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0044">Abs. 44</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+In RDFS angelegte Klassen lassen sich zunächst hierarchisch gliedern. 
+Hierzu werden die Beziehungen der Ressorucen zueinander wie im 
+RDF-Datenmodell als <i>triples</i> beschrieben. Um die Entscheidung des 
+BVerfG aus dem obigen Beispiel in eine solche Klassenhierarchie 
+einzubetten, könnte man sie als einer Klasse "Gerichtsentscheidung" 
+zugehörig ansehen. Diese Klasse könnte man ihrerseits als eine 
+Unterklasse einer allgemeineren Klasse juristischer Dokumente namens 
+"Rechtsquelle" ansehen. In der N3-Notation ließe sich das wie hier 
+beschreiben:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0045">Abs. 45</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td style="background-color: dcdcdc; " width="70%">
+<pre>@prefix ro: &lt;http://www.rechtsontologie.de/elemente#&gt;;
+rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
+   
+&lt;ro:Rechtsquelle&gt; &lt;rdfs:subClassOf&gt; &lt;rdfs:Resource&gt;.
+&lt;ro:Gerichtsentscheidung&gt; &lt;rdfs:subClassOf&gt; &lt;ro:Rechtsquelle&gt;.
+</pre>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0046">Abs. 46</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Das Prädikat <tt>rdfs:subClassOf</tt> aus dem RDFS-Vokabular drückt also aus, dass das Subjekt des <i>triples</i> eine Unterklasse des Objekts ist (dabei ist <tt>rdfs:Resource</tt> eine allgemeine "Superklasse" ohne besondere Eigenschaften). Andere Unterklassen von <tt>ro:Rechtsquelle</tt> könnten z.B. <tt>ro:Gesetz</tt> oder <tt>ro:Literatur</tt>
+ sein. Existiert nun eine Ressource, die eine Gerichtsentscheidung 
+repräsentiert, wie in unserem Beispiel, lässt sich dies durch eine 
+einfache RDF-Aussage zum Ausdruck bringen (wiederum in N3):
+<http: www.ra-meier.de="" entscheidungen="" bverfg_2004-03-30_2-bvr-1520-01="" .xml=""> <rdf:type> <ro:gerichtsentscheidung>.
+</ro:gerichtsentscheidung></rdf:type></http:></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0047">Abs. 47</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Die Eigenschaft rdf:type heißt also frei übersetzt "gehört zur Klasse 
+...", oder auch, technischer formuliert (s.o.): "ist eine Instanz der 
+Klasse ...".
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0048">Abs. 48</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Wie Ressourcenklassen lassen sich auch Eigenschaften (<i>properties</i>) definieren und klassifizieren. Im Zusammenhang mit der Klasse <tt>ro:Gerichtsentscheidung</tt> bietet es sich z.B. an, eine Eigenschaft zu definieren, die beschreibt, welches Gericht die Entscheidung erlassen hat:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0049">Abs. 49</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td style="background-color: dcdcdc; " width="70%">
+&lt;ro:entschieden_von&gt; &lt;rdf:type&gt; &lt;rdf:Property&gt;.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0050">Abs. 50</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Diese Definition ist zunächst nicht speziell der Klasse <tt>ro:Gerichtsentscheidung</tt> zugeordnet. In RDFS kann diese Eigenschaft nun mit Grenzwerten (<i>constraints</i>) versehen werden. Schließlich möchten wir, dass nur Klassen vom Typ <tt>ro:Gerichtsentscheidung</tt> die Eigenschaft <tt>ro:entschieden_von</tt> haben sollen. Wert der Eigenschaft soll nur eine Klasse des Typs <tt>ro:Gericht</tt> sein. Die Definition hierzu muss demnach so aussehen:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0051">Abs. 51</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td style="background-color: dcdcdc; " width="70%">
+&lt;ro:entschieden_von&gt; &lt;rdfs:domain&gt; &lt;ro:Gerichtsentscheidung&gt;.
+&lt;ro:entschieden_von&gt; &lt;rdfs:range&gt; &lt;ro:Gericht&gt;.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0052">Abs. 52</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Nicht nur hinsichtlich der Klassen sieht RDFS hierarchische Ordnungen 
+vor, sondern auch bezüglich ihrer Eigenschaften. Nehmen wir z.B. an, RA 
+Meier ist Instanz einer Klasse <tt>ro:Rechtsanwalt</tt>, welche eine Unterklasse von <tt>ro:Volljurist</tt> und diese wiederum eine Unterklasse von <tt>ro:Jurist</tt>
+ ist. Nehmen wir außerdem an, RA Meier hat einen Sozius in seiner 
+Kanzlei, Herrn Rechtsanwalt Müller. Möchte man in RDF zum Ausdruck 
+bringen, dass ein Jurist mit einem anderen Juristen zusammenarbeitet, 
+könnte man zunächst zur Klase <tt>ro:Jurist</tt> eine Eigenschaft <tt>ro:arbeitet_zusammen_mit</tt>
+ definieren. Nun arbeitet RA Müller aber nicht bloß mit RA Meier 
+zusammen, er ist etwas spezielleres, nämlich sein Sozius. Daher bietet 
+es sich an, die Eigenschaft <tt>ro:ist_Sozius_von</tt> als Untereigenschaft (<i>sub-property</i>) von <tt>ro:arbeitet_zusammen_mit</tt> zu definieren. Das könnte so aussehen:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0053">Abs. 53</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td style="background-color: dcdcdc; " width="70%">
+<pre>&lt;ro:Jurist&gt; &lt;rdfs:subClassOf&gt; &lt;foaf:Person&gt;
+&lt;ro:Volljurist&gt; &lt;rdfs:subClassOf&gt; &lt;ro:Jurist&gt;
+&lt;ro:Rechtsanwalt&gt; &lt;rdfs:subClassOf&gt; &lt;ro:Volljurist&gt;
+   
+&lt;ro:arbeitet_zusammen_mit&gt; &lt;rdf:type&gt; &lt;rdf:Property&gt;
+&lt;rdfs:domain&gt; &lt;ro:Jurist&gt;.
+   
+&lt;ro:ist_Sozius_von&gt;
+&lt;rdfs:subPropertyOf&gt; &lt;ro:arbeitet_zusammen_mit&gt;
+</pre>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0054">Abs. 54</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="V"></a>
+V. OWL als Ontologiesprache
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="V1"></a>
+1. Ontologien und Taxonomien
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Wenn man RDF-Aussagen in Klassen mit festgelegten Eigenschaften zusammenfasst, wie hier mit den Klassen <tt>ro:Gerichtsentscheidung</tt>, <tt>ro:Rechtsanwalt</tt> oder <tt>ro:Jurist</tt>
+ angedeutet, ergibt sich nach und nach ein systematisches Modell (oder 
+auch: ein gewisses Bild) eines bestimmter Fach- oder Wissensgebiete. 
+Diese Modelle nennt man Ontologien. Der Begriff der Ontologie entstammt 
+eigentlich der Philosophie und bezeichnet dort eine "Seinslehre".<a class="sdfootnoteanc" name="sdfootnote22anc" href="#sdfootnote22sym">(22)</a>
+ Das Fachgebiet der Wissensrepräsentation hat den Begriff übernommen und
+ definiert ihn als Modellierung von Domänen der realen Welt mit dem Ziel
+ eines strukturierten und fundierten Aufbaus von Wissensbasen.<a class="sdfootnoteanc" name="sdfootnote23anc" href="#sdfootnote23sym">(23)</a>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0055">Abs. 55</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+In vergleichbarer Form wird der Begriff auch im Semantic Web benutzt. 
+Ontologien sind hier im Grunde alle Modelle, die Klassen von 
+RDF-Ressourcen, ihre Eigenschaften und deren Beziehungen zueinander 
+definieren. Schon die einfachen Klassenhierarchien, die sich mit RDFS 
+formulieren lassen, sind begrifflich bereits Ontologien, wenn hier auch 
+häufig eher von einer Taxonomie als abgeschwächter Form der Ontologie 
+gesprochen wird. Um eine "echte" Ontologie im Semantic Web zu 
+entwickeln, muss es Möglichkeiten geben, die Verhältnisse zwischen 
+Klassen und Klasseneigenschaften noch detaillierter zu beschreiben als 
+es mit RDFS möglich ist. Diese Aufgaben übernehmen die sog. 
+Ontologiesprachen des Semantic Web.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0056">Abs. 56</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="V2"></a>
+2. Über DAML+OIL zu OWL
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Ein bislang bereits weit verbreiteter Standard für Ontologiesprachen war DAML+OIL<a class="sdfootnoteanc" name="sdfootnote24anc" href="#sdfootnote24sym">(24)</a>, eine Fusion zweier von den Organisationen DARPA<a class="sdfootnoteanc" name="sdfootnote25anc" href="#sdfootnote25sym">(25)</a> und On-To-Knowledge<a class="sdfootnoteanc" name="sdfootnote26anc" href="#sdfootnote26sym">(26)</a>
+ entwickelter Standards. Seit einiger Zeit jedoch entwickelt auch das W3
+ Consortium einen eigenen Ontologiestandard namens OWL, der stark an 
+DAML+OIL angelehnt ist. DAML+OIL wird mittlerweile nicht mehr weiter 
+entwickelt, die Entwicklergemeinde konzentriert sich auf OWL als 
+Ontologie-Standard.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0057">Abs. 57</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+OWL liegt derzeit in drei Abstufungen vor: OWL Lite, OWL DL (DL: Description Logic) und OWL Full.<a class="sdfootnoteanc" name="sdfootnote27anc" href="#sdfootnote27sym">(27)</a>
+ Während OWL Lite bei der Beschreibung von Ressourcenklassen kaum mehr 
+Möglichkeiten bietet als RDFS, liefert OWL Full als stärkste 
+"Ausbaustufe" zahlreiche Sprachelemente, um Verhältnisse zwischen 
+Klassen und ihren Eigenschaften sehr differenziert beschreiben zu 
+können. Aus Platzgründen können hier im Folgenden nur einige Beispiele 
+spezieller OWL-Ausdrücke genannt werden.<a class="sdfootnoteanc" name="sdfootnote28anc" href="#sdfootnote28sym">(28)</a>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0058">Abs. 58</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="V3"></a>
+3. Einzelne OWL-Beispiele
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Als relativ leicht verständliches Beispiel erlaubt es OWL, Eigenschaften (<i>properties</i>) mit sog. Kardinalitäten (<i>cardinalities</i>)
+ zu versehen. Kardinalitäten drücken aus, wie häufig die Instanz einer 
+Ressourcenklasse eine bestimmte Eigenschaft definieren darf. 
+Verdeutlichen lässt sich dies am Beispiel der Eigenschaft <tt>ro:entschieden_von</tt> , welche der Klasse <tt>ro:Gerichtsentscheidung</tt>
+ zugeordnet ist. Jede einzelne Gerichtsentscheidung wird von nur einem 
+Gericht entschieden. Daher ist es sinnvoll, die Eigenschaft <tt>ro:entschieden_von</tt> mit der (exakten) Kardinalität 1 zu versehen:
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0059">Abs. 59</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td style="background-color: dcdcdc; " width="70%">
+<pre>@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt;.
+   
+&lt;ro:entschieden_von&gt; &lt;rdfs:domain&gt; &lt;ro:Gerichtsentscheidung&gt;.
+&lt;ro:entschieden_von&gt; &lt;rdfs:range&gt; &lt;ro:Gericht&gt;.
+&lt;ro:entschieden_von&gt; &lt;owl:cardinality&gt; 1.
+</pre>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0060">Abs. 60</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Am Beispiel sieht man, dass OWL ebenso wie RDF Schema nach dem <i>triple</i>-Prinzip
+ formuliert wird. Neben der hier beschriebenen exakten Kardinalität 
+lassen sich auch minimale (owl:minCardinality) und maximale 
+(owl:maxCardinality) Kardinalitäten formulieren. Eine einzelne 
+Gerichtsentscheidung hat z.B. mindestens ein Aktenzeichen, gerade solche
+ des BVerfG (wie auch in unserem Beispiel) haben aber manchmal auch 
+mehrere. Würde man also für die Klasse <tt>ro:Gerichtsentscheidung</tt> eine Eigenschaft <tt>ro:hat_Aktenzeichen</tt>
+ definieren, wäre es wenig sinnvoll, sie neben der minimalen 
+Kardinalität von 1 auch mit einem entsprechenden Höchstwert zu versehen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0061">Abs. 61</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Zudem lassen sich mit OWL Aussagen darüber treffen, wie die durch 
+Prädikate verbundenen Subjekte und Objekte in logischer Hinsicht 
+zueinander stehen. So lässt sich beispielsweise eine Eigenschaft als 
+owl:SymmetricProperty, also als symmetrische Eigenschaft definieren. 
+Eine solche symmetrische Eigenschaft ist das oben beschriebene <tt>ro:ist_Sozius_von</tt>;
+ auf das Verhältnis zwischen RA Meier und RA Müller träfe eine solche 
+Beschreibung zu. Schließlich ist nicht nur RA Meier der Sozius von RA 
+Müller, sondern auch umgekehrt.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0062">Abs. 62</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Wenn dagegen der junge Rechtsanwalt Schulze nur bei RA Meier angestellt,
+ also abhängig beschäftigt ist, und diese Abhängigkeit durch die 
+Eigenschaft <tt>ro:ist_angestellt_bei</tt> ausgedrückt würde, wäre diese Eigenschaft nicht symmetrisch. In diesem Fall kann RA Meier <i>nicht</i> umgekehrt auch bei RA Schulze angestellt sein, für ihn trifft gegenüber RA Schulze eine Definition wie <tt>ro:beschäftigt_als_Angestellten</tt> zu. Diese beiden Eigenschaften lassen sich in OWL als owl:inverseOf kennzeichnen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0063">Abs. 63</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Nicht nur Eigenschaften lassen sich in OWL detaillierter beschreiben als
+ in RDFS, sondern auch Klassen. So lässt sich z.B. eine Klasse durch die
+ Bezeichnung <tt>owl:intersectionOf</tt> als Schnittmenge anderer 
+Klassen definieren. Die Schnittmenge kann entweder aus verschiedenen 
+anderen Klassen bestehen, oder sie wird aus Klassen gebildet, deren 
+Eigenschaften bestimmte Werte zugeordnet sind, wie im folgenden Beispiel
+ (in RDF/XML):
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0064">Abs. 64</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td style="background-color: dcdcdc; " width="70%">
+<pre>&lt;owl:Class rdf:ID="BVerfGEntscheidung"&gt;
+&lt;owl:intersectionOf rdf:parseType="Collection"&gt;
+&lt;owl:Class rdf:about="#Resource" /&gt;
+&lt;owl:Restriction&gt;
+&lt;owl:onProperty 
+rdf:resource="http://www.rechtsontologie.de/elemente#entschieden_von" /&gt;
+&lt;owl:hasValue rdf:resource="http://www.bundesverfassungsgericht.de" /&gt;
+&lt;owl:Restriction&gt;
+&lt;owl:intersectionOf&gt;
+&lt;owl:Class&gt;
+</pre>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0065">Abs. 65</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Die wohl wichtigste OWL-Beschreibung ist gleichzeitig die wohl am 
+nächsten liegende. In RDF(S) und OWL lassen sich Ressourcen, ihre 
+Klassen und Eigenschaften bekanntlich per URI frei adressieren. Daher 
+lässt es sich in der Praxis nicht vermeiden, dass Ressourcen, Klassen 
+oder Eigenschaften mit gleicher Bedeutung unterschiedlich benannt 
+werden. Was in unseren Beispielen <tt>ro:Gerichtsentscheidung</tt> oder <tt>ro:entschieden_von</tt>
+ heißt, kann woanders auch jo:Entscheidungen oder 
+jo:wurde_entschieden_durch (jo: könnte der Namespace für 
+http://juristische-ontologien.org/ sein) heißen. Unabhängig davon, ob 
+die jeweiligen Entwickler der RDF-Daten, die auf diesen Beschreibungen 
+aufbauen, die jeweils anderen Bezeichnungen kennen, können Maschinen, 
+die mit den RDF-Daten arbeiten, sie nicht von sich aus erkennen. Es sei 
+denn, sie "verstehen" OWL und können aus den Aussagen ...
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0066">Abs. 66</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td style="background-color: dcdcdc; " width="70%">
+<pre>@prefix ro: &lt;http://www.rechtsontologie.de/elemente#&gt;;
+jo: &lt;http://juristische-ontologien.org/&gt;.
+
+&lt;ro:Gerichtsentscheidung&gt;
+&lt;owl:equivalentOf&gt; &lt;jo:Entscheidungen&gt;.
+
+&lt;ro:entschieden_von&gt;
+&lt;owl:equivalentOf&gt; &lt;jo:wurde_entschieden_durch&gt;.
+</pre>
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0067">Abs. 67</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+... herleiten, dass die jeweiligen Klassen schlicht und einfach 
+gleichbedeutend sind. Dabei ist es wegen der dezentralen und nicht 
+hierarchischen Struktur des Semantic Web irrelevant, wer diese 
+"Gleichheitsaussage" aufgestellt hat. Während owl:equivalentOf nur für 
+Klassen- und Eigenschaftsdefinitionen gilt, lassen sich diese 
+Gleichheitsbeziehungen über die Bezeichnung owl:sameAs auch für 
+beliebige RDF-Elemente aufstellen, die keiner Klasse zugeordnet sind.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0068">Abs. 68</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0"><tbody><tr><td></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%"><h3 align="left"><a name="VI"></a>
+VI. Zusammenfassung
+</h3></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Anwendungen im Semantic Web basieren nicht auf "abgehobener" künstlicher
+ Intelligenz, sondern auf der Einhaltung besonderer Metadaten-Standards 
+wie RDF, RDF Schema und OWL. RDF ist ein abstraktes Modell, das 
+Datenbeschreibungen in Form von Aussagen nach dem <i>triple</i>-Prinzip 
+ermöglicht. Notiert werden diese Aussagen vornehmlich in einer 
+XML-basierten Sprache (RDF/XML), um sie besser maschinell verarbeiten zu
+ können. Mit RDF Schema und OWL lassen sich Ontologien bilden, also 
+Konzepte verschiedener Ressourcentypen und ihrer Beziehungen zueinander.
+ So lassen sich "schlaue" Dokumente veröffentlichen, deren 
+Bedeutungsgehalt von Web-Anwendungen erfasst und umgesetzt werden kann.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0069">Abs. 69</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Jeder kann seinen Teil zum Erfolg des Semantic Web beitragen, indem er 
+seine Online-Dokumente durch Metadaten ergänzt, die den Standards RDF(S)
+ und OWL entsprechen. Doch welchen Nutzen haben Juristen wie der 
+Rechtsanwalt Meier konkret davon? Was ist der Lohn für ihre Mühe?
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0070">Abs. 70</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%"><tbody><tr><td width="10%"></td><td width="70%">
+Semantic-Web-Daten sind nicht unmittelbar für Menschen gedacht, sondern 
+für Maschinen. Der offensichtlichste Fall einer "Semantic-Web-Maschine" 
+ist eine Suchmaschine, die auf Ontologie- und RDF-Daten basiert. Eines 
+Tages wird es spezielle juristische Suchmaschinen geben, die mit diesen 
+Daten nicht nur umgehen können, sondern sie sogar voraussetzen. Sie 
+werden die von Rechtsanwalt Meier veröffentlichten Urteile erfassen, 
+sinnvoll verarbeiten und präsentieren können. Nutzer dieser Suchmaschine
+ finden im Gegensatz zu vielen aktuellen Suchanfragen genau die 
+Dokumente und Daten, nach denen sie suchen. Das könnten gerade die 
+Urteile von Rechtsanwalt Meier sein, denn dieser ist im Gegensatz zu 
+seinen Kollegen bereits im Semantic Web aktiv. So könnte er mit seiner 
+"semantischen" Anwaltshomepage besser auf sich aufmerksam machen und 
+neue Mandanten gewinnen.
+</td><td width="20%" valign="TOP" align="RIGHT"><font size="-1"><a name="0071">Abs. 71</a></font></td></tr></tbody></table><table width="100%"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" border="0"><tbody><tr><td width="10%"></td><td width="70%">
+Die genannte Suchmaschine gibt es leider noch nicht. Die 
+Semantic-Web-Entwicklergemeinde war bisher vor allem mit dem Entwurf der
+ oben beschriebenen Datenstandards beschäftigt, die höheren Ebenen des 
+"Semantic Web Tower", die sich mit der Verarbeitung dieser Daten 
+befassen, sind noch nicht vollständig ausgearbeitet. Sie sollen im 
+folgenden Teil dieser Reihe ebenso beschrieben werden wie konkrete 
+Anwendungsideen für den Einsatz der neuen Technologie in der 
+juristischen Praxis.
+<hr width="100%"></td><td width="20%" valign="TOP" align="RIGHT"><font size="-1">JurPC Web-Dok.<br>65/2005, <a name="0072">Abs. 72</a></font></td></tr></tbody></table><table width="100%" border="0"><tbody><tr><td></td></tr></tbody></table>
+<table width="100%" cellspacing="15" border="0">
+<tbody><tr><td></td></tr>
+</tbody></table>
+<table width="100%" border="0">
+<tbody><tr>
+<td width="10%"></td>
+<td width="70%">
+<h4>Fußnoten:</h4>
+<a class="sdfootnotesym" name="sdfootnote1sym" href="#sdfootnote1anc">(1)</a>
+ &nbsp;Im Original: "The Semantic Web is not a separate Web but an 
+extension of the current one, in which information is given well-defined
+ meaning, better enabling computers and people to work in cooperation." -
+ vgl. Berners-Lee/Miller, The Semantic Web Lifts Off (2002), online 
+abrufbar unter: <u><a href="http://www.ercim.org/publication/Ercim_News/enw51/berners-lee.html">http://www.ercim.org/publication/Ercim_News/enw51/berners-lee.html </a></u>
+<br><a class="sdfootnotesym" name="sdfootnote2sym" href="#sdfootnote2anc">(2)</a> &nbsp;Vgl. Berners-Lee, Der Web-Report (1999), S. 257.
+<br><a class="sdfootnotesym" name="sdfootnote3sym" href="#sdfootnote3anc">(3)</a>
+ &nbsp;Zur Abgrenzung zwischen Künstlicher Intelligenz (KI) und dem 
+Semantic-Web-Konzept vgl. Berners-Lee, What A Semantic Web Can Represent
+ (1998), online abrufbar unter: <u><a href="http://www.w3.org/DesignIssues/RDFnot.html">http://www.w3.org/De signIssues/RDFnot.html</a></u>
+ - "The concept of machine-understandable documents does not imply some 
+magical artificial intelligence which allows machines to comprehend 
+human mumblings. It only indicates a machine's ability to solve a 
+well-defined problem by performing well-defined operations on existing 
+well-defined data. Instead of asking machines to understand people's 
+language, it involves asking people to make the extra effort."
+<br><a class="sdfootnotesym" name="sdfootnote4sym" href="#sdfootnote4anc">(4)</a> &nbsp;Zur Definition der benannten vgl. die freie Online-Enzyklopädie Wikipedia (Stand jeweils: 01.11.2004): Semiotik (<u><a href="http://de.wikipedia.org/wiki/Semiotik">http://de.wikipedia.org/w iki/Semiotik</a></u>), Logik (<u><a href="http://de.wikipedia.org/wiki/Logik">http://de.wikipedia.org/wiki /Logik </a></u>bzw. <u><a href="http://de.wikipedia.org/wiki/Kategorie:Logik">http://de.wikipedi a.org/wiki/Kategorie:Logik</a></u>), Wissensrepräsentation (<u><a href="http://de.wikipedia.org/wiki/Wissensrepr%C3%A4sentation">http://de.wi kipedia.org/wiki/Wissensrepr%C3%A4sentation</a></u>), Graphentheorie (<u><a href="http://de.wikipedia.org/wiki/Graphentheorie">http://de.wikipedia .org/wiki/Graphentheorie</a></u>).
+<br><a class="sdfootnotesym" name="sdfootnote5sym" href="#sdfootnote5anc">(5)</a> &nbsp;Vgl. Berners-Lee, Semantic Web Roadmap (1998), online abrufbar unter: <u><a href="http://www.w3.org/DesignIssues/Semantic.html">http://www.w3.org/ DesignIssues/Semantic.html</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote6sym" href="#sdfootnote6anc">(6)</a>
+ &nbsp;Auch die Abkürzung RDF/S ist gängig. Wenn von RDF(S) die Rede 
+ist, wird hierunter zumeist die Zusammenfassung von RDF und RDF Schema 
+verstanden.
+<br><a class="sdfootnotesym" name="sdfootnote7sym" href="#sdfootnote7anc">(7)</a>
+ &nbsp;Das "verdrehte" Akronym wurde bewusst gewählt; es wird nämlich 
+nicht buchstabenweise ausgesprochen, sondern wie das engl. Wort <i>owl</i> (Eule).
+<br><a class="sdfootnotesym" name="sdfootnote8sym" href="#sdfootnote8anc">(8)</a> &nbsp;Aus einem Vortrag von Tim Berners-Lee für das W3 Consortium (2000), online abrufbar unter: <u><a href="http://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html">http ://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote9sym" href="#sdfootnote9anc">(9)</a> &nbsp;Siehe hierzu auch Wikipedia (Stand: 01.11.2004): <u><a href="http://de.wikipedia.org/wiki/Unicode">http://de.wikipedia.org/wi ki/Unicode</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote10sym" href="#sdfootnote10anc">(10)</a> &nbsp;Die Übersicht des W3 Consortiums zur Online-Adressierung mittels URIs ist online abrufbar unter: <u><a href="http://www.w3.org/Addressing/">http://www.w3.org/Addressing/</a> </u>. Zu URIs vgl. auch Wikipedia (Stand: 01.11.2004): <u><a href="http://de.wikipedia.org/wiki/Uniform_Resource_Identifier">http:/ /de.wikipedia.org/wiki/Uniform_Resource_Identifier</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote11sym" href="#sdfootnote11anc">(11)</a> &nbsp;Siehe hierzu auch Wikipedia (Stand: 01.11.2004): <u><a href="http://de.wikipedia.org/wiki/Uniform_Resource_Locator">http://de .wikipedia.org/wiki/Uniform_Resource_Locator</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote12sym" href="#sdfootnote12anc">(12)</a> &nbsp;Die Grafik wurde, wie auch die folgenden graphischen RDF-Darstellungen, mit Hilfe des RDF-Autorentools IsaViz (<u><a href="http://www.w3.org/2001/11/IsaViz/">http://www.w3.org/2001/11/Isa Viz/</a></u>) erzeugt.
+<br><a class="sdfootnotesym" name="sdfootnote13sym" href="#sdfootnote13anc">(13)</a>
+ &nbsp;FOAF steht für "Friend Of A Friend". Das FOAF-Projekt: (mit 
+ausführlichen Erläuterungstexten) ist online zu finden unter: <u><a href="http://www.foaf-project.org/">http://www.foaf-project.org/</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote14sym" href="#sdfootnote14anc">(14)</a>
+ &nbsp;Die URIs in diesem Beispiel sind, abgesehen von der URL des 
+Bundesverfassungsgerichts, fiktiv. Sie dienen hier der reinen 
+Veranschaulichung. Grundsätzlich können in RDF jedoch problemlos auch 
+fiktive URIs verwendet werden. Einzige Verwendungsbedingung ist die für 
+URIs gültige Syntax und die Eindeutigkeit für die zu beschreibende(n) 
+Ressource(n).
+<br><a class="sdfootnotesym" name="sdfootnote15sym" href="#sdfootnote15anc">(15)</a>
+ &nbsp;Das schreibt z.B. auch Berners-Lee, Der Web-Report (1999), S. 262
+ f.: "Das Konsortium ist dabei, eine solche Sprache zu entwickeln, das 
+Resource Description Framework (RDF), das selbstverständlich auf XML 
+basiert." Gemeint ist damit freilich nicht das Modell, sondern die 
+Notation. Hier arbeitet Berners-Lee häufig auch zur Veranschaulichung 
+mit Notation 3 (s.u.), wie z.B. in: Berners-Lee, Primer: Getting into 
+RDF &amp; Semantic Web using N3 (2003), online abrufbar unter: <u><a href="http://www.w3.org/2000/10/swap/Primer.html">http://www.w3.org/20 00/10/swap/Primer.html</a></u>
+<br><a class="sdfootnotesym" name="sdfootnote16sym" href="#sdfootnote16anc">(16)</a> &nbsp;Auch der den RDF-Block einleitende Tag <tt>&lt;rdf:RDF ...&gt;</tt>
+ darf einen solchen Namespace enthalten, obwohl dieser erst nach der 
+ersten Verwendung (jedoch noch in der gleichen Klammer) definiert wird.
+<br><a class="sdfootnotesym" name="sdfootnote17sym" href="#sdfootnote17anc">(17)</a> &nbsp;Zur praktischen Durchführung vgl. Palmer, RDF in HTML: Approaches (2002), online abrufbar unter: <u><a href="http://infomesh.net/2002/rdfinhtml/">http://infomesh.net/2002/rd finhtml/</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote18sym" href="#sdfootnote18anc">(18)</a> &nbsp;Die <tt>@prefix</tt>-Deklaration
+ in der ersten Zeile ist gleichbedeutend mit der Namespace-Deklaration 
+in (RDF/)XML - interessanterweise wird selbst hier die <i>triple</i>-Form eingehalten.
+<br><a class="sdfootnotesym" name="sdfootnote19sym" href="#sdfootnote19anc">(19)</a>
+ &nbsp;Wobei das Wort "jemand" natürlich impliziert, dass es sich um 
+eine (natürliche) Person handelt, was aus der Beschreibung an sich hier 
+nicht zwingend hervorgeht. Streng genommen müsste es also heißen: "... 
+hat <i>etwas</i> veröffentlicht, <i>das</i> Michael Meier heißt und 
+Rechtsanwalt ist." Um aus der RDF-Aussage schließen zu können, dass es 
+sich bei RA Meier um einen Menschen handelt, wäre die Bindung der 
+Beschreibung des RA Meier an ein RDF Schema erforderlich; diese 
+Möglichkeit wird unten näher beschrieben.
+<br><a class="sdfootnotesym" name="sdfootnote20sym" href="#sdfootnote20anc">(20)</a> &nbsp;Berners-Lee, Semantic Web Roadmap (1998), online abrufbar unter: <u><a href="http://www.w3.org/DesignIssues/Semantic.html">http://www.w3.org/ DesignIssues/Semantic.html</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote21sym" href="#sdfootnote21anc">(21)</a>
+ &nbsp;Schon eher erinnert RDFS daher an das Verfahren des 
+Programmentwurfs in der Objektorientierten Programmierung (OOP). Der 
+maßgebliche Unterschied zum OOP-Entwurf, wo Objekte ebenfalls zu Klassen
+ mit fest definierten Eigenschaften (Attribute und Methoden) 
+zusammengefasst werden, um aus diesen letztlich Instanzen zu erzeugen, 
+liegt darin, dass es sich im RDF Schema "nur" um Datenklassen handelt, 
+während OOP-Objekte als Methoden auch "aktive" Programme enthalten 
+können. Siehe zur Objektorientierten Programmierung auch Wikipedia 
+(Stand: 01.11.2004): <u><a href="http://de.wikipedia.org/wiki/Oop">http://de.wikipedia.org/wiki/Oop</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote22sym" href="#sdfootnote22anc">(22)</a> &nbsp;Siehe zum Begriff auch Wikipedia (Stand: 01.11.2004): <u><a href="http://de.wikipedia.org/wiki/Ontologie">http://de.wikipedia.org/ wiki/Ontologie</a></u>
+ - "Die Ontologie ist eine philosophische Disziplin, die sich (primär) 
+mit dem Sein, dem Seienden als solchem und mit den fundamentalen Typen 
+von Entitäten beschäftigt. Der Ausdruck Ontologie leitet sich dabei von 
+dem griechischen Partizip on (Seiendes) ab."
+<br><a class="sdfootnotesym" name="sdfootnote23sym" href="#sdfootnote23anc">(23)</a> &nbsp;Vgl. Wikipedia (Stand: 01.11.2004): <u><a href="http://de.wikipedia.org/wiki/Ontologie_(Begriffskl%C3%A4rung)">http:/ /de.wikipedia.org/wiki/Ontologie_%28Begriffskl%C3%A4rung%29</a></u>.
+<br><a class="sdfootnotesym" name="sdfootnote24sym" href="#sdfootnote24anc">(24)</a> &nbsp;DAML: DARPA Agent Markup Language (<u><a href="http://www.daml.org/">http://www.daml.org/</a></u>); OIL: Ontology Inference Layer (<u><a href="http://www.ontoknowledge.org/oil/">http://www.ontoknowledge.org/ oil/</a></u>).
+<br><a class="sdfootnotesym" name="sdfootnote25sym" href="#sdfootnote25anc">(25)</a> &nbsp;DARPA: Defense Advanced Research Projects Agency (<u><a href="http://www.darpa.mil/">http://www.darpa.mil/</a></u>). Die DARPA ist damit so etwas wie die Hi-Tech-Abteilung des US-amerikanischen Verteidigungsministeriums.
+<br><a class="sdfootnotesym" name="sdfootnote26sym" href="#sdfootnote26anc">(26)</a> &nbsp;Zum mittlerweile abgeschlossenen Projekt On-To-Knowledge siehe <u><a href="http://www.ontoknowledge.org/">http://www.ontoknowledge.org/</a> </u>.
+<br><a class="sdfootnotesym" name="sdfootnote27sym" href="#sdfootnote27anc">(27)</a>
+ &nbsp;Ebenso wie RDFS basiert auch OWL auf der Aussagen- und 
+Prädikatenlogik (vgl. zur Einführung Herberger/Simon, 
+Wissenschaftstheorie für Juristen (1980), S. 34 ff., 89 ff., online 
+abrufbar unter: <u><a href="http://www.jura.uni-sb.de/wtheorie/">http://www.jura.uni-sb.de/wtheorie/</a></u>).
+ Der Grund für die Abstufung von OWL in die "Ausbaustufen" Lite, DL und 
+Full liegt im logischen Grundproblem der Berechenbarkeit. Je 
+ausdrucksstärker logische Aussagen sind, desto weniger kann man 
+garantieren, dass die logische Richtigkeit dieser Aussagen tatsächlich 
+berechenbar (oder auch: entscheidbar) ist. So ist der Sprachumfang von 
+OWL Lite zwar nicht besonders ausdrucksstark, aber die Berechenbarkeit 
+logischer Schlüsse aus diesen Aussagen kann garantiert werden. Bei 
+Ausdrücken, die zum Vokabular von OWL Full gehören, ist dies dagegen 
+nicht unbedingt der Fall.
+<br><a class="sdfootnotesym" name="sdfootnote28sym" href="#sdfootnote28anc">(28)</a>
+ &nbsp;Eine ausführliche Beschreibung aller Ausdrücke findet sich in: 
+Smith/Welty/McGuiness, OWL Web Ontology Language Guide (2004), online 
+abrufbar unter: <u><a href="http://www.w3.org/TR/owl-guide/">http://www.w3.org/TR/owl-guide/ </a></u>.
+<hr width="100%"></td>
+<td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr></tbody></table>
+<table width="100%" cellspacing="20" border="0">
+<tbody><tr><td></td></tr>
+</tbody></table>
+<table width="100%" cellspacing="15" border="0">
+<tbody><tr><td></td></tr>
+</tbody></table>
+<table width="100%" cellspacing="2" border="0">
+<tbody><tr>
+<td width="10%"></td>
+<td width="70%"><a href="#rfn0" name="fn0">*</a> 
+Der Autor ist Diplom-Jurist und Doktorand am <a href="http://rechtsinformatik.jura.uni-sb.de/">Institut  für  Rechtsinformatik</a> 
+der Universität des Saarlandes. Im  Rahmen  seiner  Promotion,  betreut  von
+<nobr>Prof. Dr. Maximilian Herberger</nobr>, untersucht er die  Einsatzmöglichkeiten  für
+aktuelle  Online-Technologien  in  juristischen  Lernangeboten.  In   diesem
+Rahmen   ist   das   hier   vorgestellte   "Semantic    Web"    maßgeblicher
+Untersuchungsgegenstand.
+</td>
+<td width="20%" valign="TOP" align="RIGHT"><font size="-1"></font></td></tr>
+</tbody></table>
+<table width="100%" cellspacing="15" border="0">
+<tbody><tr><td></td></tr>
+</tbody></table>
+<table width="100%" border="0">
+<tbody><tr>
+<td width="10%"></td>
+<td width="70%">[<i>online seit: 
+20.05.2005
+</i>]</td>
+<td width="20%"></td></tr>
+</tbody></table>
+<table width="100%" cellspacing="15" border="0">
+<tbody><tr><td></td></tr>
+</tbody></table>
+<table width="100%" border="0">
+</table><table width="100%" border="0">
+<tbody><tr>
+<td width="10%"></td>
+<td width="70%"><i><b>Zitiervorschlag:</b> Autor, Titel, JurPC Web-Dok., Abs.
+</i><br></td>
+<td width="20%"></td></tr>
+</tbody></table>
+<table width="100%" border="0">
+<tbody><tr><td></td></tr>
+</tbody></table>
+<!-- tsc 10.08.2015  -->
+								<table width="100%" border="0">
+									<tbody>
+										<tr>
+											<td width="10%">
+											</td>
+											<td width="70%">
+												<i>
+													<b>Zitiervorschlag: </b>
+													Notholt, Jochen, Die Standards des Semantic Web (Teil 2) - JurPC-Web-Dok. 0065/2005</i>
+											</td>
+											<td width="20%"> </td>
+										</tr>
+									</tbody>
+								</table>
+								<br><br>
+							</div>
+							<div class="rightCol">	
+						 		<form id="simple-search" action="search" method="get">
+						 		    <span class="smallText spanSearch">Suche:</span>
+								    <!-- input class="textField" value="" size="15" name="q" type="text" -->
+								    <input class="textField" size="15" name="q" type="text">
+								    <input value="&gt;" type="submit">
+						       	</form>
+						       	
+						 		<form id="doi-search" action="search" method="get">
+						 		    <span class="smallText spanDoi">Web-Dok/DOI:</span> 
+								    <input class="textField" size="15" name="doi_webdok" type="text">
+								    <input value="&gt;" type="submit">
+						       	</form>
+						 	
+								<form id="simple-search" action="search" method="get" style="margin-top:12px;">
+							 		<span class="smallText spanOpenJ">Jahrgang:</span>
+									<input class="textFieldSmall" size="15" name="jahr" type="text">
+									<span class="smallText spanOpenS">S.</span>
+						    		<input class="textFieldSmall" size="15" name="seite" type="text">
+						    		<input value="&gt;" type="submit">
+			       				</form>
+						       	<h4 class="th-nav">Klassiker</h4>
+						       	<ul><li><a href="https://www.jurpc.de/jurpc/show?id=20090017">Virtuelle Gegenstände als Objekte der Rechtsordnung (2009)</a></li><li><a href="https://www.jurpc.de/jurpc/show?id=20090028">Käuferrechte bei Computerspielen
+– Technische Kopierschutzmaßnahmen und End User License
+Agreements (2009)</a></li><li><a href="https://www.jurpc.de/jurpc/show?id=20050145">Vertrags- und urheberrechtliche Aspekte von Open Source Software im deutschen Recht (2005)</a></li><li><a href="https://www.jurpc.de/jurpc/show?id=19990187">Fuzzy Logik und neuronale Netze (1999)</a></li><li><a href="https://www.jurpc.de/jurpc/show?id=1991_07_27400">EDV-Mängel - Rechtsprechung und Literatur (Teil 4) (1991)</a></li><li><a href="https://www.jurpc.de/jurpc/show?id=1992_07_41800">Stellungnahme zum Diskussionsentwurf des Bundesjustizministeriums zur Änderung des Urheberrechtsgesetzes (Teil 2) (1992)</a></li><li><a href="https://www.jurpc.de/jurpc/show?id=1996_06_96900">Was schuldet der Staat der Öffentlichkeit an Rechtstexten? (1996)</a></li><li><a href="https://www.jurpc.de/jurpc/show?id=1995_12_90900">Allgemeine
+ datenschutzrechtliche Rechtsgrundlagen sowie 
+technisch-organisatorischer Datenschutz im Bereich des richterlichen 
+Arbeitsplatzes (1995)</a></li><li><a href="https://www.jurpc.de/jurpc/show?id=iur_1988_0000_0006_0012_0017">Der Schutz von Computersoftware und Microchips in der Schweiz (1988)</a></li><li><a href="https://www.jurpc.de/jurpc/show?id=iur_1986_0000_0004_0039_0043">Einführung in die Programmiersprache „BASIC” (1986)</a></li></ul>
+
+</div> 	
+						</div>
+			</div>
+			<div id="skyscraper" style="float: left; padding-top: 20px; padding-left: 15px; width: 180px; display: none; left: 1475px;" class="fixedPosition">
+				<div>
+<script type="text/javascript">
+<!--
+  var _paq = _paq || [];
+	_paq.push(['setCustomVariable', 2, 'Banneraufruf', '', 'visit']);
+//-->
+</script>
+		<img class="skyscraperImg" src="" alt="">
+<hr><div class="androidLink"><div>Auch für Android:</div><div>
+<script type="text/javascript">
+<!--
+  var _paq = _paq || [];
+	_paq.push(['setCustomVariable', 2, 'Banneraufruf', '', 'visit']);
+//-->
+</script>
+		<img class="androidImg" src="" alt="">
+</div>
+</div></div>
+</div>	
+		</div>
+		<div style="clear: both;">	
+			<div id="topnav">
+     
+    
+    <div class="center">
+    <div class="menu-footmenu-container"><ul id="menu-footmenu" class="menu"><li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://www.jurpc.de/wp/impressum/">Impressum</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="https://www.jurpc.de/wp/kontakt/">Kontakt</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://www.jurpc.de/wp/datenschutz/">Datenschutz</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://facebook.com/jurpc"><span style="vertical-align: top;">Facebook </span><img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/facebook.png" alt="Facebook"></a></li><li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://www.twitter.com/jurpc"><span style="vertical-align: top;">Twitter </span><img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/twitter.png" alt="Twitter"></a></li><li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://www.xing.com/net/pri1cf6e7x/jurpc/"><span style="vertical-align: top;">Xing </span><img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/xing.png" alt="Xing"></a></li><li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="http://www.jurpc.de/jurpc.rss"><span style="vertical-align: top;">RSS-Feed </span><img src="Notholt,%20Jochen,%20Die%20Standards%20des%20Semantic%20Web%20(Teil%202)%20-%20JurPC-Web-Dok_files/rss.png" alt="RSS-Feed"></a></li></ul></div>    </div> 
+</div></div>
+
+		<!-- Piwik --> 
+		<!--
+		<script type="text/javascript">
+		var id = "20050065";
+		var pkBaseURL = (("https:" == document.location.protocol) ? "https://hub.makrolog.de/" : "http://hub.makrolog.de/");
+		document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+		try {
+		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 24);
+		piwikTracker.setCustomVariable(1, "docid", id);
+		piwikTracker.trackPageView();
+		piwikTracker.enableLinkTracking();
+		} catch( err ) {}
+		</script><noscript><p><img src="http://hub.makrolog.de/piwik.php?idsite=24" style="border:0" alt="" /></p></noscript>
+		-->
+		<script type="text/javascript">
+		  var id = "20050065";
+		  var _paq = _paq || [];
+		  _paq.push(["setCookieDomain", "*.jurpc.de"]);
+		  _paq.push(['setCustomVariable', 1, 'docid', id, 'page']); 
+		  _paq.push(["trackPageView"]);
+		  _paq.push(["enableLinkTracking"]);
+
+			(function() {
+		    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://hub.makrolog.de/";
+		    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+		    _paq.push(["setSiteId", "24"]);
+		    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+		    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+		  })();
+		</script>
+		<!-- End Piwik Tracking Code -->
+
+	
+</body></html>
