@@ -3,7 +3,7 @@ view-source:https://traumabasedmindcontrol.com/index.php/tag/kampusch/
 Wed Oct 26 12:49:19 PM CEST 2022
 => ich dumpe / wget'te diese seite mal ungesehen zur beweissicherung... ich vermute mal da wäre wenn es ein Honeypot ist auch noch irgendwelche pädophiliebilder eingewoben die ich mir jetzt downloade, ich versuche das zu sichten, wenn pädophilie dabei ist werde ich das umgehend melden, weil solches will ich nicht sehen, das würde mir zu nahe gehen
 Wed Oct 26 12:49:21 PM CEST 2022
-
+Die webseite blockiert den wget -rl5
 
 
 Ich bin nicht seine Mama, ich wäre ein „Gaxi“ [oesterreichisch Kindersprache für Kot], schwarz, böse und besiegt, die „echte“ Mama ist beim Papa.

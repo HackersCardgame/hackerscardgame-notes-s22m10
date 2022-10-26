@@ -102,7 +102,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 	for (var i = 0; i < evts.length; i++) {
 		addEvent(evts[i], logHuman);
 	}
-})('//traumabasedmindcontrol.com/?wordfence_lh=1&hid=DAD13E2BD104C9E16293D6F739E52A2B');
+})('//traumabasedmindcontrol.com/?wordfence_lh=1&hid=AF2D2A8CEE27CFBF0B1323110D90F1E0');
 </script><style type="text/css">
 .qtranxs_flag_de {background-image: url(https://traumabasedmindcontrol.com/wp-content/plugins/qtranslate-x/flags/de.png); background-repeat: no-repeat;}
 .qtranxs_flag_en {background-image: url(https://traumabasedmindcontrol.com/wp-content/plugins/qtranslate-x/flags/gb.png); background-repeat: no-repeat;}

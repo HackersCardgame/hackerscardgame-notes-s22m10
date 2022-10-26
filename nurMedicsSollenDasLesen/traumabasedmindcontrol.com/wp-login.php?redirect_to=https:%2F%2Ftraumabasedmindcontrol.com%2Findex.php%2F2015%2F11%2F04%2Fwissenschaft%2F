@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+	<!--[if IE 8]>
+		<html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="de-DE">
+	<![endif]-->
+	<!--[if !(IE 8) ]><!-->
+		<html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE">
+	<!--<![endif]-->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Anmelden &lsaquo; www.traumabasedmindcontrol.com &#8212; WordPress</title>
+	<link rel='dns-prefetch' href='//s.w.org' />
+<script src='https://traumabasedmindcontrol.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script src='https://traumabasedmindcontrol.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script>
+var WFLSVars = {"ajaxurl":"https:\/\/traumabasedmindcontrol.com\/wp-admin\/admin-ajax.php","nonce":"6bfbd41083","recaptchasitekey":"","useCAPTCHA":"","allowremember":"","verification":""};
+</script>
+<script src='https://traumabasedmindcontrol.com/wp-content/plugins/wordfence/modules/login-security/js/login.1659014884.js?ver=1.0.10'></script>
+<link rel='stylesheet' id='dashicons-css'  href='https://traumabasedmindcontrol.com/wp-includes/css/dashicons.min.css?ver=40d716cf1ef6658fe6a3546d3541cc08' media='all' />
+<link rel='stylesheet' id='buttons-css'  href='https://traumabasedmindcontrol.com/wp-includes/css/buttons.min.css?ver=40d716cf1ef6658fe6a3546d3541cc08' media='all' />
+<link rel='stylesheet' id='forms-css'  href='https://traumabasedmindcontrol.com/wp-admin/css/forms.min.css?ver=40d716cf1ef6658fe6a3546d3541cc08' media='all' />
+<link rel='stylesheet' id='l10n-css'  href='https://traumabasedmindcontrol.com/wp-admin/css/l10n.min.css?ver=40d716cf1ef6658fe6a3546d3541cc08' media='all' />
+<link rel='stylesheet' id='login-css'  href='https://traumabasedmindcontrol.com/wp-admin/css/login.min.css?ver=40d716cf1ef6658fe6a3546d3541cc08' media='all' />
+<link rel='stylesheet' id='wordfence-ls-login-css'  href='https://traumabasedmindcontrol.com/wp-content/plugins/wordfence/modules/login-security/css/login.1659014884.css?ver=1.0.10' media='all' />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//traumabasedmindcontrol.com/?wordfence_lh=1&hid=297D952BA0CA75B58194062AA410D123');
+</script>	<meta name='robots' content='noindex,noarchive' />
+	<meta name='referrer' content='strict-origin-when-cross-origin' />
+		<meta name="viewport" content="width=device-width" />
+		</head>
+	<body class="login no-js login-action-login wp-core-ui  locale-de-de">
+	<script type="text/javascript">
+		document.body.className = document.body.className.replace('no-js','js');
+	</script>
+		<div id="login">
+		<h1><a href="https://de.wordpress.org/">Powered by WordPress</a></h1>
+	
+		<form name="loginform" id="loginform" action="https://traumabasedmindcontrol.com/wp-login.php" method="post">
+			<p>
+				<label for="user_login">Benutzername oder E-Mail-Adresse</label>
+				<input type="text" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" />
+			</p>
+
+			<div class="user-pass-wrap">
+				<label for="user_pass">Passwort</label>
+				<div class="wp-pwd">
+					<input type="password" name="pwd" id="user_pass" class="input password-input" value="" size="20" />
+					<button type="button" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Passwort anzeigen">
+						<span class="dashicons dashicons-visibility" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+						<p class="forgetmenot"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  /> <label for="rememberme">Angemeldet bleiben</label></p>
+			<p class="submit">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Anmelden" />
+									<input type="hidden" name="redirect_to" value="https://traumabasedmindcontrol.com/index.php/2015/11/04/wissenschaft/" />
+									<input type="hidden" name="testcookie" value="1" />
+			</p>
+		</form>
+
+					<p id="nav">
+									<a href="https://traumabasedmindcontrol.com/wp-login.php?action=lostpassword">Passwort vergessen?</a>
+								</p>
+					<script type="text/javascript">
+			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
+wp_attempt_focus();
+if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
+				<p id="backtoblog"><a href="https://traumabasedmindcontrol.com/">
+		&larr; Zurück zu www.traumabasedmindcontrol.com		</a></p>
+			</div>
+	<script>
+var _zxcvbnSettings = {"src":"https:\/\/traumabasedmindcontrol.com\/wp-includes\/js\/zxcvbn.min.js"};
+</script>
+<script src='https://traumabasedmindcontrol.com/wp-includes/js/zxcvbn-async.min.js?ver=1.0'></script>
+<script>
+var pwsL10n = {"unknown":"Passwort-St\u00e4rke unbekannt","short":"Ganz schwach","bad":"Schwach","good":"Mittel","strong":"Stark","mismatch":"Keine \u00dcbereinstimmung"};
+</script>
+<script src='https://traumabasedmindcontrol.com/wp-admin/js/password-strength-meter.min.js?ver=40d716cf1ef6658fe6a3546d3541cc08'></script>
+<script src='https://traumabasedmindcontrol.com/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script>
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://traumabasedmindcontrol.com/wp-includes/js/wp-util.min.js?ver=40d716cf1ef6658fe6a3546d3541cc08'></script>
+<script>
+var userProfileL10n = {"warn":"Dein neues Passwort wurde nicht gespeichert.","warnWeak":"Best\u00e4tige die Verwendung eines schwachen Passworts.","show":"Anzeigen","hide":"Verbergen","cancel":"Abbrechen","ariaShow":"Passwort anzeigen","ariaHide":"Passwort verbergen"};
+</script>
+<script src='https://traumabasedmindcontrol.com/wp-admin/js/user-profile.min.js?ver=40d716cf1ef6658fe6a3546d3541cc08'></script>
+	<div class="clear"></div>
+	</body>
+	</html>
+	
