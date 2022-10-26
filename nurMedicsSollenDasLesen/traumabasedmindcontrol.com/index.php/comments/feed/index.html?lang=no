@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments for www.traumabasedmindcontrol.com	</title>
+	<atom:link href="https://traumabasedmindcontrol.com/index.php/comments/feed/?lang=no" rel="self" type="application/rss+xml" />
+	<link>https://traumabasedmindcontrol.com</link>
+	<description>Netzwerk gegen Folter an (Klein)Kindern &#124; Network against torture on toddlers and children</description>
+	<lastBuildDate>Wed, 31 Aug 2022 00:00:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+</channel>
+</rss>
