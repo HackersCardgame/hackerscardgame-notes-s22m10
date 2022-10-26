@@ -1,0 +1,19 @@
+Zum Thema Gehirn ist die Quantum-Mind Hypothese spannend, das könntet zwei Ihr ja als Physiker mal nachrechnen. Da wäre meine Frage, sind am Dish-Pong auch Quanteneffekte beteiligt?
+
+* https://www.karger.com/Article/Fulltext/446752
+
+Dann wäre auch eine spannende Frage, ist ein Neuronales Netzwerk im Computer grundsätzlich das Selbe wie ein Petrischalen Gehirn oder fehlen da die angenommenen Quanteneffekte? Und wenn die Quanteneffekte fehlen wird dadurch die Leistungsfähigkeit des Netzwerks schlechter oder leigt das nur daran, dass die Komplexität und somit die evolutionäre Optimierung eines Neurons in der Biologie besser ist als eines welches am Computer mit einer simplen Formel nachmodelliert wird?
+
+Dann für Neurologie bzw. Neuronen-Forschung wird oft der C.Elegans Wurm beigezogen. Das ist so ein ganz kleiner Wurm der immer ca. ungefähr gleichviele Nervenzellen hat.
+
+https://de.wikipedia.org/wiki/Caenorhabditis_elegans
+
+Diese Studie hier will beweisen, dass es bei diesem Wurm genau ein Neuron für den "Vorwärtsgang" gibt:
+
+https://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1001066
+
+Dann auch spannend ist das Projekt Open-Worm wo dieser Wurm mit seinen Neuronen etc. im PC simuliert wird.
+
+https://openworm.org/getting_started.html
+
+Danke für das spannende Thema 3
