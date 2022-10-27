@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="abstractClassKult.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0494603"
+     inkscape:cx="427.3625"
+     inkscape:cy="585.0626"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="79.353214"
+       y="199.41982"
+       width="759.77793"
+       height="503.5097"
+       id="rect2476" />
+    <rect
+       x="79.353214"
+       y="199.41982"
+       width="759.77793"
+       height="503.5097"
+       id="rect7036" />
+    <rect
+       x="79.35321"
+       y="199.41982"
+       width="759.77795"
+       height="503.5097"
+       id="rect2476-3" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#000000;stroke-width:5.78847;stroke-linecap:round"
+       id="rect5322"
+       width="267.0665"
+       height="228.94481"
+       x="-0.59992468"
+       y="33.202141"
+       ry="5.4855542" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-12.080168,103.4777)"
+       id="text2474-6"
+       style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2476-3);fill:#00ff00;fill-opacity:1;stroke:none"><tspan
+         x="79.353516"
+         y="211.21677"
+         id="tspan17772">public abstract class Kult-Member
+</tspan><tspan
+         x="79.353516"
+         y="227.88339"
+         id="tspan17774">{
+</tspan><tspan
+         x="79.353516"
+         y="244.55002"
+         id="tspan17776">  public String Glaube
+</tspan><tspan
+         x="79.353516"
+         y="261.21664"
+         id="tspan17778">  public boolean istVonKultÜberzeugt
+</tspan><tspan
+         x="79.353516"
+         y="277.88327"
+         id="tspan17780">  public String ManipulierbarÜberThema
+</tspan><tspan
+         x="79.353516"
+         y="294.5499"
+         id="tspan17782">  
+</tspan><tspan
+         x="79.353516"
+         y="311.21652"
+         id="tspan17784">  public float epilepsiePegel
+</tspan><tspan
+         x="79.353516"
+         y="327.88315"
+         id="tspan17786">  public float incentivesPegel
+</tspan><tspan
+         x="79.353516"
+         y="344.54977"
+         id="tspan17788">
+</tspan><tspan
+         x="79.353516"
+         y="361.2164"
+         id="tspan17790">  
+</tspan><tspan
+         x="79.353516"
+         y="377.88303"
+         id="tspan17792">
+</tspan><tspan
+         x="79.353516"
+         y="394.54965"
+         id="tspan17794">}
+</tspan><tspan
+         x="79.353516"
+         y="411.21628"
+         id="tspan17796">
+</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-12.080168,-5.7802818)"
+       id="text2474"
+       style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2476);fill:#00ff00;fill-opacity:1;stroke:none"><tspan
+         x="79.353516"
+         y="211.21677"
+         id="tspan17798">public abstract class Kult
+</tspan><tspan
+         x="79.353516"
+         y="227.88339"
+         id="tspan17800">{
+</tspan><tspan
+         x="79.353516"
+         y="244.55002"
+         id="tspan17802">  public String Name
+</tspan><tspan
+         x="79.353516"
+         y="261.21664"
+         id="tspan17804">  public String Helden
+</tspan><tspan
+         x="79.353516"
+         y="277.88327"
+         id="tspan17806">  public String Feinde
+</tspan><tspan
+         x="79.353516"
+         y="294.5499"
+         id="tspan17808">  public String Symbole
+</tspan><tspan
+         x="79.353516"
+         y="311.21652"
+         id="tspan17810">  public String Rituale
+</tspan><tspan
+         x="79.353516"
+         y="327.88315"
+         id="tspan17812">  public String Geheimnisse
+</tspan><tspan
+         x="79.353516"
+         y="344.54977"
+         id="tspan17814">  public String Triggerwort
+</tspan><tspan
+         x="79.353516"
+         y="361.2164"
+         id="tspan17816">  
+</tspan><tspan
+         x="79.353516"
+         y="377.88303"
+         id="tspan17818">  // da wäre ein zwingendes Prärequisit zugriff mindestens auf
+</tspan><tspan
+         x="79.353516"
+         y="394.54965"
+         id="tspan17820">  // den Bildschirm oder schlimmer noch auf Neuralink oder was älteres
+</tspan><tspan
+         x="79.353516"
+         y="411.21628"
+         id="tspan17822">  // und beim Neuralink wäre ein Prärequisit, dass die Inhalte irgendwie
+</tspan><tspan
+         x="79.353516"
+         y="427.8829"
+         id="tspan17824">  // sortiert sind, gleichgeschaltet sind oder es eine ProjektionsMatrix
+</tspan><tspan
+         x="79.353516"
+         y="444.54953"
+         id="tspan17826">  // von Gehirn 1 zu Gehrin 2 gibt
+</tspan><tspan
+         x="79.353516"
+         y="461.21616"
+         id="tspan17828">
+</tspan><tspan
+         x="79.353516"
+         y="477.88278"
+         id="tspan17830">}
+</tspan><tspan
+         x="79.353516"
+         y="494.54941"
+         id="tspan17832">
+</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,75.955198,-6.1938889)"
+       id="text7034"
+       style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect7036);fill:#00ff00;fill-opacity:1;stroke:none"><tspan
+         x="79.353516"
+         y="211.21677"
+         id="tspan17834">class EVP extends Kult
+</tspan><tspan
+         x="79.353516"
+         y="227.88339"
+         id="tspan17836">{
+</tspan><tspan
+         x="79.353516"
+         y="244.55002"
+         id="tspan17838">  Name = &quot;EVP&quot;
+</tspan><tspan
+         x="79.353516"
+         y="261.21664"
+         id="tspan17840">  Helden = &quot;Jesus&quot;, &quot;Gott&quot; ...
+</tspan><tspan
+         x="79.353516"
+         y="277.88327"
+         id="tspan17842">  Feinde = &quot;Satan&quot;, &quot;Todsünden&quot;, ...
+</tspan><tspan
+         x="79.353516"
+         y="294.5499"
+         id="tspan17844">  Symbole = &quot;Christen-Kreuz&quot;
+</tspan><tspan
+         x="79.353516"
+         y="311.21652"
+         id="tspan17846">  Rituale = &quot;Beichte&quot;
+</tspan><tspan
+         x="79.353516"
+         y="327.88315"
+         id="tspan17848">  Geheimnisse = &quot;liebe Deinen nächsten wie dich selbst gilt auch für die nächste Religion&quot;
+</tspan><tspan
+         x="79.353516"
+         y="344.54977"
+         id="tspan17850">  Triggerwort = &quot;ans Kreuz nageln&quot;
+</tspan><tspan
+         x="79.353516"
+         y="361.2164"
+         id="tspan17852">  
+</tspan><tspan
+         x="79.353516"
+         y="377.88303"
+         id="tspan17854">
+</tspan><tspan
+         x="79.353516"
+         y="394.54965"
+         id="tspan17856"> 
+</tspan><tspan
+         x="79.353516"
+         y="411.21628"
+         id="tspan17858"> 
+</tspan><tspan
+         x="79.353516"
+         y="427.8829"
+         id="tspan17860"> 
+</tspan><tspan
+         x="79.353516"
+         y="444.54953"
+         id="tspan17862"> 
+</tspan><tspan
+         x="79.353516"
+         y="461.21616"
+         id="tspan17864">
+</tspan><tspan
+         x="79.353516"
+         y="477.88278"
+         id="tspan17866">}
+</tspan><tspan
+         x="79.353516"
+         y="494.54941"
+         id="tspan17868">
+</tspan></text>
+  </g>
+</svg>

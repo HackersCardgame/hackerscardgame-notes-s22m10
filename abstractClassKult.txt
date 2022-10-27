@@ -1,0 +1,27 @@
+
+
+public abstract class Kult
+{
+  public String Name
+  public String Helden
+  public String Feinde
+  public String Symbole
+  public String Rituale
+  public String Geheimnisse
+  public String Triggerwort
+  public String Religion
+  public boolean istReligiös
+  public String amBestenManipulierbarÜberThema
+  
+  public float epilepsiePegel
+  public float incentivesPegel
+  
+  // da wäre ein zwingendes Prärequisit zugriff mindestens auf
+  // den Bildschirm oder schlimmer noch auf Neuralink oder was älteres
+  // und beim Neuralink wäre ein Prärequisit, dass die Inhalte irgendwie
+  // sortiert sind, gleichgeschaltet sind oder es eine ProjektionsMatrix
+  // von Gehirn 1 zu Gehrin 2 gibt
+
+}
+
+
