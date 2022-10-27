@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.0494603"
-     inkscape:cx="427.3625"
-     inkscape:cy="585.0626"
+     inkscape:zoom="0.74208053"
+     inkscape:cx="562.60741"
+     inkscape:cy="541.72018"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="1920"
@@ -52,19 +52,25 @@
        width="759.77795"
        height="503.5097"
        id="rect2476-3" />
+    <rect
+       x="79.353214"
+       y="199.41982"
+       width="796.99526"
+       height="379.24243"
+       id="rect22224" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="opacity:1;fill:#000000;stroke-width:5.78847;stroke-linecap:round"
+       style="opacity:1;fill:#000000;stroke-width:6.57464;stroke-linecap:round"
        id="rect5322"
-       width="267.0665"
-       height="228.94481"
+       width="321.59735"
+       height="245.2753"
        x="-0.59992468"
-       y="33.202141"
-       ry="5.4855542" />
+       y="16.871653"
+       ry="5.8768353" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-12.080168,103.4777)"
@@ -72,56 +78,82 @@
        style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2476-3);fill:#00ff00;fill-opacity:1;stroke:none"><tspan
          x="79.353516"
          y="211.21677"
-         id="tspan17772">public abstract class Kult-Member
-</tspan><tspan
+         id="tspan104505"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104503">public abstract class KultMember
+</tspan></tspan><tspan
          x="79.353516"
          y="227.88339"
-         id="tspan17774">{
-</tspan><tspan
+         id="tspan104509"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104507">{
+</tspan></tspan><tspan
          x="79.353516"
          y="244.55002"
-         id="tspan17776">  public String Glaube
-</tspan><tspan
+         id="tspan104513"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104511">  public String glaube
+</tspan></tspan><tspan
          x="79.353516"
          y="261.21664"
-         id="tspan17778">  public boolean istVonKultÜberzeugt
-</tspan><tspan
+         id="tspan104517"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104515">  public boolean istVonKultÜberzeugt
+</tspan></tspan><tspan
          x="79.353516"
          y="277.88327"
-         id="tspan17780">  public String ManipulierbarÜberThema
-</tspan><tspan
+         id="tspan104521"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104519">  public String manipulierbarÜberThema
+</tspan></tspan><tspan
          x="79.353516"
          y="294.5499"
-         id="tspan17782">  
-</tspan><tspan
+         id="tspan104525"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104523">  
+</tspan></tspan><tspan
          x="79.353516"
          y="311.21652"
-         id="tspan17784">  public float epilepsiePegel
-</tspan><tspan
+         id="tspan104529"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104527">  public float epilepsiePegel
+</tspan></tspan><tspan
          x="79.353516"
          y="327.88315"
-         id="tspan17786">  public float incentivesPegel
-</tspan><tspan
+         id="tspan104533"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104531">  public float incentivesPegel
+</tspan></tspan><tspan
          x="79.353516"
          y="344.54977"
-         id="tspan17788">
-</tspan><tspan
+         id="tspan104537"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104535">
+</tspan></tspan><tspan
          x="79.353516"
          y="361.2164"
-         id="tspan17790">  
-</tspan><tspan
+         id="tspan104541"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104539">  
+</tspan></tspan><tspan
          x="79.353516"
          y="377.88303"
-         id="tspan17792">
-</tspan><tspan
+         id="tspan104545"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104543">
+</tspan></tspan><tspan
          x="79.353516"
          y="394.54965"
-         id="tspan17794">}
-</tspan><tspan
+         id="tspan104549"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104547">}
+</tspan></tspan><tspan
          x="79.353516"
          y="411.21628"
-         id="tspan17796">
-</tspan></text>
+         id="tspan104553"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104551">
+</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-12.080168,-5.7802818)"
@@ -129,76 +161,112 @@
        style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2476);fill:#00ff00;fill-opacity:1;stroke:none"><tspan
          x="79.353516"
          y="211.21677"
-         id="tspan17798">public abstract class Kult
-</tspan><tspan
+         id="tspan104557"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104555">public abstract class Kult
+</tspan></tspan><tspan
          x="79.353516"
          y="227.88339"
-         id="tspan17800">{
-</tspan><tspan
+         id="tspan104561"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104559">{
+</tspan></tspan><tspan
          x="79.353516"
          y="244.55002"
-         id="tspan17802">  public String Name
-</tspan><tspan
+         id="tspan104565"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104563">  public String Name
+</tspan></tspan><tspan
          x="79.353516"
          y="261.21664"
-         id="tspan17804">  public String Helden
-</tspan><tspan
+         id="tspan104569"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104567">  public String Helden
+</tspan></tspan><tspan
          x="79.353516"
          y="277.88327"
-         id="tspan17806">  public String Feinde
-</tspan><tspan
+         id="tspan104573"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104571">  public String Feinde
+</tspan></tspan><tspan
          x="79.353516"
          y="294.5499"
-         id="tspan17808">  public String Symbole
-</tspan><tspan
+         id="tspan104577"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104575">  public String Symbole
+</tspan></tspan><tspan
          x="79.353516"
          y="311.21652"
-         id="tspan17810">  public String Rituale
-</tspan><tspan
+         id="tspan104581"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104579">  public String Rituale
+</tspan></tspan><tspan
          x="79.353516"
          y="327.88315"
-         id="tspan17812">  public String Geheimnisse
-</tspan><tspan
+         id="tspan104585"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104583">  public String Geheimnisse
+</tspan></tspan><tspan
          x="79.353516"
          y="344.54977"
-         id="tspan17814">  public String Triggerwort
-</tspan><tspan
+         id="tspan104589"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104587">  public String Triggerwort
+</tspan></tspan><tspan
          x="79.353516"
          y="361.2164"
-         id="tspan17816">  
-</tspan><tspan
+         id="tspan104593"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104591">  
+</tspan></tspan><tspan
          x="79.353516"
          y="377.88303"
-         id="tspan17818">  // da wäre ein zwingendes Prärequisit zugriff mindestens auf
-</tspan><tspan
+         id="tspan104597"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104595">  // da wäre ein zwingendes Prärequisit zugriff mindestens auf
+</tspan></tspan><tspan
          x="79.353516"
          y="394.54965"
-         id="tspan17820">  // den Bildschirm oder schlimmer noch auf Neuralink oder was älteres
-</tspan><tspan
+         id="tspan104601"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104599">  // den Bildschirm oder schlimmer noch auf Neuralink oder was älteres
+</tspan></tspan><tspan
          x="79.353516"
          y="411.21628"
-         id="tspan17822">  // und beim Neuralink wäre ein Prärequisit, dass die Inhalte irgendwie
-</tspan><tspan
+         id="tspan104605"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104603">  // und beim Neuralink wäre ein Prärequisit, dass die Inhalte irgendwie
+</tspan></tspan><tspan
          x="79.353516"
          y="427.8829"
-         id="tspan17824">  // sortiert sind, gleichgeschaltet sind oder es eine ProjektionsMatrix
-</tspan><tspan
+         id="tspan104609"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104607">  // sortiert sind, gleichgeschaltet sind oder es eine ProjektionsMatrix
+</tspan></tspan><tspan
          x="79.353516"
          y="444.54953"
-         id="tspan17826">  // von Gehirn 1 zu Gehrin 2 gibt
-</tspan><tspan
+         id="tspan104613"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104611">  // von Gehirn 1 zu Gehrin 2 gibt
+</tspan></tspan><tspan
          x="79.353516"
          y="461.21616"
-         id="tspan17828">
-</tspan><tspan
+         id="tspan104617"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104615">
+</tspan></tspan><tspan
          x="79.353516"
          y="477.88278"
-         id="tspan17830">}
-</tspan><tspan
+         id="tspan104621"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104619">}
+</tspan></tspan><tspan
          x="79.353516"
          y="494.54941"
-         id="tspan17832">
-</tspan></text>
+         id="tspan104625"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104623">
+</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,75.955198,-6.1938889)"
@@ -206,75 +274,344 @@
        style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect7036);fill:#00ff00;fill-opacity:1;stroke:none"><tspan
          x="79.353516"
          y="211.21677"
-         id="tspan17834">class EVP extends Kult
-</tspan><tspan
+         id="tspan104629"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104627">class EVP extends Kult
+</tspan></tspan><tspan
          x="79.353516"
          y="227.88339"
-         id="tspan17836">{
-</tspan><tspan
+         id="tspan104633"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104631">{
+</tspan></tspan><tspan
          x="79.353516"
          y="244.55002"
-         id="tspan17838">  Name = &quot;EVP&quot;
-</tspan><tspan
+         id="tspan104637"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104635">  Name = &quot;EVP&quot;
+</tspan></tspan><tspan
          x="79.353516"
          y="261.21664"
-         id="tspan17840">  Helden = &quot;Jesus&quot;, &quot;Gott&quot; ...
-</tspan><tspan
+         id="tspan104641"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104639">  Helden = &quot;Jesus&quot;, &quot;Gott&quot; ...
+</tspan></tspan><tspan
          x="79.353516"
          y="277.88327"
-         id="tspan17842">  Feinde = &quot;Satan&quot;, &quot;Todsünden&quot;, ...
-</tspan><tspan
+         id="tspan104645"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104643">  Feinde = &quot;Satan&quot;, &quot;Todsünden&quot;, ...
+</tspan></tspan><tspan
          x="79.353516"
          y="294.5499"
-         id="tspan17844">  Symbole = &quot;Christen-Kreuz&quot;
-</tspan><tspan
+         id="tspan104649"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104647">  Symbole = &quot;Christen-Kreuz&quot;
+</tspan></tspan><tspan
          x="79.353516"
          y="311.21652"
-         id="tspan17846">  Rituale = &quot;Beichte&quot;
-</tspan><tspan
+         id="tspan104653"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104651">  Rituale = &quot;Beichte&quot;
+</tspan></tspan><tspan
          x="79.353516"
          y="327.88315"
-         id="tspan17848">  Geheimnisse = &quot;liebe Deinen nächsten wie dich selbst gilt auch für die nächste Religion&quot;
-</tspan><tspan
+         id="tspan104657"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104655">  Geheimnisse = &quot;liebe Deinen nächsten wie dich selbst gilt auch für die nächste Religion&quot;
+</tspan></tspan><tspan
          x="79.353516"
          y="344.54977"
-         id="tspan17850">  Triggerwort = &quot;ans Kreuz nageln&quot;
-</tspan><tspan
+         id="tspan104661"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104659">  Triggerwort = &quot;ans Kreuz nageln&quot;
+</tspan></tspan><tspan
          x="79.353516"
          y="361.2164"
-         id="tspan17852">  
-</tspan><tspan
+         id="tspan104665"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104663">  
+</tspan></tspan><tspan
          x="79.353516"
          y="377.88303"
-         id="tspan17854">
-</tspan><tspan
+         id="tspan104669"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104667">
+</tspan></tspan><tspan
          x="79.353516"
          y="394.54965"
-         id="tspan17856"> 
-</tspan><tspan
+         id="tspan104673"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104671"> 
+</tspan></tspan><tspan
          x="79.353516"
          y="411.21628"
-         id="tspan17858"> 
-</tspan><tspan
+         id="tspan104677"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104675"> 
+</tspan></tspan><tspan
          x="79.353516"
          y="427.8829"
-         id="tspan17860"> 
-</tspan><tspan
+         id="tspan104681"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104679"> 
+</tspan></tspan><tspan
          x="79.353516"
          y="444.54953"
-         id="tspan17862"> 
-</tspan><tspan
+         id="tspan104685"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104683"> 
+</tspan></tspan><tspan
          x="79.353516"
          y="461.21616"
-         id="tspan17864">
-</tspan><tspan
+         id="tspan104689"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104687">
+</tspan></tspan><tspan
          x="79.353516"
          y="477.88278"
-         id="tspan17866">}
-</tspan><tspan
+         id="tspan104693"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104691">}
+</tspan></tspan><tspan
          x="79.353516"
          y="494.54941"
-         id="tspan17868">
-</tspan></text>
+         id="tspan104697"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104695">
+</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,75.955198,101.75618)"
+       id="text22222"
+       style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect22224);fill:#00ff00;fill-opacity:1;stroke:none"><tspan
+         x="79.353516"
+         y="211.21677"
+         id="tspan104701"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104699">class Bauhofer extends KultMember
+</tspan></tspan><tspan
+         x="79.353516"
+         y="227.88339"
+         id="tspan104705"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104703">{
+</tspan></tspan><tspan
+         x="79.353516"
+         y="244.55002"
+         id="tspan104709"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104707">  glaube = &quot;Christentum&quot; (könnte auch Satan sein und man tarnt sich als Christ)
+</tspan></tspan><tspan
+         x="79.353516"
+         y="261.21664"
+         id="tspan104713"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104711">  istVonKultÜberzeugt = true
+</tspan></tspan><tspan
+         x="79.353516"
+         y="277.88327"
+         id="tspan104721"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104715">  manipulierbarÜberThema = &quot;Christliche Geheimnisse&quot;, &quot;von </tspan><tspan
+           style="font-weight:bold"
+           id="tspan104717">Gott eingefügte</tspan><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104719"> geheime Botschaften&quot;
+</tspan></tspan><tspan
+         x="79.353516"
+         y="294.5499"
+         id="tspan104725"><tspan
+           style="fill:#ff0000"
+           id="tspan104723">  =&gt; somit könnte Satan sich über Informatik in Texten mit einem Typo (Rechtschreibfehler)
+</tspan></tspan><tspan
+         x="79.353516"
+         y="311.21652"
+         id="tspan104729"><tspan
+           style="fill:#ff0000"
+           id="tspan104727">  den er in Texte von Zeugen oder Angeklagten einfügt dem Richter sagen &quot;der Verfasser ist
+</tspan></tspan><tspan
+         x="79.353516"
+         y="327.88315"
+         id="tspan104733"><tspan
+           style="fill:#ff0000"
+           id="tspan104731">  [ schuldig | unschuldig ] und wenn der Richter diesen Trick Satans noch nicht kennt würde
+</tspan></tspan><tspan
+         x="79.353516"
+         y="344.54977"
+         id="tspan104737"><tspan
+           style="fill:#ff0000"
+           id="tspan104735">  er sich allenfalls beeinflussen lassen.
+</tspan></tspan><tspan
+         x="79.353516"
+         y="361.2164"
+         id="tspan104741"><tspan
+           style="fill:#ff0000"
+           id="tspan104739">  Wenn der Richter überlastet [ und | oder ] überfüttert ist, dann würde er mit &quot;schnellem
+</tspan></tspan><tspan
+         x="79.353516"
+         y="377.88303"
+         id="tspan104745"><tspan
+           style="fill:#ff0000"
+           id="tspan104743">  Denken&quot; (Buch: Daniel Kahneman) sich zu Fehlurteilen treiben lassen.
+</tspan></tspan><tspan
+         x="79.353516"
+         y="394.54965"
+         id="tspan104751"><tspan
+           style="fill:#ff0000"
+           id="tspan104747">  </tspan><tspan
+           style="fill:#ffff00"
+           id="tspan104749">Hat der Richter genügend Zeit um alle Puzzleteile zu sichten und das Puzzle zusammen zu setzen
+</tspan></tspan><tspan
+         x="79.353516"
+         y="411.21628"
+         id="tspan104757"><tspan
+           style="fill:#ffff00"
+           id="tspan104753">  wird dieser Angriffsvektor aber vermutlich nicht funktionieren.</tspan><tspan
+           style="fill:#ff0000"
+           id="tspan104755">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="427.8829"
+         id="tspan104761"><tspan
+           style="fill:#ff0000"
+           id="tspan104759">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="444.54953"
+         id="tspan104765"><tspan
+           style="fill:#ff0000"
+           id="tspan104763">  Mühsamer würde es wenn passenden Botschaft auf einem hidden Kommunikations-Kanal wie z.B. 
+</tspan></tspan><tspan
+         x="79.353516"
+         y="461.21616"
+         id="tspan104769"><tspan
+           style="fill:#ff0000"
+           id="tspan104767">  Neuralink übermittelt werden, wenn eine schnelle KI oder ein Mensch schaut dass die Puzzle-
+</tspan></tspan><tspan
+         x="79.353516"
+         y="477.88278"
+         id="tspan104773"><tspan
+           style="fill:#ff0000"
+           id="tspan104771">  Teile die zum richtigen Täter führen würden gleich mit falschen Beweisen auf den Sündenbock /
+</tspan></tspan><tspan
+         x="79.353516"
+         y="494.54941"
+         id="tspan104777"><tspan
+           style="fill:#ff0000"
+           id="tspan104775">  Angeklagten verlinkt würde. Dazu brächte man aber eine Software die den Richter sehr genau
+</tspan></tspan><tspan
+         x="79.353516"
+         y="511.21603"
+         id="tspan104781"><tspan
+           style="fill:#ff0000"
+           id="tspan104779">  aushorcht und merkt: &quot;Der Richter glaubt dem fälschlich Beschuldigten&quot; (etwas wie ein 
+</tspan></tspan><tspan
+         x="79.353516"
+         y="527.88266"
+         id="tspan104785"><tspan
+           style="fill:#ff0000"
+           id="tspan104783">  EEG Lügendetektor in den Händen Satans)
+</tspan></tspan><tspan
+         x="79.353516"
+         y="544.54929"
+         id="tspan104789"><tspan
+           style="fill:#ff0000"
+           id="tspan104787">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="561.21591"
+         id="tspan104793">}<tspan
+   style="fill:#ff0000"
+   id="tspan104791">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="577.88254"
+         id="tspan104797"><tspan
+           style="fill:#ff0000"
+           id="tspan104795">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="590.45895"
+         id="tspan104803">}<tspan
+   dx="8.0273237 8.0273237 8.0273218 8.0273237 8.0273256 8.0273256 8.0273218 8.0273256 8.0273218 8.027318"
+   style="fill:#ff0000"
+   id="tspan104799">n ausgeben</tspan><tspan
+   dx="8.0273256"
+   style="font-family:monospace;-inkscape-font-specification:monospace"
+   id="tspan104801">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="607.12558"
+         id="tspan104807"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104805">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="623.7922"
+         id="tspan104811"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104809">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="640.45883"
+         id="tspan104815"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104813">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="657.12545"
+         id="tspan104819"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104817">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="673.79208"
+         id="tspan104823"><tspan
+           dx="0 8.0273237"
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104821"> 
+</tspan></tspan><tspan
+         x="79.353516"
+         y="690.4587"
+         id="tspan104827"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104825">
+</tspan></tspan><tspan
+         x="79.353516"
+         y="707.12533"
+         id="tspan104831"><tspan
+           dx="0 8.0273237"
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104829">}
+</tspan></tspan><tspan
+         x="79.353516"
+         y="723.79195"
+         id="tspan104835"><tspan
+           style="font-family:monospace;-inkscape-font-specification:monospace"
+           id="tspan104833">
+</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="11.909099"
+       y="32.96386"
+       id="text56325"><tspan
+         sodipodi:role="line"
+         id="tspan56323"
+         style="fill:#37c8ab;stroke-width:0.264583"
+         x="11.909099"
+         y="32.96386">Vorlage</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="97.807617"
+       y="32.96386"
+       id="text57971"><tspan
+         sodipodi:role="line"
+         id="tspan57969"
+         style="fill:#55ddff;stroke-width:0.264583"
+         x="97.807617"
+         y="32.96386">Implementierung</tspan></text>
   </g>
 </svg>
